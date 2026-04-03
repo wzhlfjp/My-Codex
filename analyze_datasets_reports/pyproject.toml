@@ -1,0 +1,11 @@
+[project]
+name = "analyze-datasets-reports"
+version = "0.1.0"
+description = "Data analysis project for datasets and reports"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
