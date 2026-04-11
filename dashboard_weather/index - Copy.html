@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-City Weather Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            soft: '0 18px 50px rgba(15, 23, 42, 0.12)',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(6px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            fadeIn: 'fadeIn 320ms ease-out',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="relative overflow-hidden bg-gradient-to-br from-emerald-500 via-cyan-500 to-amber-400">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.32),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.18),transparent_26%)]"></div>
+    <div class="relative mx-auto max-w-7xl px-4 pb-8 pt-8 sm:px-6 lg:px-8">
+      <div class="max-w-3xl py-8 sm:py-12">
+        <p class="mb-3 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/16 px-3 py-1 text-sm font-medium text-white/90 backdrop-blur">
+          Meteostat daily weather
+        </p>
+        <h1 class="max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          Two-City Weather Dashboard
+        </h1>
+        <p class="mt-4 max-w-2xl text-base leading-7 text-white/90 sm:text-lg">
+          Track temperature, rain, and wind across Seattle and Bellingham. Adjust the filters and the story below rewrites itself around the slice you choose.
+        </p>
+      </div>
+
+      <div class="grid gap-4 md:grid-cols-3">
+        <section id="kpi-high-gap" class="rounded-lg border border-white/28 bg-white/16 p-4 text-white shadow-soft backdrop-blur">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-sm font-medium text-white/80">Average high gap</p>
+              <p class="mt-2 text-3xl font-semibold" data-value>--</p>
+              <p class="mt-2 text-sm text-white/85" data-detail>Loading filtered highs</p>
+              <p class="mt-3 text-sm font-medium" data-delta>--</p>
+            </div>
+            <div class="rounded-lg bg-white/18 p-2">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3v13"></path>
+                <path d="M8 7l4-4 4 4"></path>
+                <path d="M4 17c0-2.2 1.8-4 4-4h8a4 4 0 0 1 0 8H8a4 4 0 0 1-4-4Z"></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="kpi-wettest" class="rounded-lg border border-white/28 bg-white/16 p-4 text-white shadow-soft backdrop-blur">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-sm font-medium text-white/80">Wettest city</p>
+              <p class="mt-2 text-3xl font-semibold" data-value>--</p>
+              <p class="mt-2 text-sm text-white/85" data-detail>Waiting on rain totals</p>
+              <p class="mt-3 text-sm font-medium" data-delta>--</p>
+            </div>
+            <div class="rounded-lg bg-white/18 p-2">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M7 15a5 5 0 1 1 .7-9.95A6 6 0 0 1 19 8a4 4 0 0 1-1 7"></path>
+                <path d="M8 17l-1 3"></path>
+                <path d="M12 17l-1 4"></path>
+                <path d="M16 17l-1 3"></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="kpi-wind" class="rounded-lg border border-white/28 bg-white/16 p-4 text-white shadow-soft backdrop-blur">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-sm font-medium text-white/80">Peak wind</p>
+              <p class="mt-2 text-3xl font-semibold" data-value>--</p>
+              <p class="mt-2 text-sm text-white/85" data-detail>Looking for the fastest day</p>
+              <p class="mt-3 text-sm font-medium" data-delta>--</p>
+            </div>
+            <div class="rounded-lg bg-white/18 p-2">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h11a3 3 0 1 0-3-3"></path>
+                <path d="M3 12h15a3 3 0 1 1-3 3"></path>
+                <path d="M3 16h8"></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <main class="mx-auto -mt-2 max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+    <div class="grid gap-6 lg:grid-cols-[1.08fr,0.92fr]">
+      <section class="rounded-lg border border-white/60 bg-white/70 p-5 shadow-soft backdrop-blur">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div>
+            <h2 class="text-xl font-semibold text-slate-900">Filter the weather slice</h2>
+            <p class="mt-1 text-sm text-slate-600">Choose a city mix, date window, and calmer or rougher conditions.</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span id="filter-summary" class="inline-flex rounded-full bg-slate-900 px-3 py-1 text-sm font-medium text-white">All cities • full range</span>
+            <button id="reset-all" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-100">
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-5 grid gap-5 xl:grid-cols-2">
+          <div class="space-y-5">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Cities</p>
+              <div id="city-checkboxes" class="mt-3 flex flex-wrap gap-3"></div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block">
+                <span class="text-sm font-semibold text-slate-800">Start date</span>
+                <input id="start-date" type="date" class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200">
+                <span id="start-date-label" class="mt-2 block text-sm text-slate-600"></span>
+              </label>
+              <label class="block">
+                <span class="text-sm font-semibold text-slate-800">End date</span>
+                <input id="end-date" type="date" class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200">
+                <span id="end-date-label" class="mt-2 block text-sm text-slate-600"></span>
+              </label>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <button class="preset-btn rounded-lg bg-emerald-500 px-3 py-2 text-sm font-medium text-white transition hover:bg-emerald-600" data-preset="calm">Calm Days</button>
+              <button class="preset-btn rounded-lg bg-rose-500 px-3 py-2 text-sm font-medium text-white transition hover:bg-rose-600" data-preset="storm">Storm Week</button>
+              <button class="preset-btn rounded-lg bg-amber-500 px-3 py-2 text-sm font-medium text-slate-900 transition hover:bg-amber-400" data-preset="warm">Warm Stretch</button>
+            </div>
+
+            <details class="rounded-lg border border-slate-200 bg-slate-50 p-4">
+              <summary class="cursor-pointer list-none text-sm font-semibold text-slate-800">Need tips?</summary>
+              <div class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+                <p>Try a single city if you want cleaner trend lines.</p>
+                <p>Tighten the wind range to isolate calmer days or stormier stretches.</p>
+                <p>The active chips below each reflect one piece of state you can undo in one click.</p>
+              </div>
+            </details>
+          </div>
+
+          <div class="space-y-5">
+            <div>
+              <div class="flex items-center justify-between">
+                <p class="text-sm font-semibold text-slate-800">Daytime high range</p>
+                <p id="temp-range-label" class="text-sm text-slate-600"></p>
+              </div>
+              <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <div class="grid gap-3">
+                  <label class="block">
+                    <span class="text-xs font-medium uppercase tracking-wide text-slate-500">Minimum high</span>
+                    <input id="temp-min" type="range" class="mt-2 w-full accent-cyan-600">
+                  </label>
+                  <label class="block">
+                    <span class="text-xs font-medium uppercase tracking-wide text-slate-500">Maximum high</span>
+                    <input id="temp-max" type="range" class="mt-2 w-full accent-cyan-600">
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <p class="text-sm font-semibold text-slate-800">Wind speed range</p>
+                <p id="wind-range-label" class="text-sm text-slate-600"></p>
+              </div>
+              <div class="mt-3 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <div class="grid gap-3">
+                  <label class="block">
+                    <span class="text-xs font-medium uppercase tracking-wide text-slate-500">Minimum wind</span>
+                    <input id="wind-min" type="range" class="mt-2 w-full accent-emerald-600">
+                  </label>
+                  <label class="block">
+                    <span class="text-xs font-medium uppercase tracking-wide text-slate-500">Maximum wind</span>
+                    <input id="wind-max" type="range" class="mt-2 w-full accent-emerald-600">
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Active filters</p>
+              <div id="active-chips" class="mt-3 flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-lg border border-slate-200 bg-slate-900 p-5 text-white shadow-soft">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-semibold">What story does this slice tell?</h2>
+            <p class="mt-1 text-sm text-slate-300">These bullets update from the filtered records you have on screen.</p>
+          </div>
+          <span id="story-range" class="rounded-full bg-white/10 px-3 py-1 text-sm text-slate-200">0 days</span>
+        </div>
+        <ul id="story-list" class="mt-5 space-y-3 text-sm leading-6 text-slate-200"></ul>
+      </section>
+    </div>
+
+    <section class="mt-6 grid gap-6 md:grid-cols-2">
+      <article class="chart-card rounded-lg border border-slate-200 bg-white p-5 shadow-soft" data-card="highTrend">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">How are daytime highs moving over time?</h2>
+            <p class="mt-1 text-sm text-slate-500">Line chart of daily high temperatures by city.</p>
+          </div>
+          <button class="info-bubble rounded-full border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-600" data-info="Tracks filtered daily tmax values across time so you can spot warming pockets, dips, and city separation.">i</button>
+        </div>
+        <div class="mt-4 relative h-72">
+          <canvas id="highTrendChart"></canvas>
+          <div class="no-data absolute inset-0 hidden items-center justify-center rounded-lg bg-white/88 text-center">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No rows match these filters.</p>
+              <button class="reset-inline mt-3 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white">Reset filters</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chart-card rounded-lg border border-slate-200 bg-white p-5 shadow-soft" data-card="lowTrend">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">How are overnight lows shifting?</h2>
+            <p class="mt-1 text-sm text-slate-500">Line chart of daily low temperatures by city.</p>
+          </div>
+          <button class="info-bubble rounded-full border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-600" data-info="Uses filtered tmin values to show how cool nights or cold snaps cluster through the selected range.">i</button>
+        </div>
+        <div class="mt-4 relative h-72">
+          <canvas id="lowTrendChart"></canvas>
+          <div class="no-data absolute inset-0 hidden items-center justify-center rounded-lg bg-white/88 text-center">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No rows match these filters.</p>
+              <button class="reset-inline mt-3 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white">Reset filters</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chart-card rounded-lg border border-slate-200 bg-white p-5 shadow-soft" data-card="prcpTrend">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">When did precipitation spike?</h2>
+            <p class="mt-1 text-sm text-slate-500">Filled line chart of daily precipitation totals.</p>
+          </div>
+          <button class="info-bubble rounded-full border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-600" data-info="Plots filtered prcp by date with a filled area so rainy runs and sharp storms stand out quickly.">i</button>
+        </div>
+        <div class="mt-4 relative h-72">
+          <canvas id="prcpTrendChart"></canvas>
+          <div class="no-data absolute inset-0 hidden items-center justify-center rounded-lg bg-white/88 text-center">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No rows match these filters.</p>
+              <button class="reset-inline mt-3 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white">Reset filters</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chart-card rounded-lg border border-slate-200 bg-white p-5 shadow-soft" data-card="highBar">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">Which city runs warmer on average highs?</h2>
+            <p class="mt-1 text-sm text-slate-500">Average filtered high temperature by city.</p>
+          </div>
+          <button class="info-bubble rounded-full border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-600" data-info="Compares the selected cities on mean tmax so you can see the warmer city in the current slice.">i</button>
+        </div>
+        <div class="mt-4 relative h-72">
+          <canvas id="highBarChart"></canvas>
+          <div class="no-data absolute inset-0 hidden items-center justify-center rounded-lg bg-white/88 text-center">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No rows match these filters.</p>
+              <button class="reset-inline mt-3 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white">Reset filters</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chart-card rounded-lg border border-slate-200 bg-white p-5 shadow-soft md:col-span-2" data-card="scatter">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">How does wind travel with rain?</h2>
+            <p class="mt-1 text-sm text-slate-500">Scatter plot of wind speed versus precipitation for filtered days.</p>
+          </div>
+          <button class="info-bubble rounded-full border border-slate-300 px-2.5 py-1 text-xs font-semibold text-slate-600" data-info="Pairs wspd and prcp for each filtered day to show whether breezier days also tend to be wetter.">i</button>
+        </div>
+        <div class="mt-4 relative h-80">
+          <canvas id="scatterChart"></canvas>
+          <div class="no-data absolute inset-0 hidden items-center justify-center rounded-lg bg-white/88 text-center">
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No rows match these filters.</p>
+              <button class="reset-inline mt-3 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white">Reset filters</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="tooltip" class="pointer-events-none fixed z-50 hidden max-w-xs rounded-lg bg-slate-900 px-3 py-2 text-sm text-white shadow-soft"></div>
+
+  <script>
+    const weatherData = [{"date":"2025-10-16","city":"Seattle","tmax":14,"tmin":4,"prcp":0,"wspd":8.5},{"date":"2025-10-17","city":"Seattle","tmax":16,"tmin":11,"prcp":0.7,"wspd":6.4},{"date":"2025-10-18","city":"Seattle","tmax":13,"tmin":8,"prcp":1,"wspd":8.1},{"date":"2025-10-19","city":"Seattle","tmax":17,"tmin":10,"prcp":1.3,"wspd":18.3},{"date":"2025-10-20","city":"Seattle","tmax":15,"tmin":10,"prcp":0.3,"wspd":8.4},{"date":"2025-10-21","city":"Seattle","tmax":16,"tmin":7,"prcp":0,"wspd":4.2},{"date":"2025-10-22","city":"Seattle","tmax":17,"tmin":8,"prcp":0.8,"wspd":11.5},{"date":"2025-10-23","city":"Seattle","tmax":17,"tmin":11,"prcp":0,"wspd":9.8},{"date":"2025-10-24","city":"Seattle","tmax":14,"tmin":9,"prcp":0.8,"wspd":14.7},{"date":"2025-10-25","city":"Seattle","tmax":14,"tmin":7,"prcp":2.7,"wspd":15.8},{"date":"2025-10-26","city":"Seattle","tmax":11,"tmin":7,"prcp":2.7,"wspd":12},{"date":"2025-10-27","city":"Seattle","tmax":13,"tmin":6,"prcp":0.3,"wspd":6.3},{"date":"2025-10-28","city":"Seattle","tmax":14,"tmin":4,"prcp":0,"wspd":4.8},{"date":"2025-10-29","city":"Seattle","tmax":15,"tmin":8,"prcp":1.7,"wspd":8.1},{"date":"2025-10-30","city":"Seattle","tmax":11,"tmin":5,"prcp":0,"wspd":3.1},{"date":"2025-10-31","city":"Seattle","tmax":12,"tmin":6,"prcp":0.4,"wspd":8.5},{"date":"2025-11-01","city":"Seattle","tmax":17,"tmin":11,"prcp":1.2,"wspd":14.3},{"date":"2025-11-02","city":"Seattle","tmax":14,"tmin":8,"prcp":0.2,"wspd":7.9},{"date":"2025-11-03","city":"Seattle","tmax":10,"tmin":8,"prcp":0.6,"wspd":3.2},{"date":"2025-11-04","city":"Seattle","tmax":15,"tmin":6,"prcp":0.6,"wspd":5.3},{"date":"2025-11-05","city":"Seattle","tmax":16,"tmin":11,"prcp":1.2,"wspd":14.5},{"date":"2025-11-06","city":"Seattle","tmax":13,"tmin":11,"prcp":1.3,"wspd":19.5},{"date":"2025-11-07","city":"Seattle","tmax":13,"tmin":8,"prcp":0,"wspd":13},{"date":"2025-11-08","city":"Seattle","tmax":13,"tmin":3,"prcp":0,"wspd":2.9},{"date":"2025-11-09","city":"Seattle","tmax":18.3,"tmin":5,"prcp":0,"wspd":7.2},{"date":"2025-11-10","city":"Seattle","tmax":16,"tmin":11,"prcp":2.6,"wspd":11.4},{"date":"2025-11-11","city":"Seattle","tmax":13,"tmin":6,"prcp":0,"wspd":3.3},{"date":"2025-11-12","city":"Seattle","tmax":13,"tmin":8,"prcp":0.7,"wspd":5.8},{"date":"2025-11-13","city":"Seattle","tmax":14,"tmin":11,"prcp":2,"wspd":12.5},{"date":"2025-11-14","city":"Seattle","tmax":13,"tmin":9,"prcp":3.2,"wspd":8.5},{"date":"2025-11-15","city":"Seattle","tmax":14,"tmin":12,"prcp":0.3,"wspd":10.4},{"date":"2025-11-16","city":"Seattle","tmax":13,"tmin":11,"prcp":0.8,"wspd":7.1},{"date":"2025-10-16","city":"Bellingham","tmax":12,"tmin":0,"prcp":0.2,"wspd":7.6},{"date":"2025-10-17","city":"Bellingham","tmax":14,"tmin":7,"prcp":0,"wspd":8.2},{"date":"2025-10-18","city":"Bellingham","tmax":11,"tmin":4,"prcp":0.4,"wspd":10.5},{"date":"2025-10-19","city":"Bellingham","tmax":13,"tmin":9,"prcp":4.6,"wspd":13.9},{"date":"2025-10-20","city":"Bellingham","tmax":12,"tmin":9,"prcp":1.9,"wspd":9.9},{"date":"2025-10-21","city":"Bellingham","tmax":14,"tmin":6,"prcp":0,"wspd":6.2},{"date":"2025-10-22","city":"Bellingham","tmax":13,"tmin":2,"prcp":0.7,"wspd":4.4},{"date":"2025-10-23","city":"Bellingham","tmax":17,"tmin":8,"prcp":0,"wspd":17.7},{"date":"2025-10-24","city":"Bellingham","tmax":16,"tmin":6,"prcp":1.3,"wspd":19.9},{"date":"2025-10-25","city":"Bellingham","tmax":13,"tmin":6,"prcp":3.6,"wspd":17.9},{"date":"2025-10-26","city":"Bellingham","tmax":10,"tmin":6,"prcp":4.5,"wspd":12.7},{"date":"2025-10-27","city":"Bellingham","tmax":11,"tmin":2,"prcp":2.3,"wspd":8.7},{"date":"2025-10-28","city":"Bellingham","tmax":14,"tmin":3,"prcp":9.3,"wspd":12.5},{"date":"2025-10-29","city":"Bellingham","tmax":13,"tmin":4,"prcp":0.8,"wspd":11.5},{"date":"2025-10-30","city":"Bellingham","tmax":11,"tmin":3,"prcp":0,"wspd":2.3},{"date":"2025-10-31","city":"Bellingham","tmax":13,"tmin":2,"prcp":2.9,"wspd":9.7},{"date":"2025-11-01","city":"Bellingham","tmax":12,"tmin":9,"prcp":1.8,"wspd":7.6},{"date":"2025-11-02","city":"Bellingham","tmax":12,"tmin":5,"prcp":0.8,"wspd":9.3},{"date":"2025-11-03","city":"Bellingham","tmax":10,"tmin":1,"prcp":0,"wspd":6},{"date":"2025-11-04","city":"Bellingham","tmax":13,"tmin":-1,"prcp":0,"wspd":8.2},{"date":"2025-11-05","city":"Bellingham","tmax":16,"tmin":9,"prcp":0.3,"wspd":21},{"date":"2025-11-06","city":"Bellingham","tmax":14,"tmin":10,"prcp":4.4,"wspd":23},{"date":"2025-11-07","city":"Bellingham","tmax":12,"tmin":6,"prcp":1.2,"wspd":10},{"date":"2025-11-08","city":"Bellingham","tmax":13,"tmin":1,"prcp":0,"wspd":7.5},{"date":"2025-11-09","city":"Bellingham","tmax":16,"tmin":3,"prcp":0.4,"wspd":3.8},{"date":"2025-11-10","city":"Bellingham","tmax":14,"tmin":10,"prcp":2.1,"wspd":9.2},{"date":"2025-11-11","city":"Bellingham","tmax":12,"tmin":2,"prcp":0,"wspd":5.2},{"date":"2025-11-12","city":"Bellingham","tmax":9,"tmin":2,"prcp":0.7,"wspd":3.2},{"date":"2025-11-13","city":"Bellingham","tmax":13,"tmin":7,"prcp":3.9,"wspd":5.2},{"date":"2025-11-14","city":"Bellingham","tmax":8,"tmin":6,"prcp":0.3,"wspd":1.7},{"date":"2025-11-15","city":"Bellingham","tmax":9,"tmin":6,"prcp":1.2,"wspd":9.2},{"date":"2025-11-16","city":"Bellingham","tmax":13,"tmin":7,"prcp":4,"wspd":4.5}];
+
+    const parsedData = weatherData
+      .map((row) => ({ ...row, parsedDate: new Date(`${row.date}T00:00:00`) }))
+      .sort((a, b) => a.parsedDate - b.parsedDate || a.city.localeCompare(b.city));
+
+    const cities = [...new Set(parsedData.map((row) => row.city))];
+    const allDates = parsedData.map((row) => row.parsedDate.getTime());
+    const limits = {
+      minDate: new Date(Math.min(...allDates)),
+      maxDate: new Date(Math.max(...allDates)),
+      minTmax: Math.floor(Math.min(...parsedData.map((row) => row.tmax))),
+      maxTmax: Math.ceil(Math.max(...parsedData.map((row) => row.tmax))),
+      minWspd: Math.floor(Math.min(...parsedData.map((row) => row.wspd))),
+      maxWspd: Math.ceil(Math.max(...parsedData.map((row) => row.wspd))),
+    };
+
+    const state = {
+      selectedCities: new Set(cities),
+      startDate: formatDateInput(limits.minDate),
+      endDate: formatDateInput(limits.maxDate),
+      tempMin: limits.minTmax,
+      tempMax: limits.maxTmax,
+      windMin: limits.minWspd,
+      windMax: limits.maxWspd,
+      preset: null,
+    };
+
+    const els = {
+      cityCheckboxes: document.getElementById('city-checkboxes'),
+      startDate: document.getElementById('start-date'),
+      endDate: document.getElementById('end-date'),
+      startDateLabel: document.getElementById('start-date-label'),
+      endDateLabel: document.getElementById('end-date-label'),
+      tempMin: document.getElementById('temp-min'),
+      tempMax: document.getElementById('temp-max'),
+      windMin: document.getElementById('wind-min'),
+      windMax: document.getElementById('wind-max'),
+      tempRangeLabel: document.getElementById('temp-range-label'),
+      windRangeLabel: document.getElementById('wind-range-label'),
+      filterSummary: document.getElementById('filter-summary'),
+      activeChips: document.getElementById('active-chips'),
+      storyList: document.getElementById('story-list'),
+      storyRange: document.getElementById('story-range'),
+      tooltip: document.getElementById('tooltip'),
+    };
+
+    const charts = {};
+    const palette = {
+      Seattle: { stroke: '#0f766e', fill: 'rgba(15,118,110,0.18)' },
+      Bellingham: { stroke: '#f97316', fill: 'rgba(249,115,22,0.18)' },
+    };
+
+    init();
+
+    function init() {
+      renderCityCheckboxes();
+      setupInputs();
+      bindInfoBubbles();
+      document.getElementById('reset-all').addEventListener('click', resetAllFilters);
+      document.querySelectorAll('.reset-inline').forEach((button) => button.addEventListener('click', resetAllFilters));
+      document.querySelectorAll('.preset-btn').forEach((button) => {
+        button.addEventListener('click', () => applyPreset(button.dataset.preset));
+      });
+      initializeCharts();
+      syncControls();
+      render();
+    }
+
+    function renderCityCheckboxes() {
+      els.cityCheckboxes.innerHTML = cities.map((city) => `
+        <label class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm">
+          <input type="checkbox" class="city-box h-4 w-4 rounded border-slate-300 text-cyan-600 focus:ring-cyan-500" value="${city}" checked>
+          <span>${city}</span>
+        </label>
+      `).join('');
+
+      els.cityCheckboxes.querySelectorAll('.city-box').forEach((box) => {
+        box.addEventListener('change', () => {
+          if (!box.checked && state.selectedCities.size === 1) {
+            box.checked = true;
+            return;
+          }
+          if (box.checked) state.selectedCities.add(box.value);
+          else state.selectedCities.delete(box.value);
+          state.preset = null;
+          render();
+        });
+      });
+    }
+
+    function setupInputs() {
+      els.startDate.min = formatDateInput(limits.minDate);
+      els.startDate.max = formatDateInput(limits.maxDate);
+      els.endDate.min = formatDateInput(limits.minDate);
+      els.endDate.max = formatDateInput(limits.maxDate);
+      els.tempMin.min = limits.minTmax;
+      els.tempMin.max = limits.maxTmax;
+      els.tempMax.min = limits.minTmax;
+      els.tempMax.max = limits.maxTmax;
+      els.windMin.min = limits.minWspd;
+      els.windMin.max = limits.maxWspd;
+      els.windMax.min = limits.minWspd;
+      els.windMax.max = limits.maxWspd;
+
+      els.startDate.addEventListener('input', () => {
+        if (els.startDate.value > state.endDate) state.endDate = els.startDate.value;
+        state.startDate = els.startDate.value;
+        state.preset = null;
+        render();
+      });
+
+      els.endDate.addEventListener('input', () => {
+        if (els.endDate.value < state.startDate) state.startDate = els.endDate.value;
+        state.endDate = els.endDate.value;
+        state.preset = null;
+        render();
+      });
+
+      els.tempMin.addEventListener('input', () => {
+        const next = Number(els.tempMin.value);
+        state.tempMin = Math.min(next, state.tempMax);
+        if (state.tempMin !== next) els.tempMin.value = state.tempMin;
+        state.preset = null;
+        render();
+      });
+
+      els.tempMax.addEventListener('input', () => {
+        const next = Number(els.tempMax.value);
+        state.tempMax = Math.max(next, state.tempMin);
+        if (state.tempMax !== next) els.tempMax.value = state.tempMax;
+        state.preset = null;
+        render();
+      });
+
+      els.windMin.addEventListener('input', () => {
+        const next = Number(els.windMin.value);
+        state.windMin = Math.min(next, state.windMax);
+        if (state.windMin !== next) els.windMin.value = state.windMin;
+        state.preset = null;
+        render();
+      });
+
+      els.windMax.addEventListener('input', () => {
+        const next = Number(els.windMax.value);
+        state.windMax = Math.max(next, state.windMin);
+        if (state.windMax !== next) els.windMax.value = state.windMax;
+        state.preset = null;
+        render();
+      });
+    }
+
+    function initializeCharts() {
+      const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: { duration: 300, easing: 'easeOutQuart' },
+        interaction: { mode: 'nearest', intersect: false },
+        plugins: {
+          legend: {
+            labels: {
+              usePointStyle: true,
+              boxWidth: 10,
+              color: '#334155',
+              font: { family: 'ui-sans-serif, system-ui, sans-serif' },
+            },
+          },
+          tooltip: {
+            backgroundColor: 'rgba(15,23,42,0.92)',
+            titleColor: '#fff',
+            bodyColor: '#e2e8f0',
+            cornerRadius: 8,
+          },
+        },
+        scales: {
+          x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.18)' } },
+          y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.18)' } },
+        },
+      };
+
+      charts.highTrend = new Chart(document.getElementById('highTrendChart'), {
+        type: 'line',
+        data: { datasets: [] },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { type: 'time', time: { unit: 'day', tooltipFormat: 'MMM d, yyyy' }, ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.18)' } },
+            y: { ticks: { color: '#64748b', callback: (value) => `${value}°C` }, grid: { color: 'rgba(148,163,184,0.18)' } },
+          },
+          plugins: {
+            ...commonOptions.plugins,
+            tooltip: { ...commonOptions.plugins.tooltip, callbacks: { label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)}°C` } },
+          },
+        },
+      });
+
+      charts.lowTrend = new Chart(document.getElementById('lowTrendChart'), {
+        type: 'line',
+        data: { datasets: [] },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { type: 'time', time: { unit: 'day', tooltipFormat: 'MMM d, yyyy' }, ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.18)' } },
+            y: { ticks: { color: '#64748b', callback: (value) => `${value}°C` }, grid: { color: 'rgba(148,163,184,0.18)' } },
+          },
+          plugins: {
+            ...commonOptions.plugins,
+            tooltip: { ...commonOptions.plugins.tooltip, callbacks: { label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)}°C` } },
+          },
+        },
+      });
+
+      charts.prcpTrend = new Chart(document.getElementById('prcpTrendChart'), {
+        type: 'line',
+        data: { datasets: [] },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { type: 'time', time: { unit: 'day', tooltipFormat: 'MMM d, yyyy' }, ticks: { color: '#64748b' }, grid: { color: 'rgba(148,163,184,0.18)' } },
+            y: { ticks: { color: '#64748b', callback: (value) => `${value} mm` }, grid: { color: 'rgba(148,163,184,0.18)' } },
+          },
+          plugins: {
+            ...commonOptions.plugins,
+            tooltip: { ...commonOptions.plugins.tooltip, callbacks: { label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)} mm` } },
+          },
+        },
+      });
+
+      charts.highBar = new Chart(document.getElementById('highBarChart'), {
+        type: 'bar',
+        data: { labels: [], datasets: [{ data: [] }] },
+        options: {
+          ...commonOptions,
+          plugins: {
+            ...commonOptions.plugins,
+            legend: { display: false },
+            tooltip: { ...commonOptions.plugins.tooltip, callbacks: { label: (ctx) => `Average high: ${ctx.parsed.y.toFixed(1)}°C` } },
+          },
+          scales: {
+            x: { ticks: { color: '#64748b' }, grid: { display: false } },
+            y: { ticks: { color: '#64748b', callback: (value) => `${value}°C` }, grid: { color: 'rgba(148,163,184,0.18)' } },
+          },
+        },
+      });
+
+      charts.scatter = new Chart(document.getElementById('scatterChart'), {
+        type: 'scatter',
+        data: { datasets: [] },
+        options: {
+          ...commonOptions,
+          scales: {
+            x: { ticks: { color: '#64748b', callback: (value) => `${value} km/h` }, grid: { color: 'rgba(148,163,184,0.18)' }, title: { display: true, text: 'Wind speed', color: '#475569' } },
+            y: { ticks: { color: '#64748b', callback: (value) => `${value} mm` }, grid: { color: 'rgba(148,163,184,0.18)' }, title: { display: true, text: 'Precipitation', color: '#475569' } },
+          },
+          plugins: {
+            ...commonOptions.plugins,
+            tooltip: {
+              ...commonOptions.plugins.tooltip,
+              callbacks: {
+                label: (ctx) => `${ctx.dataset.label}: ${ctx.raw.x.toFixed(1)} km/h, ${ctx.raw.y.toFixed(1)} mm on ${formatFullDate(new Date(ctx.raw.metaDate))}`,
+              },
+            },
+          },
+        },
+      });
+    }
+
+    function render() {
+      syncControls();
+      const filtered = getFilteredData();
+      const byCity = groupByCity(filtered);
+      updateSummary(filtered);
+      updateActiveChips();
+      updateStory(filtered, byCity);
+      updateKPIs(filtered, byCity);
+      updateCharts(byCity);
+    }
+
+    function syncControls() {
+      els.startDate.value = state.startDate;
+      els.endDate.value = state.endDate;
+      els.tempMin.value = state.tempMin;
+      els.tempMax.value = state.tempMax;
+      els.windMin.value = state.windMin;
+      els.windMax.value = state.windMax;
+      els.startDateLabel.textContent = formatFullDate(parseInputDate(state.startDate));
+      els.endDateLabel.textContent = formatFullDate(parseInputDate(state.endDate));
+      els.tempRangeLabel.textContent = `${state.tempMin}°C to ${state.tempMax}°C`;
+      els.windRangeLabel.textContent = `${state.windMin} to ${state.windMax} km/h`;
+
+      els.cityCheckboxes.querySelectorAll('.city-box').forEach((box) => {
+        box.checked = state.selectedCities.has(box.value);
+      });
+    }
+
+    function getFilteredData() {
+      const start = parseInputDate(state.startDate).getTime();
+      const end = parseInputDate(state.endDate).getTime();
+      return parsedData.filter((row) =>
+        state.selectedCities.has(row.city) &&
+        row.parsedDate.getTime() >= start &&
+        row.parsedDate.getTime() <= end &&
+        row.tmax >= state.tempMin &&
+        row.tmax <= state.tempMax &&
+        row.wspd >= state.windMin &&
+        row.wspd <= state.windMax
+      );
+    }
+
+    function updateSummary(filtered) {
+      const cityLabel = state.selectedCities.size === cities.length ? 'All cities' : [...state.selectedCities].join(' + ');
+      els.filterSummary.textContent = `${cityLabel} • ${formatShortDate(parseInputDate(state.startDate))} to ${formatShortDate(parseInputDate(state.endDate))} • ${filtered.length} rows`;
+    }
+
+    function updateActiveChips() {
+      const chips = [];
+      if (state.selectedCities.size !== cities.length) chips.push({ label: [...state.selectedCities].join(', '), key: 'cities' });
+      if (state.startDate !== formatDateInput(limits.minDate)) chips.push({ label: `From ${formatShortDate(parseInputDate(state.startDate))}`, key: 'startDate' });
+      if (state.endDate !== formatDateInput(limits.maxDate)) chips.push({ label: `To ${formatShortDate(parseInputDate(state.endDate))}`, key: 'endDate' });
+      if (state.tempMin !== limits.minTmax || state.tempMax !== limits.maxTmax) chips.push({ label: `High ${state.tempMin}°C-${state.tempMax}°C`, key: 'tempRange' });
+      if (state.windMin !== limits.minWspd || state.windMax !== limits.maxWspd) chips.push({ label: `Wind ${state.windMin}-${state.windMax} km/h`, key: 'windRange' });
+      if (state.preset) chips.push({ label: `${presetName(state.preset)} preset`, key: 'preset' });
+
+      if (!chips.length) {
+        els.activeChips.innerHTML = '<span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-500">No active overrides</span>';
+        return;
+      }
+
+      els.activeChips.innerHTML = chips.map((chip) => `
+        <button class="chip rounded-full border border-slate-300 bg-white px-3 py-1 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:bg-slate-100" data-key="${chip.key}">
+          ${chip.label} ×
+        </button>
+      `).join('');
+
+      els.activeChips.querySelectorAll('.chip').forEach((button) => {
+        button.addEventListener('click', () => clearFilter(button.dataset.key));
+      });
+    }
+
+    function updateStory(filtered, byCity) {
+      els.storyRange.textContent = `${filtered.length} days`;
+
+      if (!filtered.length) {
+        els.storyList.innerHTML = [
+          'The current filters remove every row, so there is no weather slice to compare.',
+          'Reset the range or pick a broader city and wind window to bring the charts back.',
+          'Once rows return, this panel will summarize warmth, rain, and wind automatically.',
+        ].map((item) => `<li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-cyan-300"></span><span>${item}</span></li>`).join('');
+        return;
+      }
+
+      const summaries = cities.map((city) => {
+        const rows = byCity[city] || [];
+        if (!rows.length) return null;
+        return {
+          city,
+          avgHigh: average(rows.map((row) => row.tmax)),
+          avgLow: average(rows.map((row) => row.tmin)),
+          totalRain: sum(rows.map((row) => row.prcp)),
+          avgWind: average(rows.map((row) => row.wspd)),
+        };
+      }).filter(Boolean);
+
+      const warmest = [...summaries].sort((a, b) => b.avgHigh - a.avgHigh)[0];
+      const wettest = [...summaries].sort((a, b) => b.totalRain - a.totalRain)[0];
+      const windiest = [...summaries].sort((a, b) => b.avgWind - a.avgWind)[0];
+      const rainiestDay = [...filtered].sort((a, b) => b.prcp - a.prcp)[0];
+
+      const bullets = [
+        `${warmest.city} is running warmest in this slice with an average high of ${warmest.avgHigh.toFixed(1)}°C and an average low of ${warmest.avgLow.toFixed(1)}°C.`,
+        `${wettest.city} carries the most precipitation here with ${wettest.totalRain.toFixed(1)} mm total, while the sharpest daily spike lands on ${formatShortDate(rainiestDay.parsedDate)} at ${rainiestDay.prcp.toFixed(1)} mm.`,
+        `${windiest.city} is the breezier pick right now at ${windiest.avgWind.toFixed(1)} km/h on average, which helps explain the wind-rain pattern in the scatter plot.`,
+      ];
+
+      els.storyList.innerHTML = bullets.map((item) => `<li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-cyan-300"></span><span>${item}</span></li>`).join('');
+    }
+
+    function updateKPIs(filtered, byCity) {
+      const highGapEl = document.getElementById('kpi-high-gap');
+      const wettestEl = document.getElementById('kpi-wettest');
+      const windEl = document.getElementById('kpi-wind');
+
+      if (!filtered.length) {
+        [highGapEl, wettestEl, windEl].forEach((card) => {
+          card.querySelector('[data-value]').textContent = '--';
+          card.querySelector('[data-detail]').textContent = 'No filtered records';
+          card.querySelector('[data-delta]').textContent = 'Reset filters to restore detail';
+          card.querySelector('[data-delta]').className = 'mt-3 text-sm font-medium text-white/80';
+        });
+        return;
+      }
+
+      const cityAverages = cities.map((city) => ({
+        city,
+        avgHigh: average((byCity[city] || []).map((row) => row.tmax)),
+        totalRain: sum((byCity[city] || []).map((row) => row.prcp)),
+        count: (byCity[city] || []).length,
+      })).filter((row) => row.count > 0);
+
+      const sortedByHigh = [...cityAverages].sort((a, b) => b.avgHigh - a.avgHigh);
+      const highGap = sortedByHigh.length > 1 ? Math.abs(sortedByHigh[0].avgHigh - sortedByHigh[1].avgHigh) : sortedByHigh[0].avgHigh;
+      const gapLabel = sortedByHigh.length > 1 ? `${sortedByHigh[0].city} vs ${sortedByHigh[1].city}` : sortedByHigh[0].city;
+      paintDelta(highGapEl.querySelector('[data-delta]'), describeDelta(compareMetricChange(filtered, 'tmax', state.selectedCities), '°C'));
+      highGapEl.querySelector('[data-value]').textContent = `${highGap.toFixed(1)}°C`;
+      highGapEl.querySelector('[data-detail]').textContent = sortedByHigh.length > 1 ? `${gapLabel} average filtered highs` : `${gapLabel} average filtered high`;
+
+      const wettest = [...cityAverages].sort((a, b) => b.totalRain - a.totalRain)[0];
+      paintDelta(wettestEl.querySelector('[data-delta]'), describeDelta(compareMetricChange(filtered, 'prcp', new Set([wettest.city])), ' mm'));
+      wettestEl.querySelector('[data-value]').textContent = `${wettest.totalRain.toFixed(1)} mm`;
+      wettestEl.querySelector('[data-detail]').textContent = `${wettest.city} total precipitation in this slice`;
+
+      const peakWind = [...filtered].sort((a, b) => b.wspd - a.wspd)[0];
+      paintDelta(windEl.querySelector('[data-delta]'), describeDelta(compareMetricChange(filtered, 'wspd', state.selectedCities), ' km/h'));
+      windEl.querySelector('[data-value]').textContent = `${peakWind.wspd.toFixed(1)} km/h`;
+      windEl.querySelector('[data-detail]').textContent = `${peakWind.city} on ${formatShortDate(peakWind.parsedDate)}`;
+    }
+
+    function updateCharts(byCity) {
+      updateLineChart(charts.highTrend, Object.values(byCity), 'tmax', false, 'highTrend');
+      updateLineChart(charts.lowTrend, Object.values(byCity), 'tmin', false, 'lowTrend');
+      updateLineChart(charts.prcpTrend, Object.values(byCity), 'prcp', true, 'prcpTrend');
+      updateBarChart(charts.highBar, byCity, 'highBar');
+      updateScatterChart(charts.scatter, byCity, 'scatter');
+    }
+
+    function updateLineChart(chart, cityRowsArray, metric, fill, cardKey) {
+      const datasets = cityRowsArray.filter((rows) => rows.length).map((rows) => {
+        const city = rows[0].city;
+        return {
+          label: city,
+          data: rows.map((row) => ({ x: row.parsedDate, y: row[metric] })),
+          borderColor: palette[city].stroke,
+          backgroundColor: palette[city].fill,
+          fill,
+          tension: 0.28,
+          borderWidth: 2.2,
+          pointRadius: 2,
+          pointHoverRadius: 4,
+        };
+      });
+
+      chart.data.datasets = datasets;
+      chart.update();
+      toggleCardState(cardKey, datasets.some((set) => set.data.length));
+    }
+
+    function updateBarChart(chart, byCity, cardKey) {
+      const entries = cities.map((city) => ({
+        city,
+        value: average((byCity[city] || []).map((row) => row.tmax)),
+      })).filter((entry) => !Number.isNaN(entry.value));
+
+      chart.data.labels = entries.map((entry) => entry.city);
+      chart.data.datasets = [{
+        data: entries.map((entry) => entry.value),
+        backgroundColor: entries.map((entry) => palette[entry.city].fill.replace('0.18', '0.75')),
+        borderColor: entries.map((entry) => palette[entry.city].stroke),
+        borderWidth: 1.5,
+        borderRadius: 8,
+      }];
+      chart.update();
+      toggleCardState(cardKey, entries.length > 0);
+    }
+
+    function updateScatterChart(chart, byCity, cardKey) {
+      const datasets = Object.values(byCity).filter((rows) => rows.length).map((rows) => {
+        const city = rows[0].city;
+        return {
+          label: city,
+          data: rows.map((row) => ({ x: row.wspd, y: row.prcp, metaDate: row.parsedDate.toISOString() })),
+          backgroundColor: palette[city].fill.replace('0.18', '0.68'),
+          borderColor: palette[city].stroke,
+          pointRadius: 5,
+          pointHoverRadius: 6,
+        };
+      });
+
+      chart.data.datasets = datasets;
+      chart.update();
+      toggleCardState(cardKey, datasets.some((set) => set.data.length));
+    }
+
+    function toggleCardState(cardKey, hasData) {
+      const card = document.querySelector(`[data-card="${cardKey}"]`);
+      const canvas = card.querySelector('canvas');
+      const overlay = card.querySelector('.no-data');
+      card.classList.remove('animate-fadeIn');
+      void card.offsetWidth;
+      card.classList.add('animate-fadeIn');
+      overlay.classList.toggle('hidden', hasData);
+      overlay.classList.toggle('flex', !hasData);
+      canvas.classList.toggle('opacity-0', !hasData);
+      canvas.classList.toggle('opacity-100', hasData);
+    }
+
+    function bindInfoBubbles() {
+      document.querySelectorAll('.info-bubble').forEach((button) => {
+        button.addEventListener('mouseenter', (event) => showTooltip(event, button.dataset.info));
+        button.addEventListener('mousemove', (event) => showTooltip(event, button.dataset.info));
+        button.addEventListener('mouseleave', hideTooltip);
+        button.addEventListener('focus', (event) => showTooltip(event, button.dataset.info));
+        button.addEventListener('blur', hideTooltip);
+      });
+    }
+
+    function showTooltip(event, text) {
+      els.tooltip.textContent = text;
+      els.tooltip.classList.remove('hidden');
+      const x = (event.clientX || event.target.getBoundingClientRect().left) + 14;
+      const y = (event.clientY || event.target.getBoundingClientRect().bottom) + 14;
+      els.tooltip.style.left = `${x}px`;
+      els.tooltip.style.top = `${y}px`;
+    }
+
+    function hideTooltip() {
+      els.tooltip.classList.add('hidden');
+    }
+
+    function applyPreset(preset) {
+      if (preset === 'calm') {
+        state.selectedCities = new Set(cities);
+        state.startDate = formatDateInput(limits.minDate);
+        state.endDate = formatDateInput(limits.maxDate);
+        state.tempMin = limits.minTmax;
+        state.tempMax = 14;
+        state.windMin = limits.minWspd;
+        state.windMax = 8;
+      }
+
+      if (preset === 'storm') {
+        state.selectedCities = new Set(cities);
+        state.startDate = '2025-10-24';
+        state.endDate = '2025-10-31';
+        state.tempMin = limits.minTmax;
+        state.tempMax = 17;
+        state.windMin = 8;
+        state.windMax = limits.maxWspd;
+      }
+
+      if (preset === 'warm') {
+        state.selectedCities = new Set(cities);
+        state.startDate = '2025-11-01';
+        state.endDate = '2025-11-10';
+        state.tempMin = 14;
+        state.tempMax = limits.maxTmax;
+        state.windMin = limits.minWspd;
+        state.windMax = limits.maxWspd;
+      }
+
+      state.preset = preset;
+      render();
+    }
+
+    function clearFilter(key) {
+      if (key === 'cities') state.selectedCities = new Set(cities);
+      if (key === 'startDate') state.startDate = formatDateInput(limits.minDate);
+      if (key === 'endDate') state.endDate = formatDateInput(limits.maxDate);
+      if (key === 'tempRange') {
+        state.tempMin = limits.minTmax;
+        state.tempMax = limits.maxTmax;
+      }
+      if (key === 'windRange') {
+        state.windMin = limits.minWspd;
+        state.windMax = limits.maxWspd;
+      }
+      if (key === 'preset') state.preset = null;
+      render();
+    }
+
+    function resetAllFilters() {
+      state.selectedCities = new Set(cities);
+      state.startDate = formatDateInput(limits.minDate);
+      state.endDate = formatDateInput(limits.maxDate);
+      state.tempMin = limits.minTmax;
+      state.tempMax = limits.maxTmax;
+      state.windMin = limits.minWspd;
+      state.windMax = limits.maxWspd;
+      state.preset = null;
+      render();
+    }
+
+    function groupByCity(rows) {
+      return rows.reduce((acc, row) => {
+        if (!acc[row.city]) acc[row.city] = [];
+        acc[row.city].push(row);
+        return acc;
+      }, {});
+    }
+
+    function compareMetricChange(rows, metric, citySet) {
+      const sample = rows.filter((row) => citySet.has(row.city));
+      if (sample.length < 2) {
+        return { value: 0, direction: 'flat', context: 'Not enough dates for an early vs late comparison' };
+      }
+      const sorted = [...sample].sort((a, b) => a.parsedDate - b.parsedDate);
+      const cut = Math.max(1, Math.floor(sorted.length / 2));
+      const early = sorted.slice(0, cut);
+      const late = sorted.slice(sorted.length - cut);
+      const diff = average(late.map((row) => row[metric])) - average(early.map((row) => row[metric]));
+      const direction = Math.abs(diff) < 0.05 ? 'flat' : diff > 0 ? 'up' : 'down';
+      return { value: diff, direction, context: 'Late period vs early period' };
+    }
+
+    function describeDelta(delta, unit) {
+      if (delta.direction === 'flat') return { text: `→ 0${unit} • ${delta.context}`, tone: 'neutral' };
+      const arrow = delta.direction === 'up' ? '↑' : '↓';
+      const sign = delta.direction === 'up' ? '+' : '';
+      return { text: `${arrow} ${sign}${delta.value.toFixed(1)}${unit} • ${delta.context}`, tone: delta.direction === 'up' ? 'up' : 'down' };
+    }
+
+    function paintDelta(el, delta) {
+      el.textContent = delta.text;
+      el.className = delta.tone === 'up'
+        ? 'mt-3 text-sm font-medium text-emerald-100'
+        : delta.tone === 'down'
+          ? 'mt-3 text-sm font-medium text-amber-100'
+          : 'mt-3 text-sm font-medium text-white/80';
+    }
+
+    function average(values) {
+      if (!values.length) return NaN;
+      return sum(values) / values.length;
+    }
+
+    function sum(values) {
+      return values.reduce((total, value) => total + value, 0);
+    }
+
+    function formatDateInput(date) {
+      return date.toISOString().slice(0, 10);
+    }
+
+    function parseInputDate(value) {
+      return new Date(`${value}T00:00:00`);
+    }
+
+    function formatFullDate(date) {
+      return new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }).format(date);
+    }
+
+    function formatShortDate(date) {
+      return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(date);
+    }
+
+    function presetName(value) {
+      return { calm: 'Calm Days', storm: 'Storm Week', warm: 'Warm Stretch' }[value] || 'Custom';
+    }
+  </script>
+</body>
+</html>

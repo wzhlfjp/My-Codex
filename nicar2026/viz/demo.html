@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Tree Neighborhoods</title>
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --panel: #fffaf3;
+      --border: #d9cdb9;
+      --text: #1f2a2a;
+      --muted: #5f6b6b;
+      --accent: #1d6b57;
+      --error-bg: #fdeaea;
+      --error-text: #922d2d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(29, 107, 87, 0.12), transparent 30%),
+        linear-gradient(180deg, #faf6ef 0%, var(--bg) 100%);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      margin: 0 0 24px;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(65, 54, 38, 0.08);
+      overflow: hidden;
+    }
+
+    .status {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(29, 107, 87, 0.08);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .status.error {
+      background: var(--error-bg);
+      color: var(--error-text);
+    }
+
+    #chart {
+      padding: 18px 18px 8px;
+      min-height: 440px;
+    }
+
+    #chart svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .footnote {
+      padding: 0 18px 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Top Neighborhoods by Street Trees</h1>
+    <p>This chart uses Datasette's JSON API and Observable Plot to show the ten San Francisco analysis neighborhoods with the highest street tree counts.</p>
+    <section class="panel">
+      <div id="status" class="status">Loading data...</div>
+      <div id="chart"></div>
+      <div class="footnote">Source: <code>/trees/-/query.json</code> from the local Datasette instance.</div>
+    </section>
+  </main>
+
+  <script type="module">
+    import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot/+esm";
+
+    const QUERY_URL = "/trees/-/query.json?sql=select%20%5BAnalysis%20Neighborhood%20Name%5D%20as%20neighborhood%2C%20count(*)%20as%20trees%20from%20trees%20where%20%5BAnalysis%20Neighborhood%20Name%5D%20is%20not%20null%20and%20trim(%5BAnalysis%20Neighborhood%20Name%5D)%20!%3D%20''%20group%20by%20%5BAnalysis%20Neighborhood%20Name%5D%20order%20by%20trees%20desc%20limit%2010";
+
+    const statusEl = document.getElementById("status");
+    const chartEl = document.getElementById("chart");
+
+    function setStatus(message, isError = false) {
+      statusEl.textContent = message;
+      statusEl.classList.toggle("error", isError);
+    }
+
+    function rowsToObjects(columns, rows) {
+      if (!Array.isArray(rows)) {
+        return [];
+      }
+
+      if (rows.length > 0 && !Array.isArray(rows[0]) && typeof rows[0] === "object") {
+        return rows;
+      }
+
+      if (!Array.isArray(columns)) {
+        throw new Error("Datasette response did not include a usable columns array.");
+      }
+
+      return rows.map((row) =>
+        Object.fromEntries(columns.map((column, index) => [column, row[index]]))
+      );
+    }
+
+    function renderChart(data) {
+      const sortedData = [...data].sort((a, b) => b.trees - a.trees);
+      const width = Math.max(640, chartEl.clientWidth || 640);
+
+      chartEl.innerHTML = "";
+
+      const chart = Plot.plot({
+        width,
+        marginTop: 60,
+        marginRight: 20,
+        marginBottom: 90,
+        marginLeft: 70,
+        style: {
+          background: "transparent",
+          color: "#1f2a2a",
+          fontFamily: 'Georgia, "Times New Roman", serif'
+        },
+        title: "Neighborhoods with the Most Street Trees",
+        x: {
+          label: "Analysis Neighborhood",
+          tickRotate: -35
+        },
+        y: {
+          label: "Number of Trees",
+          grid: true
+        },
+        marks: [
+          Plot.barY(sortedData, {
+            x: "neighborhood",
+            y: "trees",
+            sort: {x: "-y"},
+            fill: "#2f7f5f",
+            title: (d) => `${d.neighborhood}\n${d.trees.toLocaleString()} trees`
+          }),
+          Plot.ruleY([0])
+        ]
+      });
+
+      chartEl.append(chart);
+    }
+
+    let currentData = [];
+
+    async function loadData() {
+      setStatus("Loading data...");
+
+      try {
+        const response = await fetch(QUERY_URL);
+
+        if (!response.ok) {
+          throw new Error(`Request failed with ${response.status} ${response.statusText}`);
+        }
+
+        const json = await response.json();
+        const data = rowsToObjects(json.columns, json.rows).map((row) => ({
+          neighborhood: row.neighborhood,
+          trees: Number(row.trees)
+        }));
+
+        currentData = data;
+        renderChart(data);
+        setStatus(`Loaded ${data.length} neighborhoods`);
+      } catch (error) {
+        chartEl.innerHTML = "";
+        currentData = [];
+        setStatus(error instanceof Error ? error.message : String(error), true);
+      }
+    }
+
+    window.addEventListener("resize", () => {
+      if (currentData.length > 0) {
+        renderChart(currentData);
+      }
+    });
+
+    loadData();
+  </script>
+</body>
+</html>
