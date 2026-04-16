@@ -1,0 +1,740 @@
+[
+  {
+    "id": "T001",
+    "technologyName": "Mammography",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T002",
+    "technologyName": "Ultrasound",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T003",
+    "technologyName": "MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T004",
+    "technologyName": "Biopsy/Resection with H&E/IHC",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T005",
+    "technologyName": "NGS/RNA Profiling",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T006",
+    "technologyName": "cfDNA/ctDNA",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T007",
+    "technologyName": "PSA Testing",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T008",
+    "technologyName": "Multiparametric MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T009",
+    "technologyName": "Biopsy Pathology (H&E/IHC)",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T010",
+    "technologyName": "PSMA PET/CT (as indicated)",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T011",
+    "technologyName": "Tissue/Plasma Genomic Profiling",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T012",
+    "technologyName": "CT",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T013",
+    "technologyName": "PET/CT",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T014",
+    "technologyName": "Brain MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T015",
+    "technologyName": "H&E/IHC",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T016",
+    "technologyName": "Tissue NGS",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T017",
+    "technologyName": "Blood Biomarkers/ctDNA",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T018",
+    "technologyName": "Radiomic Analysis",
+    "technologyCategory": "computational",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "quantitative imaging features",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T019",
+    "technologyName": "Colonoscopy + Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T020",
+    "technologyName": "CMS Assay",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T021",
+    "technologyName": "Plasma ctDNA for MRD",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T022",
+    "technologyName": "Stool Microbiome Profiling",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T023",
+    "technologyName": "Dermoscopy/Clinical Imaging",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T024",
+    "technologyName": "Biopsy H&E/IHC",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T025",
+    "technologyName": "NGS",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T026",
+    "technologyName": "CNS MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T027",
+    "technologyName": "CSF Evaluation/Profiling (Advanced Disease)",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T028",
+    "technologyName": "Cystoscopy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T029",
+    "technologyName": "Urine Cytology and Urinary Biomarkers",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T030",
+    "technologyName": "TURBT Pathology",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T031",
+    "technologyName": "CT Urography/MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T032",
+    "technologyName": "Tissue Genomics",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T033",
+    "technologyName": "Abdominal CT/MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T034",
+    "technologyName": "Biopsy/Nephrectomy Pathology",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T035",
+    "technologyName": "IHC",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T036",
+    "technologyName": "Targeted NGS",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T037",
+    "technologyName": "Serum Chemistries/Urinalysis",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T038",
+    "technologyName": "Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T039",
+    "technologyName": "Flow Cytometry",
+    "technologyCategory": "cytometry",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "cell populations, chromosomal abnormalities, or hematologic markers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T040",
+    "technologyName": "FISH/Cytogenetics",
+    "technologyCategory": "cytometry",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "cell populations, chromosomal abnormalities, or hematologic markers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T041",
+    "technologyName": "Cell Therapy Response Monitoring (CAR-T/CAR-NK)",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T042",
+    "technologyName": "Transvaginal Ultrasound",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T043",
+    "technologyName": "Endometrial Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T044",
+    "technologyName": "CT/MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T045",
+    "technologyName": "MMR/MSI and NGS Profiling",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T046",
+    "technologyName": "Pancreas-Protocol CT/MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T047",
+    "technologyName": "EUS-Guided Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T048",
+    "technologyName": "CA19-9",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T049",
+    "technologyName": "CBC",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T050",
+    "technologyName": "Marrow Aspirate/Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T051",
+    "technologyName": "Karyotype/FISH",
+    "technologyCategory": "cytometry",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "cell populations, chromosomal abnormalities, or hematologic markers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T052",
+    "technologyName": "MRD Assays",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "circulating tumor DNA or minimal residual disease",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T053",
+    "technologyName": "Endoscopy/Laryngoscopy + Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T054",
+    "technologyName": "CT/MRI/PET",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T055",
+    "technologyName": "Single-Cell Sequencing",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T056",
+    "technologyName": "Blood-Based Response Assays",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T057",
+    "technologyName": "Neck Ultrasound",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T058",
+    "technologyName": "FNA Cytology",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T059",
+    "technologyName": "Surgical Pathology",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T060",
+    "technologyName": "BRAF/RET or Broader NGS",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T061",
+    "technologyName": "Radioiodine Imaging (as indicated)",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T062",
+    "technologyName": "Multiphasic Liver CT/MRI",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T063",
+    "technologyName": "Biopsy Pathology",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "tissue morphology and protein-marker pathology",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T064",
+    "technologyName": "AFP/Liver Labs",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T065",
+    "technologyName": "Interventional Radiology Procedure Data",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T066",
+    "technologyName": "SPEP/UPEP/Free Light Chains",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T067",
+    "technologyName": "Integrated Flow Cytometry/FISH/NGS Profiling",
+    "technologyCategory": "cytometry",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T068",
+    "technologyName": "Upper Endoscopy + Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T069",
+    "technologyName": "CT/PET",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T070",
+    "technologyName": "HER2/MMR or Broader NGS Profiling",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T071",
+    "technologyName": "Neurosurgical Tissue Sampling",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T072",
+    "technologyName": "Tumor/CSF/Blood Profiling",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T073",
+    "technologyName": "Sequencing",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T074",
+    "technologyName": "Upper Endoscopy/EUS + Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T075",
+    "technologyName": "Blood Biomarkers",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T076",
+    "technologyName": "Pelvic Ultrasound",
+    "technologyCategory": "imaging",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T077",
+    "technologyName": "BRCA/HRD and Broader NGS",
+    "technologyCategory": "sequencing",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "DNA/RNA alterations and molecular subtype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T078",
+    "technologyName": "CA-125",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "clinical laboratory biomarkers",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T079",
+    "technologyName": "Pap Smear",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T080",
+    "technologyName": "HPV Testing",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T081",
+    "technologyName": "Colposcopy/Biopsy",
+    "technologyCategory": "pathology workflow",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "anatomy, tumor burden, or radiologic phenotype",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "T082",
+    "technologyName": "Immune Profiling",
+    "technologyCategory": "molecular assay",
+    "summary": "Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.",
+    "measurementFocus": "disease-specific biomarker or assay readout",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-04-16T01:25:20.742Z",
+  "status": "passed_with_warnings",
+  "summary": {
+    "filesScanned": 13,
+    "tableCount": {
+      "core": 5,
+      "relationship": 8,
+      "total": 13
+    },
+    "rowCount": 741,
+    "issueCountBySeverity": {
+      "error": 0,
+      "warning": 4
+    },
+    "issueCountByType": {
+      "empty_table": 4
+    },
+    "normalizationSubstitutionCount": 61
+  },
+  "issuesByFile": {
+    "researchers.csv": {
+      "rowCount": 58,
+      "errors": [],
+      "warnings": []
+    },
+    "projects.csv": {
+      "rowCount": 0,
+      "errors": [],
+      "warnings": [
+        "[projects.csv] No rows found."
+      ]
+    },
+    "datasets.csv": {
+      "rowCount": 20,
+      "errors": [],
+      "warnings": []
+    },
+    "technologies.csv": {
+      "rowCount": 82,
+      "errors": [],
+      "warnings": []
+    },
+    "disease_areas.csv": {
+      "rowCount": 20,
+      "errors": [],
+      "warnings": []
+    },
+    "researcher_disease_areas.csv": {
+      "rowCount": 60,
+      "errors": [],
+      "warnings": []
+    },
+    "researcher_technologies.csv": {
+      "rowCount": 315,
+      "errors": [],
+      "warnings": []
+    },
+    "researcher_datasets.csv": {
+      "rowCount": 60,
+      "errors": [],
+      "warnings": []
+    },
+    "project_researchers.csv": {
+      "rowCount": 0,
+      "errors": [],
+      "warnings": [
+        "[project_researchers.csv] No rows found."
+      ]
+    },
+    "project_datasets.csv": {
+      "rowCount": 0,
+      "errors": [],
+      "warnings": [
+        "[project_datasets.csv] No rows found."
+      ]
+    },
+    "project_disease_areas.csv": {
+      "rowCount": 0,
+      "errors": [],
+      "warnings": [
+        "[project_disease_areas.csv] No rows found."
+      ]
+    },
+    "dataset_technologies.csv": {
+      "rowCount": 106,
+      "errors": [],
+      "warnings": []
+    },
+    "dataset_disease_areas.csv": {
+      "rowCount": 20,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "normalizationSummary": {
+    "totalSubstitutions": 61,
+    "substitutions": [
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "pathology/cytology",
+        "to": "pathology workflow",
+        "count": 12
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "procedural/tissue acquisition",
+        "to": "pathology workflow",
+        "count": 12
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "sequencing/genomic profiling",
+        "to": "sequencing",
+        "count": 12
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "biomarker/molecular assay",
+        "to": "molecular assay",
+        "count": 11
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "liquid biopsy/fluid profiling",
+        "to": "molecular assay",
+        "count": 7
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "cytometry/cytogenetics",
+        "to": "cytometry",
+        "count": 4
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "immune/functional profiling",
+        "to": "molecular assay",
+        "count": 2
+      },
+      {
+        "fileName": "technologies.csv",
+        "column": "technology_category",
+        "from": "computational analysis",
+        "to": "computational",
+        "count": 1
+      }
+    ]
+  }
+}

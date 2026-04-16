@@ -1,0 +1,35 @@
+{
+  "name": "mdacc-cancer-data-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ci": "vitest run --reporter=dot",
+    "data:validate": "tsc --pretty false --module commonjs --target es2020 --outDir .tmp-data scripts/data_contract.ts scripts/validate_csv.ts scripts/csv_to_json.ts scripts/generate_csv_templates.ts && node .tmp-data/validate_csv.js",
+    "data:build": "tsc --pretty false --module commonjs --target es2020 --outDir .tmp-data scripts/data_contract.ts scripts/validate_csv.ts scripts/csv_to_json.ts scripts/generate_csv_templates.ts && node .tmp-data/csv_to_json.js",
+    "data:templates": "tsc --pretty false --module commonjs --target es2020 --outDir .tmp-data scripts/data_contract.ts scripts/generate_csv_templates.ts && node .tmp-data/generate_csv_templates.js",
+    "data:preflight": "tsc --pretty false --module commonjs --target es2020 --outDir .tmp-data scripts/data_contract.ts scripts/validate_csv.ts scripts/generate_csv_templates.ts scripts/data_preflight.ts && node .tmp-data/data_preflight.js",
+    "verify": "npm run data:validate && npm test && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^4.1.4"
+  }
+}

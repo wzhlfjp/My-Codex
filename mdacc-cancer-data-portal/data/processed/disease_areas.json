@@ -1,0 +1,162 @@
+[
+  {
+    "id": "C001",
+    "diseaseAreaName": "Breast Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Breast Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C002",
+    "diseaseAreaName": "Prostate Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Prostate Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C003",
+    "diseaseAreaName": "Lung Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Lung Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C004",
+    "diseaseAreaName": "Colorectal Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Colorectal Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C005",
+    "diseaseAreaName": "Melanoma",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Melanoma.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C006",
+    "diseaseAreaName": "Bladder Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Bladder Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C007",
+    "diseaseAreaName": "Kidney Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Kidney Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C008",
+    "diseaseAreaName": "Non-Hodgkin Lymphoma",
+    "diseaseGroup": "hematologic malignancy",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Non-Hodgkin Lymphoma.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C009",
+    "diseaseAreaName": "Endometrial Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Endometrial Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C010",
+    "diseaseAreaName": "Pancreatic Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Pancreatic Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C011",
+    "diseaseAreaName": "Leukemia",
+    "diseaseGroup": "hematologic malignancy",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Leukemia.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C012",
+    "diseaseAreaName": "Oral Cavity and Pharyngeal Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Oral Cavity and Pharyngeal Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C013",
+    "diseaseAreaName": "Thyroid Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Thyroid Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C014",
+    "diseaseAreaName": "Liver and Intrahepatic Bile Duct Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Liver and Intrahepatic Bile Duct Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C015",
+    "diseaseAreaName": "Multiple Myeloma",
+    "diseaseGroup": "hematologic malignancy",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Multiple Myeloma.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C016",
+    "diseaseAreaName": "Stomach / Gastric Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Stomach / Gastric Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C017",
+    "diseaseAreaName": "Brain and Other Nervous System Tumors",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Brain and Other Nervous System Tumors.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C018",
+    "diseaseAreaName": "Esophageal Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Esophageal Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C019",
+    "diseaseAreaName": "Ovarian Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Ovarian Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  },
+  {
+    "id": "C020",
+    "diseaseAreaName": "Cervical Cancer",
+    "diseaseGroup": "solid tumor",
+    "summary": "Seed disease-area entry derived from the temporary 'Cancer Types' worksheet. Includes example data types, measurement techniques, and MD Anderson investigators relevant to Cervical Cancer.",
+    "active": true,
+    "lastUpdated": "2026-04-13"
+  }
+]

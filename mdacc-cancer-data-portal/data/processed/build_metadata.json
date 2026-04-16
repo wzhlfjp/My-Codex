@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-04-15T22:40:16.833Z",
+  "sourceFilesUsed": [
+    "dataset_disease_areas.csv",
+    "dataset_technologies.csv",
+    "datasets.csv",
+    "disease_areas.csv",
+    "project_datasets.csv",
+    "project_disease_areas.csv",
+    "project_researchers.csv",
+    "projects.csv",
+    "researcher_datasets.csv",
+    "researcher_disease_areas.csv",
+    "researcher_technologies.csv",
+    "researchers.csv",
+    "technologies.csv"
+  ],
+  "processedEntityCounts": {
+    "researchers": 58,
+    "projects": 0,
+    "datasets": 20,
+    "technologies": 82,
+    "diseaseAreas": 20
+  },
+  "latestSourceUpdateDate": "2026-04-13",
+  "validationStatus": "passed_with_warnings",
+  "validationWarningsSummary": {
+    "count": 4,
+    "warnings": [
+      "[projects.csv] No rows found.",
+      "[project_researchers.csv] No rows found.",
+      "[project_datasets.csv] No rows found.",
+      "[project_disease_areas.csv] No rows found."
+    ]
+  }
+}

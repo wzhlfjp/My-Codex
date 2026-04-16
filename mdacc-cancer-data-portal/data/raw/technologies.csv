@@ -1,0 +1,83 @@
+technology_id,technology_name,technology_category,summary,measurement_focus,vendor_platform,technology_url,active,last_updated
+T001,Mammography,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T002,Ultrasound,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T003,MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T004,Biopsy/Resection with H&E/IHC,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T005,NGS/RNA Profiling,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T006,cfDNA/ctDNA,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T007,PSA Testing,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T008,Multiparametric MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T009,Biopsy Pathology (H&E/IHC),pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T010,PSMA PET/CT (as indicated),imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T011,Tissue/Plasma Genomic Profiling,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T012,CT,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T013,PET/CT,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T014,Brain MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T015,H&E/IHC,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T016,Tissue NGS,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T017,Blood Biomarkers/ctDNA,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T018,Radiomic Analysis,computational analysis,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,quantitative imaging features,,,TRUE,4/13/2026
+T019,Colonoscopy + Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T020,CMS Assay,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T021,Plasma ctDNA for MRD,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T022,Stool Microbiome Profiling,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T023,Dermoscopy/Clinical Imaging,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T024,Biopsy H&E/IHC,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T025,NGS,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T026,CNS MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T027,CSF Evaluation/Profiling (Advanced Disease),liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T028,Cystoscopy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T029,Urine Cytology and Urinary Biomarkers,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T030,TURBT Pathology,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T031,CT Urography/MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T032,Tissue Genomics,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T033,Abdominal CT/MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T034,Biopsy/Nephrectomy Pathology,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T035,IHC,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T036,Targeted NGS,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T037,Serum Chemistries/Urinalysis,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T038,Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T039,Flow Cytometry,cytometry/cytogenetics,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"cell populations, chromosomal abnormalities, or hematologic markers",,,TRUE,4/13/2026
+T040,FISH/Cytogenetics,cytometry/cytogenetics,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"cell populations, chromosomal abnormalities, or hematologic markers",,,TRUE,4/13/2026
+T041,Cell Therapy Response Monitoring (CAR-T/CAR-NK),immune/functional profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T042,Transvaginal Ultrasound,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T043,Endometrial Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T044,CT/MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T045,MMR/MSI and NGS Profiling,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T046,Pancreas-Protocol CT/MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T047,EUS-Guided Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T048,CA19-9,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T049,CBC,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T050,Marrow Aspirate/Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T051,Karyotype/FISH,cytometry/cytogenetics,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"cell populations, chromosomal abnormalities, or hematologic markers",,,TRUE,4/13/2026
+T052,MRD Assays,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,circulating tumor DNA or minimal residual disease,,,TRUE,4/13/2026
+T053,Endoscopy/Laryngoscopy + Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T054,CT/MRI/PET,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T055,Single-Cell Sequencing,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T056,Blood-Based Response Assays,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T057,Neck Ultrasound,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T058,FNA Cytology,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T059,Surgical Pathology,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T060,BRAF/RET or Broader NGS,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T061,Radioiodine Imaging (as indicated),imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T062,Multiphasic Liver CT/MRI,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T063,Biopsy Pathology,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,tissue morphology and protein-marker pathology,,,TRUE,4/13/2026
+T064,AFP/Liver Labs,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T065,Interventional Radiology Procedure Data,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T066,SPEP/UPEP/Free Light Chains,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T067,Integrated Flow Cytometry/FISH/NGS Profiling,cytometry/cytogenetics,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T068,Upper Endoscopy + Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T069,CT/PET,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T070,HER2/MMR or Broader NGS Profiling,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T071,Neurosurgical Tissue Sampling,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T072,Tumor/CSF/Blood Profiling,liquid biopsy/fluid profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T073,Sequencing,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T074,Upper Endoscopy/EUS + Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T075,Blood Biomarkers,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T076,Pelvic Ultrasound,imaging,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T077,BRCA/HRD and Broader NGS,sequencing/genomic profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,DNA/RNA alterations and molecular subtype,,,TRUE,4/13/2026
+T078,CA-125,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,clinical laboratory biomarkers,,,TRUE,4/13/2026
+T079,Pap Smear,pathology/cytology,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T080,HPV Testing,biomarker/molecular assay,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026
+T081,Colposcopy/Biopsy,procedural/tissue acquisition,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,"anatomy, tumor burden, or radiologic phenotype",,,TRUE,4/13/2026
+T082,Immune Profiling,immune/functional profiling,Seed measurement technology entry derived from the temporary 'Cancer Types' worksheet.,disease-specific biomarker or assay readout,,,TRUE,4/13/2026

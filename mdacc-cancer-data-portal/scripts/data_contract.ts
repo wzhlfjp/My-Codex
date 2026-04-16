@@ -1,0 +1,243 @@
+export type TableContract = {
+  fileName: string;
+  columns: readonly string[];
+  requiredColumns: readonly string[];
+  idColumn?: string;
+  booleanColumns?: readonly string[];
+  enumColumns?: Record<string, readonly string[]>;
+};
+
+export type RelationshipContract = {
+  fileName: string;
+  columns: readonly string[];
+  requiredColumns: readonly string[];
+  uniqueComposite: readonly string[];
+  foreignKeys: ReadonlyArray<{
+    column: string;
+    targetFile: string;
+    targetIdColumn: string;
+  }>;
+};
+
+export const CORE_TABLE_CONTRACTS: readonly TableContract[] = [
+  {
+    fileName: "researchers.csv",
+    columns: [
+      "researcher_id",
+      "full_name",
+      "title",
+      "department",
+      "center_program",
+      "email",
+      "profile_url",
+      "short_bio",
+      "lab_name",
+      "active",
+      "last_updated",
+    ],
+    requiredColumns: ["researcher_id", "full_name", "active"],
+    idColumn: "researcher_id",
+    booleanColumns: ["active"],
+  },
+  {
+    fileName: "projects.csv",
+    columns: [
+      "project_id",
+      "project_name",
+      "project_type",
+      "summary",
+      "status",
+      "department_owner",
+      "start_year",
+      "end_year",
+      "project_url",
+      "last_updated",
+    ],
+    requiredColumns: ["project_id", "project_name", "project_type", "summary"],
+    idColumn: "project_id",
+    enumColumns: {
+      project_type: ["project", "program", "initiative", "core resource", "consortium"],
+      status: ["active", "planned", "archived"],
+    },
+  },
+  {
+    fileName: "datasets.csv",
+    columns: [
+      "dataset_id",
+      "dataset_name",
+      "dataset_type",
+      "summary",
+      "data_modality",
+      "access_level",
+      "access_notes",
+      "sample_scope",
+      "dataset_url",
+      "active",
+      "last_updated",
+    ],
+    requiredColumns: ["dataset_id", "dataset_name", "dataset_type", "summary", "active"],
+    idColumn: "dataset_id",
+    booleanColumns: ["active"],
+    enumColumns: {
+      dataset_type: [
+        "clinical",
+        "imaging",
+        "genomics",
+        "transcriptomics",
+        "proteomics",
+        "pathology",
+        "single-cell",
+        "spatial-omics",
+        "preclinical",
+        "multimodal",
+      ],
+      access_level: ["public", "internal", "restricted"],
+    },
+  },
+  {
+    fileName: "technologies.csv",
+    columns: [
+      "technology_id",
+      "technology_name",
+      "technology_category",
+      "summary",
+      "measurement_focus",
+      "vendor_platform",
+      "technology_url",
+      "active",
+      "last_updated",
+    ],
+    requiredColumns: ["technology_id", "technology_name", "technology_category", "summary", "active"],
+    idColumn: "technology_id",
+    booleanColumns: ["active"],
+    enumColumns: {
+      technology_category: [
+        "sequencing",
+        "imaging",
+        "microscopy",
+        "mass spectrometry",
+        "cytometry",
+        "computational",
+        "molecular assay",
+        "pathology workflow",
+      ],
+    },
+  },
+  {
+    fileName: "disease_areas.csv",
+    columns: ["disease_area_id", "disease_area_name", "disease_group", "summary", "active", "last_updated"],
+    requiredColumns: ["disease_area_id", "disease_area_name", "active"],
+    idColumn: "disease_area_id",
+    booleanColumns: ["active"],
+  },
+];
+
+export const RELATIONSHIP_TABLE_CONTRACTS: readonly RelationshipContract[] = [
+  {
+    fileName: "researcher_disease_areas.csv",
+    columns: ["researcher_id", "disease_area_id", "relevance_type"],
+    requiredColumns: ["researcher_id", "disease_area_id"],
+    uniqueComposite: ["researcher_id", "disease_area_id"],
+    foreignKeys: [
+      { column: "researcher_id", targetFile: "researchers.csv", targetIdColumn: "researcher_id" },
+      { column: "disease_area_id", targetFile: "disease_areas.csv", targetIdColumn: "disease_area_id" },
+    ],
+  },
+  {
+    fileName: "researcher_technologies.csv",
+    columns: ["researcher_id", "technology_id", "usage_type"],
+    requiredColumns: ["researcher_id", "technology_id"],
+    uniqueComposite: ["researcher_id", "technology_id"],
+    foreignKeys: [
+      { column: "researcher_id", targetFile: "researchers.csv", targetIdColumn: "researcher_id" },
+      { column: "technology_id", targetFile: "technologies.csv", targetIdColumn: "technology_id" },
+    ],
+  },
+  {
+    fileName: "researcher_datasets.csv",
+    columns: ["researcher_id", "dataset_id", "relationship_type"],
+    requiredColumns: ["researcher_id", "dataset_id"],
+    uniqueComposite: ["researcher_id", "dataset_id"],
+    foreignKeys: [
+      { column: "researcher_id", targetFile: "researchers.csv", targetIdColumn: "researcher_id" },
+      { column: "dataset_id", targetFile: "datasets.csv", targetIdColumn: "dataset_id" },
+    ],
+  },
+  {
+    fileName: "project_researchers.csv",
+    columns: ["project_id", "researcher_id", "role"],
+    requiredColumns: ["project_id", "researcher_id"],
+    uniqueComposite: ["project_id", "researcher_id"],
+    foreignKeys: [
+      { column: "project_id", targetFile: "projects.csv", targetIdColumn: "project_id" },
+      { column: "researcher_id", targetFile: "researchers.csv", targetIdColumn: "researcher_id" },
+    ],
+  },
+  {
+    fileName: "project_datasets.csv",
+    columns: ["project_id", "dataset_id", "relationship_type"],
+    requiredColumns: ["project_id", "dataset_id"],
+    uniqueComposite: ["project_id", "dataset_id"],
+    foreignKeys: [
+      { column: "project_id", targetFile: "projects.csv", targetIdColumn: "project_id" },
+      { column: "dataset_id", targetFile: "datasets.csv", targetIdColumn: "dataset_id" },
+    ],
+  },
+  {
+    fileName: "project_disease_areas.csv",
+    columns: ["project_id", "disease_area_id"],
+    requiredColumns: ["project_id", "disease_area_id"],
+    uniqueComposite: ["project_id", "disease_area_id"],
+    foreignKeys: [
+      { column: "project_id", targetFile: "projects.csv", targetIdColumn: "project_id" },
+      { column: "disease_area_id", targetFile: "disease_areas.csv", targetIdColumn: "disease_area_id" },
+    ],
+  },
+  {
+    fileName: "dataset_technologies.csv",
+    columns: ["dataset_id", "technology_id", "relationship_type"],
+    requiredColumns: ["dataset_id", "technology_id"],
+    uniqueComposite: ["dataset_id", "technology_id"],
+    foreignKeys: [
+      { column: "dataset_id", targetFile: "datasets.csv", targetIdColumn: "dataset_id" },
+      { column: "technology_id", targetFile: "technologies.csv", targetIdColumn: "technology_id" },
+    ],
+  },
+  {
+    fileName: "dataset_disease_areas.csv",
+    columns: ["dataset_id", "disease_area_id"],
+    requiredColumns: ["dataset_id", "disease_area_id"],
+    uniqueComposite: ["dataset_id", "disease_area_id"],
+    foreignKeys: [
+      { column: "dataset_id", targetFile: "datasets.csv", targetIdColumn: "dataset_id" },
+      { column: "disease_area_id", targetFile: "disease_areas.csv", targetIdColumn: "disease_area_id" },
+    ],
+  },
+];
+
+export const NORMALIZED_VALUE_MAP: Readonly<Record<string, string>> = {
+  "pathology/cytology": "pathology workflow",
+  "sequencing/genomic profiling": "sequencing",
+  "cytometry/cytogenetics": "cytometry",
+  "computational analysis": "computational",
+  "biomarker/molecular assay": "molecular assay",
+  "immune/functional profiling": "molecular assay",
+  "liquid biopsy/fluid profiling": "molecular assay",
+  "procedural/tissue acquisition": "pathology workflow",
+};
+
+export function getAllRawCsvFileNames(): string[] {
+  return [...CORE_TABLE_CONTRACTS, ...RELATIONSHIP_TABLE_CONTRACTS].map((contract) => contract.fileName);
+}
+
+export function buildRawDataContractArtifact(): {
+  coreTables: readonly TableContract[];
+  relationshipTables: readonly RelationshipContract[];
+  allFileNames: string[];
+} {
+  return {
+    coreTables: CORE_TABLE_CONTRACTS,
+    relationshipTables: RELATIONSHIP_TABLE_CONTRACTS,
+    allFileNames: getAllRawCsvFileNames().sort(),
+  };
+}
