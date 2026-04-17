@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
+import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { PageHeader } from "@/components/ui/page-header";
 import { EntityListCard } from "@/components/ui/entity-list-card";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
@@ -135,18 +136,20 @@ export default async function TechnologiesPage({ searchParams }: { searchParams:
       {filteredTechnologies.length > 0 ? (
         <section className="grid gap-4 md:grid-cols-2">
           {filteredTechnologies.map((technology) => (
-            <EntityListCard
-              key={technology.id}
-              title={technology.technologyName}
-              subtitle={technology.summary}
-              metadata={uniqueCompactMetadata([
-                technology.technologyCategory,
-                `${(relationships.technologyToDatasets[technology.id] ?? []).length} datasets`,
-                `${(relationships.technologyToResearchers[technology.id] ?? []).length} researchers`,
-              ])}
-              metaLine={formatUpdatedMetadata(technology.lastUpdated)}
-              href={`/technologies/${technology.id}`}
-            />
+            <div key={technology.id} className="space-y-1">
+              <EntityListCard
+                title={technology.technologyName}
+                subtitle={technology.summary}
+                metadata={uniqueCompactMetadata([
+                  technology.technologyCategory,
+                  `${(relationships.technologyToDatasets[technology.id] ?? []).length} datasets`,
+                  `${(relationships.technologyToResearchers[technology.id] ?? []).length} researchers`,
+                ])}
+                metaLine={formatUpdatedMetadata(technology.lastUpdated)}
+                href={`/technologies/${technology.id}`}
+              />
+              <CompareToggleButton type="technology" id={technology.id} label={technology.technologyName} />
+            </div>
           ))}
         </section>
       ) : (

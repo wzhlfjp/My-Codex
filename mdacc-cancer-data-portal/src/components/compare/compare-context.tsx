@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import {
   buildCompareUrl,
   COMPARE_MAX_ITEMS,
+  getCompareTypeLabel,
   type CompareSelection,
   type CompareSelectionItem,
 } from "@/lib/compare";
@@ -36,7 +37,13 @@ function normalizeSelection(input: unknown): CompareSelection {
   const rawType = (input as { type?: string }).type;
   const rawItems = (input as { items?: Array<{ id?: string; label?: string }> }).items;
   const type: CompareEntityType | null =
-    rawType === "researcher" || rawType === "dataset" || rawType === "project" ? rawType : null;
+    rawType === "researcher" ||
+    rawType === "dataset" ||
+    rawType === "project" ||
+    rawType === "technology" ||
+    rawType === "disease-area"
+      ? rawType
+      : null;
 
   if (!Array.isArray(rawItems) || !type) {
     return { type, items: [] };
@@ -100,7 +107,7 @@ export function CompareProvider({ children }: { children: React.ReactNode }) {
 
       if (!selection.type || selection.type !== type) {
         setSelection({ type, items: [{ id: nextId, label: nextLabel }] });
-        return { ok: true, message: `Started comparing ${type === "researcher" ? "researchers" : type === "dataset" ? "datasets" : "projects"}.` };
+        return { ok: true, message: `Started comparing ${getCompareTypeLabel(type).toLowerCase()}.` };
       }
 
       const exists = selection.items.some((entry) => entry.id === nextId);

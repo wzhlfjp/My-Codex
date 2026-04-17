@@ -133,7 +133,7 @@ export interface ProjectDetailData {
 }
 
 export type ExploreEntityType = "all" | "researcher" | "dataset" | "technology" | "disease-area" | "project";
-export type CompareEntityType = "researcher" | "dataset" | "project";
+export type CompareEntityType = "researcher" | "dataset" | "project" | "technology" | "disease-area";
 
 export interface ExploreQuery {
   q?: string;

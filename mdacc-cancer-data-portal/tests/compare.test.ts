@@ -50,6 +50,13 @@ function createPortalData(): PortalData {
       projectToDiseaseAreas: { P001: ["C001"] },
       projectToResearchers: { P001: ["R001"] },
       projectToDatasets: { P001: ["D001"] },
+      technologyToDatasets: { T001: ["D001"] },
+      technologyToResearchers: { T001: ["R001"] },
+      technologyToDiseaseAreas: { T001: ["C001"] },
+      diseaseAreaToResearchers: { C001: ["R001"] },
+      diseaseAreaToDatasets: { C001: ["D001"] },
+      diseaseAreaToTechnologies: { C001: ["T001"] },
+      diseaseAreaToProjects: { C001: ["P001"] },
     },
   };
 }
@@ -57,12 +64,14 @@ function createPortalData(): PortalData {
 describe("compare helpers", () => {
   it("parses compare type and ids safely", () => {
     expect(parseCompareEntityType("researcher")).toBe("researcher");
-    expect(parseCompareEntityType("technology")).toBeNull();
+    expect(parseCompareEntityType("technology")).toBe("technology");
+    expect(parseCompareEntityType("disease-area")).toBe("disease-area");
     expect(parseCompareIds("R001,R001,R002,,R003,R004,R005")).toEqual(["R001", "R002", "R003", "R004"]);
   });
 
   it("builds shareable compare URLs", () => {
     expect(buildCompareUrl("dataset", ["D001", "D002"])).toBe("/compare?type=dataset&ids=D001%2CD002");
+    expect(buildCompareUrl("disease-area", ["C001", "C002"])).toBe("/compare?type=disease-area&ids=C001%2CC002");
   });
 
   it("builds compare cards and reports missing ids", () => {
@@ -71,5 +80,21 @@ describe("compare helpers", () => {
     expect(result.cards).toHaveLength(1);
     expect(result.cards[0].title).toBe("Dr. A");
     expect(result.missingIds).toEqual(["R999"]);
+  });
+
+  it("builds technology compare cards", () => {
+    const data = createPortalData();
+    const result = buildCompareCards("technology", ["T001"], data);
+    expect(result.cards).toHaveLength(1);
+    expect(result.cards[0].title).toBe("Tech 1");
+    expect(result.cards[0].fields.find((field) => field.label === "Related Datasets")?.value).toBe("1 dataset");
+  });
+
+  it("builds disease-area compare cards", () => {
+    const data = createPortalData();
+    const result = buildCompareCards("disease-area", ["C001"], data);
+    expect(result.cards).toHaveLength(1);
+    expect(result.cards[0].title).toBe("Breast Cancer");
+    expect(result.cards[0].fields.find((field) => field.label === "Related Researchers")?.value).toBe("1 researcher");
   });
 });

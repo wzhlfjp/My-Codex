@@ -16,6 +16,7 @@ import {
 } from "@/lib/compare";
 import { getPortalData } from "@/lib/data/processed-data";
 import { buildRouteMetadata } from "@/lib/site-metadata";
+import type { CompareEntityType } from "@/types/domain";
 
 type CompareQuery = {
   type?: string | string[];
@@ -24,9 +25,10 @@ type CompareQuery = {
 
 export const metadata: Metadata = buildRouteMetadata({
   title: "Compare",
-  description: "Temporarily shortlist and compare researchers, datasets, or projects side by side.",
+  description:
+    "Temporarily shortlist and compare researchers, datasets, projects, technologies, or disease areas side by side.",
   path: "/compare",
-  keywords: ["compare", "shortlist", "researchers", "datasets", "projects"],
+  keywords: ["compare", "shortlist", "researchers", "datasets", "projects", "technologies", "disease areas"],
 });
 
 function normalizeSingleValue(value: string | string[] | undefined): string | undefined {
@@ -34,6 +36,22 @@ function normalizeSingleValue(value: string | string[] | undefined): string | un
     return undefined;
   }
   return Array.isArray(value) ? value[0] : value;
+}
+
+function getBrowseHrefForCompareType(type: CompareEntityType): string {
+  if (type === "researcher") {
+    return "/researchers";
+  }
+  if (type === "dataset") {
+    return "/datasets";
+  }
+  if (type === "project") {
+    return "/projects";
+  }
+  if (type === "technology") {
+    return "/technologies";
+  }
+  return "/disease-areas";
 }
 
 export default async function ComparePage({ searchParams }: { searchParams: Promise<CompareQuery> }) {
@@ -49,7 +67,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Compare" }]} />
         <EmptyStatePanel
           title="Choose an entity type to compare"
-          description="Compare supports researchers, datasets, and projects. Add items from list pages, Explore, or detail pages."
+          description="Compare supports all core entity types. Add items from list pages, Explore, or detail pages."
           actionHref="/explore"
           actionLabel="Go to Explore"
         />
@@ -64,7 +82,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
         <EmptyStatePanel
           title={`No ${getCompareTypeLabel(type).toLowerCase()} selected`}
           description="Add at least two items to compare from list pages, Explore, or detail pages."
-          actionHref={type === "researcher" ? "/researchers" : type === "dataset" ? "/datasets" : "/projects"}
+          actionHref={getBrowseHrefForCompareType(type)}
           actionLabel={`Browse ${getCompareTypeLabel(type)}`}
         />
       </div>
@@ -81,7 +99,7 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
         <EmptyStatePanel
           title="Select at least two valid records"
           description="Some compared IDs may be missing or unavailable in current seed data. Add more items to continue."
-          actionHref={type === "researcher" ? "/researchers" : type === "dataset" ? "/datasets" : "/projects"}
+          actionHref={getBrowseHrefForCompareType(type)}
           actionLabel={`Browse ${getCompareTypeLabel(type)}`}
         />
       </div>

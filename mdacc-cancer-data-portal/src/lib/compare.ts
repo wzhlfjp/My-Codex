@@ -2,7 +2,13 @@ import { formatDateForDisplay } from "@/lib/detail-format";
 import { formatProjectStatus, formatProjectType } from "@/lib/project-format";
 import type { CompareEntityType, PortalData } from "@/types/domain";
 
-export const COMPARE_ENTITY_TYPES: CompareEntityType[] = ["researcher", "dataset", "project"];
+export const COMPARE_ENTITY_TYPES: CompareEntityType[] = [
+  "researcher",
+  "dataset",
+  "project",
+  "technology",
+  "disease-area",
+];
 export const COMPARE_MAX_ITEMS = 4;
 export const COMPARE_MIN_ITEMS = 2;
 
@@ -75,7 +81,13 @@ export function getCompareTypeLabel(type: CompareEntityType): string {
   if (type === "dataset") {
     return "Datasets";
   }
-  return "Projects";
+  if (type === "project") {
+    return "Projects";
+  }
+  if (type === "technology") {
+    return "Technologies";
+  }
+  return "Disease Areas";
 }
 
 function joinValues(values: Array<string | undefined>, limit = 3): string {
@@ -177,36 +189,119 @@ export function buildCompareCards(
     return { cards, missingIds };
   }
 
-  const projectById = Object.fromEntries(projects.map((item) => [item.id, item]));
+  if (type === "project") {
+    const projectById = Object.fromEntries(projects.map((item) => [item.id, item]));
+    const cards: CompareCard[] = [];
+    const missingIds: string[] = [];
+
+    ids.forEach((id) => {
+      const project = projectById[id];
+      if (!project) {
+        missingIds.push(id);
+        return;
+      }
+
+      const diseaseNames = (relationships.projectToDiseaseAreas[id] ?? []).map((diseaseId) => diseaseNameById[diseaseId]);
+      const researcherCount = (relationships.projectToResearchers[id] ?? []).length;
+      const datasetCount = (relationships.projectToDatasets[id] ?? []).length;
+
+      cards.push({
+        id: project.id,
+        title: project.projectName,
+        href: `/projects/${project.id}`,
+        subtitle: project.summary,
+        chips: [formatProjectType(project.projectType), formatProjectStatus(project.status), joinValues(diseaseNames, 2)].filter(
+          (item): item is string => Boolean(item && item !== "Not available"),
+        ),
+        fields: [
+          { label: "Project Type", value: formatProjectType(project.projectType) ?? "Not available" },
+          { label: "Status", value: formatProjectStatus(project.status) ?? "Not available" },
+          { label: "Disease Areas", value: joinValues(diseaseNames, 4) },
+          { label: "Related Researchers", value: toCountLabel(researcherCount, "researcher") },
+          { label: "Related Datasets", value: toCountLabel(datasetCount, "dataset") },
+          { label: "Updated", value: formatDateForDisplay(project.lastUpdated) ?? "Not available" },
+        ],
+      });
+    });
+
+    return { cards, missingIds };
+  }
+
+  if (type === "technology") {
+    const technologyById = Object.fromEntries(technologies.map((item) => [item.id, item]));
+    const cards: CompareCard[] = [];
+    const missingIds: string[] = [];
+
+    ids.forEach((id) => {
+      const technology = technologyById[id];
+      if (!technology) {
+        missingIds.push(id);
+        return;
+      }
+
+      const diseaseNames = (relationships.technologyToDiseaseAreas[id] ?? []).map((diseaseId) => diseaseNameById[diseaseId]);
+      const datasetIds = relationships.technologyToDatasets[id] ?? [];
+      const researcherCount = (relationships.technologyToResearchers[id] ?? []).length;
+      const relatedProjectIds = new Set<string>();
+      datasetIds.forEach((datasetId) => {
+        (relationships.datasetToProjects[datasetId] ?? []).forEach((projectId) => {
+          relatedProjectIds.add(projectId);
+        });
+      });
+
+      cards.push({
+        id: technology.id,
+        title: technology.technologyName,
+        href: `/technologies/${technology.id}`,
+        subtitle: technology.summary,
+        chips: [technology.technologyCategory, joinValues(diseaseNames, 2)].filter(
+          (item): item is string => Boolean(item && item !== "Not available"),
+        ),
+        fields: [
+          { label: "Category", value: technology.technologyCategory?.trim() || "Not available" },
+          { label: "Measurement Focus", value: technology.measurementFocus?.trim() || "Not available" },
+          { label: "Vendor / Platform", value: technology.vendorPlatform?.trim() || "Not available" },
+          { label: "Disease Areas", value: joinValues(diseaseNames, 4) },
+          { label: "Related Datasets", value: toCountLabel(datasetIds.length, "dataset") },
+          { label: "Related Researchers", value: toCountLabel(researcherCount, "researcher") },
+          { label: "Related Projects", value: toCountLabel(relatedProjectIds.size, "project") },
+          { label: "Updated", value: formatDateForDisplay(technology.lastUpdated) ?? "Not available" },
+        ],
+      });
+    });
+
+    return { cards, missingIds };
+  }
+
+  const diseaseAreaById = Object.fromEntries(diseaseAreas.map((item) => [item.id, item]));
   const cards: CompareCard[] = [];
   const missingIds: string[] = [];
 
   ids.forEach((id) => {
-    const project = projectById[id];
-    if (!project) {
+    const diseaseArea = diseaseAreaById[id];
+    if (!diseaseArea) {
       missingIds.push(id);
       return;
     }
 
-    const diseaseNames = (relationships.projectToDiseaseAreas[id] ?? []).map((diseaseId) => diseaseNameById[diseaseId]);
-    const researcherCount = (relationships.projectToResearchers[id] ?? []).length;
-    const datasetCount = (relationships.projectToDatasets[id] ?? []).length;
+    const researcherCount = (relationships.diseaseAreaToResearchers[id] ?? []).length;
+    const datasetCount = (relationships.diseaseAreaToDatasets[id] ?? []).length;
+    const technologyCount = (relationships.diseaseAreaToTechnologies[id] ?? []).length;
+    const projectCount = (relationships.diseaseAreaToProjects[id] ?? []).length;
 
     cards.push({
-      id: project.id,
-      title: project.projectName,
-      href: `/projects/${project.id}`,
-      subtitle: project.summary,
-      chips: [formatProjectType(project.projectType), formatProjectStatus(project.status), joinValues(diseaseNames, 2)].filter(
-        (item): item is string => Boolean(item && item !== "Not available"),
-      ),
+      id: diseaseArea.id,
+      title: diseaseArea.diseaseAreaName,
+      href: `/disease-areas/${diseaseArea.id}`,
+      subtitle: diseaseArea.summary,
+      chips: [diseaseArea.diseaseGroup].filter((item): item is string => Boolean(item)),
       fields: [
-        { label: "Project Type", value: formatProjectType(project.projectType) ?? "Not available" },
-        { label: "Status", value: formatProjectStatus(project.status) ?? "Not available" },
-        { label: "Disease Areas", value: joinValues(diseaseNames, 4) },
+        { label: "Disease Group", value: diseaseArea.diseaseGroup?.trim() || "Not available" },
         { label: "Related Researchers", value: toCountLabel(researcherCount, "researcher") },
         { label: "Related Datasets", value: toCountLabel(datasetCount, "dataset") },
-        { label: "Updated", value: formatDateForDisplay(project.lastUpdated) ?? "Not available" },
+        { label: "Related Technologies", value: toCountLabel(technologyCount, "technology") },
+        { label: "Related Projects", value: toCountLabel(projectCount, "project") },
+        { label: "Updated", value: formatDateForDisplay(diseaseArea.lastUpdated) ?? "Not available" },
       ],
     });
   });

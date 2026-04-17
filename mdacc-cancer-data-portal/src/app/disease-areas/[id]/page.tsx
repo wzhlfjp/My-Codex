@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
+import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DetailSectionNav } from "@/components/ui/detail-section-nav";
 import { MetadataList } from "@/components/ui/metadata-list";
@@ -94,7 +95,17 @@ export default async function DiseaseAreaDetailPage({ params }: { params: Promis
         <PageHeader
           title={diseaseArea.diseaseAreaName}
           description={diseaseArea.summary ?? "Disease-area profile in the MD Anderson Cancer Data Portal."}
-          actions={<ShareExportActions fileStem={`disease-area-${diseaseArea.id}`} showCsv={false} jsonData={detailExportPayload} className="md:items-end" />}
+          actions={
+            <div className="flex flex-col gap-1 md:items-end">
+              <ShareExportActions
+                fileStem={`disease-area-${diseaseArea.id}`}
+                showCsv={false}
+                jsonData={detailExportPayload}
+                className="md:items-end"
+              />
+              <CompareToggleButton type="disease-area" id={diseaseArea.id} label={diseaseArea.diseaseAreaName} />
+            </div>
+          }
         />
       </section>
 

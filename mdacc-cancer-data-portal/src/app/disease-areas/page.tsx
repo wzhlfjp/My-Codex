@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
+import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { PageHeader } from "@/components/ui/page-header";
 import { EntityListCard } from "@/components/ui/entity-list-card";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
@@ -122,19 +123,21 @@ export default async function DiseaseAreasPage({ searchParams }: { searchParams:
       {filteredDiseaseAreas.length > 0 ? (
         <section className="grid gap-4 md:grid-cols-2">
           {filteredDiseaseAreas.map((diseaseArea) => (
-            <EntityListCard
-              key={diseaseArea.id}
-              title={diseaseArea.diseaseAreaName}
-              subtitle={diseaseArea.summary ?? "Disease area summary not provided."}
-              metadata={uniqueCompactMetadata([
-                diseaseArea.diseaseGroup,
-                `${(relationships.diseaseAreaToResearchers[diseaseArea.id] ?? []).length} researchers`,
-                `${(relationships.diseaseAreaToDatasets[diseaseArea.id] ?? []).length} datasets`,
-                `${(relationships.diseaseAreaToTechnologies[diseaseArea.id] ?? []).length} technologies`,
-              ])}
-              metaLine={formatUpdatedMetadata(diseaseArea.lastUpdated)}
-              href={`/disease-areas/${diseaseArea.id}`}
-            />
+            <div key={diseaseArea.id} className="space-y-1">
+              <EntityListCard
+                title={diseaseArea.diseaseAreaName}
+                subtitle={diseaseArea.summary ?? "Disease area summary not provided."}
+                metadata={uniqueCompactMetadata([
+                  diseaseArea.diseaseGroup,
+                  `${(relationships.diseaseAreaToResearchers[diseaseArea.id] ?? []).length} researchers`,
+                  `${(relationships.diseaseAreaToDatasets[diseaseArea.id] ?? []).length} datasets`,
+                  `${(relationships.diseaseAreaToTechnologies[diseaseArea.id] ?? []).length} technologies`,
+                ])}
+                metaLine={formatUpdatedMetadata(diseaseArea.lastUpdated)}
+                href={`/disease-areas/${diseaseArea.id}`}
+              />
+              <CompareToggleButton type="disease-area" id={diseaseArea.id} label={diseaseArea.diseaseAreaName} />
+            </div>
           ))}
         </section>
       ) : (

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
+import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DetailSectionNav } from "@/components/ui/detail-section-nav";
 import { MetadataList } from "@/components/ui/metadata-list";
@@ -101,7 +102,15 @@ export default async function TechnologyDetailPage({ params }: { params: Promise
           title={technology.technologyName}
           description={technology.summary}
           actions={
-            <ShareExportActions fileStem={`technology-${technology.id}`} showCsv={false} jsonData={detailExportPayload} className="md:items-end" />
+            <div className="flex flex-col gap-1 md:items-end">
+              <ShareExportActions
+                fileStem={`technology-${technology.id}`}
+                showCsv={false}
+                jsonData={detailExportPayload}
+                className="md:items-end"
+              />
+              <CompareToggleButton type="technology" id={technology.id} label={technology.technologyName} />
+            </div>
           }
         />
       </section>

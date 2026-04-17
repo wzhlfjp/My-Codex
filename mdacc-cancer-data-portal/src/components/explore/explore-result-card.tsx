@@ -21,8 +21,7 @@ function getTypeBadgeClass(type: ExploreResult["type"]): string {
 }
 
 export function ExploreResultCard({ result }: { result: ExploreResult }) {
-  const compareType =
-    result.type === "researcher" || result.type === "dataset" || result.type === "project" ? result.type : null;
+  const compareType = result.type;
 
   return (
     <article className="rounded-xl border border-slate-200 bg-white p-4">
@@ -41,9 +40,7 @@ export function ExploreResultCard({ result }: { result: ExploreResult }) {
 
         <MetadataChips items={result.chips} max={4} />
       </Link>
-      {compareType ? (
-        <CompareToggleButton type={compareType} id={result.id} label={result.title} className="mt-2" />
-      ) : null}
+      <CompareToggleButton type={compareType} id={result.id} label={result.title} className="mt-2" />
     </article>
   );
 }
