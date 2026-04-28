@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --page-bg: #f8fafc;
+  --page-bg: #f1f4f9;
+  --sidebar-bg: #f6f8fc;
   --surface: #ffffff;
-  --border: #dbe3ec;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --accent: #0b5cab;
+  --surface-muted: #f4f7fd;
+  --border: #d7dfeb;
+  --text-primary: #1d355c;
+  --text-secondary: #5f7091;
+  --accent: #3382e9;
+  --accent-strong: #1f5fad;
 }
 
 body {
@@ -14,6 +17,7 @@ body {
   background-color: var(--page-bg);
   color: var(--text-primary);
   font-family: "Mona Sans", "Regolapro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
 }
 
 a {
@@ -27,4 +31,8 @@ a {
 :focus-visible {
   outline: 2px solid #94a3b8;
   outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(51, 130, 233, 0.2);
 }

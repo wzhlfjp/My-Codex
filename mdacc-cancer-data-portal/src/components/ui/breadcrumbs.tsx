@@ -7,7 +7,7 @@ type BreadcrumbItem = {
 
 export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-sm text-slate-600">
+    <nav aria-label="Breadcrumb" className="rounded-xl border border-slate-200 bg-[var(--surface-muted)] px-3 py-2 text-sm text-slate-600">
       <ol className="flex flex-wrap items-center gap-1.5 leading-6">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
@@ -20,7 +20,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
               ) : (
                 <span
                   aria-current={isLast ? "page" : undefined}
-                  className={isLast ? "break-words font-medium text-slate-900" : "break-words text-slate-700"}
+                  className={isLast ? "break-words font-semibold text-slate-900" : "break-words text-slate-700"}
                 >
                   {item.label}
                 </span>

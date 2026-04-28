@@ -45,6 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     createEntry({ path: "/", lastModified: buildDate, changeFrequency: "weekly", priority: 1 }),
     createEntry({ path: "/explore", lastModified: buildDate, changeFrequency: "daily", priority: 0.9 }),
+    createEntry({ path: "/dashboard", lastModified: buildDate, changeFrequency: "weekly", priority: 0.85 }),
     createEntry({ path: "/researchers", lastModified: buildDate, changeFrequency: "weekly", priority: 0.8 }),
     createEntry({ path: "/projects", lastModified: buildDate, changeFrequency: "weekly", priority: 0.8 }),
     createEntry({ path: "/datasets", lastModified: buildDate, changeFrequency: "weekly", priority: 0.8 }),
@@ -52,7 +53,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     createEntry({ path: "/disease-areas", lastModified: buildDate, changeFrequency: "weekly", priority: 0.8 }),
     createEntry({ path: "/about", lastModified: buildDate, changeFrequency: "monthly", priority: 0.5 }),
     createEntry({ path: "/status", lastModified: buildDate, changeFrequency: "weekly", priority: 0.4 }),
-    createEntry({ path: "/compare", lastModified: buildDate, changeFrequency: "weekly", priority: 0.4 }),
   ];
 
   const researcherRoutes = portalData.researchers.filter((researcher) => researcher.active).map((researcher) =>

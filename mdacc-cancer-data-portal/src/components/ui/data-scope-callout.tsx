@@ -24,8 +24,8 @@ export function DataScopeCallout({
   const isCompact = variant === "compact";
 
   return (
-    <section className={isCompact ? "rounded-lg border border-slate-200 bg-slate-50 p-3" : "rounded-xl border border-slate-200 bg-slate-50 p-4"}>
-      <p className={isCompact ? "text-xs font-semibold uppercase tracking-wide text-slate-700" : "text-sm font-semibold uppercase tracking-wide text-slate-700"}>
+    <section className={isCompact ? "rounded-xl border border-blue-100 bg-blue-50/60 p-3" : "rounded-2xl border border-blue-100 bg-blue-50/60 p-4"}>
+      <p className={isCompact ? "text-xs font-semibold uppercase tracking-wide text-blue-900" : "text-sm font-semibold uppercase tracking-wide text-blue-900"}>
         About This Data
       </p>
       <p className="mt-2 text-sm leading-6 text-slate-700">

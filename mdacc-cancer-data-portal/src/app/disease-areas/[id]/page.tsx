@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DetailSectionNav } from "@/components/ui/detail-section-nav";
 import { MetadataList } from "@/components/ui/metadata-list";
@@ -103,7 +103,6 @@ export default async function DiseaseAreaDetailPage({ params }: { params: Promis
                 jsonData={detailExportPayload}
                 className="md:items-end"
               />
-              <CompareToggleButton type="disease-area" id={diseaseArea.id} label={diseaseArea.diseaseAreaName} />
             </div>
           }
         />
@@ -116,69 +115,99 @@ export default async function DiseaseAreaDetailPage({ params }: { params: Promis
         items={metadataItems}
       />
 
-      <section className="grid gap-4 md:grid-cols-2">
-        <RelatedEntitiesPanel
-          id="related-researchers"
-          title="Researchers"
-          description="People currently linked to this disease area."
-          summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Represents currently mapped investigator activity.`}
-          browseHref={`/researchers?disease=${diseaseArea.id}`}
-          browseLabel="Browse all related researchers"
-          emptyLabel="No researchers linked in current seed data."
-          items={researchers.map((item) => ({
-            id: item.id,
-            label: item.fullName,
-            href: `/researchers/${item.id}`,
-            description: item.department,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-datasets"
-          title="Datasets"
-          description="Available data resources relevant to this disease area."
-          summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Supports disease-specific data discovery.`}
-          browseHref={`/datasets?disease=${diseaseArea.id}`}
-          browseLabel="Browse all related datasets"
-          emptyLabel="No datasets linked in current seed data."
-          items={datasets.map((item) => ({
-            id: item.id,
-            label: item.datasetName,
-            href: `/datasets/${item.id}`,
-            description: item.datasetType,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-technologies"
-          title="Technologies"
-          description="Measurement approaches associated with this disease area."
-          summaryLine={`${formatRelatedSummary(technologies.length, "technology")} Captures method coverage for this disease area.`}
-          browseHref="/technologies"
-          browseLabel="Browse all technologies"
-          emptyLabel="No technologies linked in current seed data."
-          items={technologies.map((item) => ({
-            id: item.id,
-            label: item.technologyName,
-            href: `/technologies/${item.id}`,
-            description: item.technologyCategory,
-          }))}
-        />
-        {projects.length > 0 ? (
-          <RelatedEntitiesPanel
-            id="related-projects"
-            title="Projects"
-            description="Programs connected to this disease area."
-            summaryLine={`${formatRelatedSummary(projects.length, "project")} Adds program-level context.`}
-            browseHref={`/projects?disease=${diseaseArea.id}`}
-            browseLabel="Browse all related projects"
-            emptyLabel="No projects linked in current seed data."
-            items={projects.map((item) => ({
-              id: item.id,
-              label: item.projectName,
-              href: `/projects/${item.id}`,
-              description: item.projectType,
-            }))}
-          />
-        ) : null}
+      <section className="grid gap-4 xl:grid-cols-[1.6fr_1fr]">
+        <div className="space-y-4">
+          <section className="grid gap-4 md:grid-cols-2">
+            <RelatedEntitiesPanel
+              id="related-researchers"
+              title="Researchers"
+              description="People currently linked to this disease area."
+              summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Represents currently mapped investigator activity.`}
+              browseHref={`/researchers?disease=${diseaseArea.id}`}
+              browseLabel="Browse all related researchers"
+              emptyLabel="No researchers linked in current seed data."
+              items={researchers.map((item) => ({
+                id: item.id,
+                label: item.fullName,
+                href: `/researchers/${item.id}`,
+                description: item.department,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-datasets"
+              title="Datasets"
+              description="Available data resources relevant to this disease area."
+              summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Supports disease-specific data discovery.`}
+              browseHref={`/datasets?disease=${diseaseArea.id}`}
+              browseLabel="Browse all related datasets"
+              emptyLabel="No datasets linked in current seed data."
+              items={datasets.map((item) => ({
+                id: item.id,
+                label: item.datasetName,
+                href: `/datasets/${item.id}`,
+                description: item.datasetType,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-technologies"
+              title="Technologies"
+              description="Measurement approaches associated with this disease area."
+              summaryLine={`${formatRelatedSummary(technologies.length, "technology")} Captures method coverage for this disease area.`}
+              browseHref="/technologies"
+              browseLabel="Browse all technologies"
+              emptyLabel="No technologies linked in current seed data."
+              items={technologies.map((item) => ({
+                id: item.id,
+                label: item.technologyName,
+                href: `/technologies/${item.id}`,
+                description: item.technologyCategory,
+              }))}
+            />
+            {projects.length > 0 ? (
+              <RelatedEntitiesPanel
+                id="related-projects"
+                title="Projects"
+                description="Programs connected to this disease area."
+                summaryLine={`${formatRelatedSummary(projects.length, "project")} Adds program-level context.`}
+                browseHref={`/projects?disease=${diseaseArea.id}`}
+                browseLabel="Browse all related projects"
+                emptyLabel="No projects linked in current seed data."
+                items={projects.map((item) => ({
+                  id: item.id,
+                  label: item.projectName,
+                  href: `/projects/${item.id}`,
+                  description: item.projectType,
+                }))}
+              />
+            ) : null}
+          </section>
+        </div>
+
+        <aside className="space-y-4 xl:sticky xl:top-6 xl:h-fit">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Disease Snapshot</h2>
+            <dl className="mt-3 space-y-2 text-sm">
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Disease Group</dt>
+                <dd className="mt-1 text-slate-800">{diseaseArea.diseaseGroup ?? "Not specified"}</dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Linked Portfolio</dt>
+                <dd className="mt-1 text-slate-800">
+                  {researchers.length} researchers - {datasets.length} datasets - {technologies.length} technologies
+                </dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Browse Disease Areas</dt>
+                <dd className="mt-1">
+                  <Link href="/disease-areas" className="font-medium text-blue-800 underline hover:text-blue-700">
+                    View all disease areas
+                  </Link>
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </aside>
       </section>
     </div>
   );

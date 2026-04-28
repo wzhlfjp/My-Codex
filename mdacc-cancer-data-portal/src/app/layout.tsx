@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CompareRoot } from "@/components/compare/compare-root";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { PageContainer } from "@/components/layout/page-container";
+import { AppShell } from "@/components/layout/app-shell";
 import { DEFAULT_PORTAL_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site-metadata";
 
 export const metadata: Metadata = {
@@ -34,15 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-slate-50 text-slate-900">
+      <body className="min-h-screen bg-[var(--page-bg)] text-slate-900">
         <CompareRoot>
-          <div className="flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">
-              <PageContainer>{children}</PageContainer>
-            </main>
-            <SiteFooter />
-          </div>
+          <AppShell>{children}</AppShell>
         </CompareRoot>
       </body>
     </html>

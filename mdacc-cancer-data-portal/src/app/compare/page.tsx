@@ -126,52 +126,103 @@ export default async function ComparePage({ searchParams }: { searchParams: Prom
       <PageHeader
         title={`Compare ${getCompareTypeLabel(type)}`}
         description={`Side-by-side comparison for ${cards.length} selected ${getCompareTypeLabel(type).toLowerCase()}.`}
-        actions={
-          <ShareExportActions
-            fileStem={`compare-${type}`}
-            showCsv={false}
-            jsonData={compareExportPayload}
-            className="md:items-end"
-          />
-        }
       />
 
       {missingIds.length > 0 ? (
-        <section className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+        <section className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
           {missingIds.length} item(s) from the URL were not found in current data and were skipped.
         </section>
       ) : null}
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {cards.map((card) => (
-          <article key={card.id} className="rounded-xl border border-slate-200 bg-white p-4">
-            <div className="flex items-start justify-between gap-2">
-              <h2 className="text-base font-semibold text-slate-900">
-                <Link href={card.href} className="underline-offset-2 hover:underline">
-                  {card.title}
-                </Link>
-              </h2>
+      <section className="grid gap-4 xl:grid-cols-[1.55fr_1fr]">
+        <div className="space-y-4">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">Compare Summary</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  {cards.length} {getCompareTypeLabel(type).toLowerCase()} selected for side-by-side review.
+                </p>
+              </div>
+              <ShareExportActions
+                fileStem={`compare-${type}`}
+                showCsv={false}
+                jsonData={compareExportPayload}
+                className="md:items-end"
+              />
             </div>
-            <p className="mt-2 line-clamp-2 text-sm text-slate-600">{card.subtitle ?? "No summary available."}</p>
-            <MetadataChips items={card.chips} max={4} />
+          </section>
 
-            <dl className="mt-3 space-y-2 border-t border-slate-100 pt-3 text-sm">
-              {card.fields.map((field) => (
-                <div key={`${card.id}-${field.label}`}>
-                  <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">{field.label}</dt>
-                  <dd className="mt-0.5 text-slate-700">{field.value}</dd>
+          <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {cards.map((card) => (
+              <article key={card.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+                <div className="flex items-start justify-between gap-2">
+                  <h2 className="text-base font-semibold text-[#1f3f70]">
+                    <Link href={card.href} className="underline-offset-2 hover:underline">
+                      {card.title}
+                    </Link>
+                  </h2>
                 </div>
-              ))}
-            </dl>
+                <p className="mt-2 line-clamp-2 text-sm text-slate-600">{card.subtitle ?? "No summary available."}</p>
+                <MetadataChips items={card.chips} max={4} />
 
-            <CompareToggleButton
-              type={type}
-              id={card.id}
-              label={card.title}
-              className="mt-3"
-            />
-          </article>
-        ))}
+                <dl className="mt-3 space-y-2 border-t border-slate-100 pt-3 text-sm">
+                  {card.fields.map((field) => (
+                    <div key={`${card.id}-${field.label}`}>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">{field.label}</dt>
+                      <dd className="mt-0.5 text-slate-700">{field.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+
+                <CompareToggleButton
+                  type={type}
+                  id={card.id}
+                  label={card.title}
+                  className="mt-3"
+                />
+              </article>
+            ))}
+          </section>
+        </div>
+
+        <aside className="space-y-4 xl:sticky xl:top-6 xl:h-fit">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">How To Use Compare</h2>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                Keep selected records within one entity type for a clean side-by-side review.
+              </li>
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                Use row links to open full detail pages when deeper context is needed.
+              </li>
+              <li className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                Export JSON to share shortlists with collaborators.
+              </li>
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Quick Browse</h2>
+            <div className="mt-3 grid gap-2">
+              <Link href="/researchers" className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm hover:border-blue-200">
+                Researchers
+              </Link>
+              <Link href="/datasets" className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm hover:border-blue-200">
+                Datasets
+              </Link>
+              <Link href="/projects" className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm hover:border-blue-200">
+                Projects
+              </Link>
+              <Link href="/technologies" className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm hover:border-blue-200">
+                Technologies
+              </Link>
+              <Link href="/disease-areas" className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm hover:border-blue-200">
+                Disease Areas
+              </Link>
+            </div>
+          </section>
+        </aside>
       </section>
     </div>
   );

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DetailSectionNav } from "@/components/ui/detail-section-nav";
 import { MetadataList } from "@/components/ui/metadata-list";
@@ -128,7 +127,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 jsonData={detailExportPayload}
                 className="md:items-end"
               />
-              <CompareToggleButton type="project" id={project.id} label={project.projectName} />
             </div>
           }
         />
@@ -141,91 +139,121 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         items={metadataItems}
       />
 
-      <section className="grid gap-4 md:grid-cols-2">
-        <RelatedEntitiesPanel
-          id="related-researchers"
-          title="Researchers"
-          description="People linked to this project or program."
-          summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Highlights participating investigators.`}
-          browseHref={primaryDiseaseArea ? `/researchers?disease=${primaryDiseaseArea.id}` : "/researchers"}
-          browseLabel={
-            primaryDiseaseArea
-              ? `Browse researchers in ${primaryDiseaseArea.diseaseAreaName}`
-              : "Browse all researchers"
-          }
-          emptyLabel="No researchers linked in current seed data."
-          items={researchers.map((item) => ({
-            id: item.id,
-            label: item.fullName,
-            href: `/researchers/${item.id}`,
-            description: item.department,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-datasets"
-          title="Datasets"
-          description="Data resources connected to this project."
-          summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Shows currently linked data assets.`}
-          browseHref={primaryDiseaseArea ? `/datasets?disease=${primaryDiseaseArea.id}` : "/datasets"}
-          browseLabel={
-            primaryDiseaseArea ? `Browse datasets in ${primaryDiseaseArea.diseaseAreaName}` : "Browse all datasets"
-          }
-          emptyLabel="No datasets linked in current seed data."
-          items={datasets.map((item) => ({
-            id: item.id,
-            label: item.datasetName,
-            href: `/datasets/${item.id}`,
-            description: item.datasetType,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-disease-areas"
-          title="Disease Areas"
-          description="Disease contexts represented in this project."
-          summaryLine={`${formatRelatedSummary(diseaseAreas.length, "disease area")} Provides context for where this project is active.`}
-          browseHref="/disease-areas"
-          browseLabel="Browse all disease areas"
-          emptyLabel="No disease areas linked in current seed data."
-          items={diseaseAreas.map((item) => ({
-            id: item.id,
-            label: item.diseaseAreaName,
-            href: `/disease-areas/${item.id}`,
-            description: item.diseaseGroup,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-technologies"
-          title="Technologies"
-          description="Technologies connected through linked datasets."
-          summaryLine={`${formatRelatedSummary(technologies.length, "technology")} Captures method context when available.`}
-          browseHref="/technologies"
-          browseLabel="Browse all technologies"
-          emptyLabel="No technologies linked in current seed data."
-          items={technologies.map((item) => ({
-            id: item.id,
-            label: item.technologyName,
-            href: `/technologies/${item.id}`,
-            description: item.technologyCategory,
-          }))}
-        />
-      </section>
+      <section className="grid gap-4 xl:grid-cols-[1.6fr_1fr]">
+        <div className="space-y-4">
+          <section className="grid gap-4 md:grid-cols-2">
+            <RelatedEntitiesPanel
+              id="related-researchers"
+              title="Researchers"
+              description="People linked to this project or program."
+              summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Highlights participating investigators.`}
+              browseHref={primaryDiseaseArea ? `/researchers?disease=${primaryDiseaseArea.id}` : "/researchers"}
+              browseLabel={
+                primaryDiseaseArea
+                  ? `Browse researchers in ${primaryDiseaseArea.diseaseAreaName}`
+                  : "Browse all researchers"
+              }
+              emptyLabel="No researchers linked in current seed data."
+              items={researchers.map((item) => ({
+                id: item.id,
+                label: item.fullName,
+                href: `/researchers/${item.id}`,
+                description: item.department,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-datasets"
+              title="Datasets"
+              description="Data resources connected to this project."
+              summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Shows currently linked data assets.`}
+              browseHref={primaryDiseaseArea ? `/datasets?disease=${primaryDiseaseArea.id}` : "/datasets"}
+              browseLabel={
+                primaryDiseaseArea ? `Browse datasets in ${primaryDiseaseArea.diseaseAreaName}` : "Browse all datasets"
+              }
+              emptyLabel="No datasets linked in current seed data."
+              items={datasets.map((item) => ({
+                id: item.id,
+                label: item.datasetName,
+                href: `/datasets/${item.id}`,
+                description: item.datasetType,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-disease-areas"
+              title="Disease Areas"
+              description="Disease contexts represented in this project."
+              summaryLine={`${formatRelatedSummary(diseaseAreas.length, "disease area")} Provides context for where this project is active.`}
+              browseHref="/disease-areas"
+              browseLabel="Browse all disease areas"
+              emptyLabel="No disease areas linked in current seed data."
+              items={diseaseAreas.map((item) => ({
+                id: item.id,
+                label: item.diseaseAreaName,
+                href: `/disease-areas/${item.id}`,
+                description: item.diseaseGroup,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-technologies"
+              title="Technologies"
+              description="Technologies connected through linked datasets."
+              summaryLine={`${formatRelatedSummary(technologies.length, "technology")} Captures method context when available.`}
+              browseHref="/technologies"
+              browseLabel="Browse all technologies"
+              emptyLabel="No technologies linked in current seed data."
+              items={technologies.map((item) => ({
+                id: item.id,
+                label: item.technologyName,
+                href: `/technologies/${item.id}`,
+                description: item.technologyCategory,
+              }))}
+            />
+          </section>
+        </div>
 
-      <RecommendationPanel
-        id="recommended-projects"
-        title="You May Also Want to Look At"
-        description="Similar projects based on shared disease areas, linked datasets, researchers, and project type."
-        browseHref={recommendations.browseHref}
-        browseLabel={recommendations.browseLabel}
-        emptyLabel="No strong same-type recommendations are available yet for this project."
-        items={recommendations.items.map((item) => ({
-          id: item.id,
-          label: item.title,
-          href: item.href,
-          subtitle: item.subtitle,
-          reason: item.reason,
-          chips: item.chips,
-        }))}
-      />
+        <aside className="space-y-4 xl:sticky xl:top-6 xl:h-fit">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Project Snapshot</h2>
+            <dl className="mt-3 space-y-2 text-sm">
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Project Type and Status</dt>
+                <dd className="mt-1 text-slate-800">
+                  {formatProjectType(project.projectType) ?? "Project"} - {formatProjectStatus(project.status) ?? "Status not specified"}
+                </dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Timeline</dt>
+                <dd className="mt-1 text-slate-800">{formatProjectTimeline(project.startYear, project.endYear)}</dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Browse Project Portfolio</dt>
+                <dd className="mt-1">
+                  <Link href="/projects" className="font-medium text-blue-800 underline hover:text-blue-700">
+                    View all projects
+                  </Link>
+                </dd>
+              </div>
+            </dl>
+          </section>
+
+          <RecommendationPanel
+            id="recommended-projects"
+            title="You May Also Want to Look At"
+            description="Similar projects based on shared disease areas, linked datasets, researchers, and project type."
+            browseHref={recommendations.browseHref}
+            browseLabel={recommendations.browseLabel}
+            emptyLabel="No strong same-type recommendations are available yet for this project."
+            items={recommendations.items.map((item) => ({
+              id: item.id,
+              label: item.title,
+              href: item.href,
+              subtitle: item.subtitle,
+              reason: item.reason,
+              chips: item.chips,
+            }))}
+          />
+        </aside>
+      </section>
     </div>
   );
 }

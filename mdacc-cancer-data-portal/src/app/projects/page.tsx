@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
+import { MetadataChips } from "@/components/ui/metadata-chips";
 import { DataScopeCallout } from "@/components/ui/data-scope-callout";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
-import { EntityListCard } from "@/components/ui/entity-list-card";
 import { PageHeader } from "@/components/ui/page-header";
-import { formatUpdatedMetadata, uniqueCompactMetadata } from "@/lib/entity-metadata";
+import { formatUpdatedMetadata } from "@/lib/entity-metadata";
 import { getPortalData, getPortalSnapshot } from "@/lib/data/processed-data";
 import { shapeProjectExportRows } from "@/lib/export-shape";
 import { compareUpdatedDesc, matchesQueryTokens, tokenizeQuery } from "@/lib/list-browse";
@@ -148,25 +148,48 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
       />
 
       {filteredProjects.length > 0 ? (
-        <section className="grid gap-4 md:grid-cols-2">
-          {filteredProjects.map((project) => (
-            <div key={project.id} className="space-y-1">
-              <EntityListCard
-                title={project.projectName}
-                subtitle={project.summary}
-                metadata={uniqueCompactMetadata([
-                  formatProjectType(project.projectType),
-                  formatProjectStatus(project.status),
-                  ...(relationships.projectToDiseaseAreas[project.id] ?? [])
-                    .map((id) => diseaseNameById[id])
-                    .slice(0, 2),
-                ])}
-                metaLine={formatUpdatedMetadata(project.lastUpdated)}
-                href={`/projects/${project.id}`}
-              />
-              <CompareToggleButton type="project" id={project.id} label={project.projectName} />
-            </div>
-          ))}
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <div className="hidden grid-cols-[2fr_1.5fr_1.4fr] gap-3 border-b border-slate-200 bg-[var(--surface-muted)] px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500 md:grid">
+            <p>Project</p>
+            <p>Context</p>
+            <p>Status</p>
+          </div>
+
+          <ul className="divide-y divide-slate-100">
+            {filteredProjects.map((project) => {
+              const diseaseChips = (relationships.projectToDiseaseAreas[project.id] ?? [])
+                .map((id) => diseaseNameById[id])
+                .filter(Boolean)
+                .slice(0, 2);
+              const status = formatProjectStatus(project.status) ?? "Status not specified";
+              const type = formatProjectType(project.projectType) ?? "Project";
+
+              return (
+                <li key={project.id} className="px-4 py-4">
+                  <div className="grid gap-3 md:grid-cols-[2fr_1.5fr_1.4fr] md:items-center">
+                    <div className="min-w-0">
+                      <Link href={`/projects/${project.id}`} className="text-base font-semibold text-[#1f3f70] hover:underline">
+                        {project.projectName}
+                      </Link>
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-600">{project.summary}</p>
+                    </div>
+
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Disease Context</p>
+                      <MetadataChips items={[type, ...diseaseChips]} max={4} className="mt-1" />
+                    </div>
+
+                    <div className="text-sm text-slate-600">
+                      <p>{status}</p>
+                      <p className="mt-1 text-xs">
+                        {formatUpdatedMetadata(project.lastUpdated)}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       ) : (
         <EmptyStatePanel

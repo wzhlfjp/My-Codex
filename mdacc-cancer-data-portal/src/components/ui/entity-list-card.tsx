@@ -15,11 +15,11 @@ export function EntityListCard({
   metaLine?: string;
 }) {
   const content = (
-    <article className="rounded-xl border border-slate-200 bg-white p-4 transition-colors group-hover:border-slate-300">
+    <article className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)] transition-colors group-hover:border-blue-200 group-hover:bg-blue-50/20">
       <div className="flex flex-col gap-1.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
-        <h3 className="min-w-0 flex-1 break-words text-base font-semibold text-slate-900">{title}</h3>
+        <h3 className="min-w-0 flex-1 break-words text-base font-semibold text-[#1f3f70]">{title}</h3>
         {metaLine ? (
-          <p className="shrink-0 text-left text-xs text-slate-500 sm:whitespace-nowrap sm:text-right" title={metaLine}>
+          <p className="shrink-0 rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-left text-[11px] text-slate-600 sm:whitespace-nowrap sm:text-right" title={metaLine}>
             {metaLine}
           </p>
         ) : null}

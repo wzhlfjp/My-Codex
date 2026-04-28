@@ -36,6 +36,23 @@ npm run build
 npm run start
 ```
 
+## Vercel quick deploy (recommended)
+1. Push the repository to GitHub.
+2. In Vercel, click **Add New Project** and import this repository.
+3. Keep the default framework preset (**Next.js**).
+4. Add environment variable:
+   - `NEXT_PUBLIC_SITE_URL=https://<your-vercel-domain>`
+5. Deploy.
+6. After first deploy, open:
+   - `/status` to confirm build/validation summary,
+   - `/sitemap.xml`,
+   - `/robots.txt`.
+7. If you bind a custom domain later, update `NEXT_PUBLIC_SITE_URL` to that exact domain and redeploy.
+
+## Netlify note
+- This project is compatible with Netlify Next.js runtime.
+- Set `NEXT_PUBLIC_SITE_URL` to the final public domain in Netlify environment variables before production release.
+
 ## Deployment-facing artifacts to check
 1. `data/processed/build_metadata.json`
 2. `data/processed/validation_report.json`
@@ -44,14 +61,15 @@ npm run start
 5. Metadata previews for key routes:
    - `/`
    - `/explore`
+   - `/dashboard`
    - `/researchers`
    - `/datasets`
    - `/technologies`
    - `/disease-areas`
    - `/projects`
+   - `/compare`
    - `/about`
    - `/status`
-   - `/compare`
 
 ## Final sanity check
 1. Confirm list/detail pages load normally.
@@ -59,4 +77,5 @@ npm run start
 3. Confirm detail-page quick-nav and related links still navigate correctly.
 4. Confirm validation report status is not `failed` before release.
 5. Confirm `/status` shows the expected build/validation summary.
-6. Confirm compare tray and `/compare` URL view load correctly with sample selections.
+6. Confirm `/dashboard` reflects expected coverage and freshness snapshots.
+7. Confirm compare tray and `/compare` URL view load correctly with sample selections.

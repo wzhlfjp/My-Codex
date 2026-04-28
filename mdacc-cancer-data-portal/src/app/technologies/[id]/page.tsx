@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { DetailSectionNav } from "@/components/ui/detail-section-nav";
 import { MetadataList } from "@/components/ui/metadata-list";
@@ -109,7 +109,6 @@ export default async function TechnologyDetailPage({ params }: { params: Promise
                 jsonData={detailExportPayload}
                 className="md:items-end"
               />
-              <CompareToggleButton type="technology" id={technology.id} label={technology.technologyName} />
             </div>
           }
         />
@@ -122,69 +121,97 @@ export default async function TechnologyDetailPage({ params }: { params: Promise
         items={metadataItems}
       />
 
-      <section className="grid gap-4 md:grid-cols-2">
-        <RelatedEntitiesPanel
-          id="related-disease-areas"
-          title="Disease Areas"
-          description="Cancer contexts where this technology appears in linked data."
-          summaryLine={`${formatRelatedSummary(diseaseAreas.length, "disease area")} Shows where this method is currently represented.`}
-          browseHref="/disease-areas"
-          browseLabel="Browse all disease areas"
-          emptyLabel="No disease areas linked in current seed data."
-          items={diseaseAreas.map((item) => ({
-            id: item.id,
-            label: item.diseaseAreaName,
-            href: `/disease-areas/${item.id}`,
-            description: item.diseaseGroup,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-datasets"
-          title="Datasets"
-          description="Datasets using this technology."
-          summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Indicates connected data resources.`}
-          browseHref={`/datasets?q=${encodedTechnologyName}`}
-          browseLabel="Browse matching datasets"
-          emptyLabel="No datasets linked in current seed data."
-          items={datasets.map((item) => ({
-            id: item.id,
-            label: item.datasetName,
-            href: `/datasets/${item.id}`,
-            description: item.datasetType,
-          }))}
-        />
-        <RelatedEntitiesPanel
-          id="related-researchers"
-          title="Researchers"
-          description="Researchers associated with this technology."
-          summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Highlights likely collaborators using this method.`}
-          browseHref={`/researchers?q=${encodedTechnologyName}`}
-          browseLabel="Browse matching researchers"
-          emptyLabel="No researchers linked in current seed data."
-          items={researchers.map((item) => ({
-            id: item.id,
-            label: item.fullName,
-            href: `/researchers/${item.id}`,
-            description: item.department,
-          }))}
-        />
-        {projects.length > 0 ? (
-          <RelatedEntitiesPanel
-            id="related-projects"
-            title="Projects"
-            description="Programs connected via linked datasets."
-            summaryLine={`${formatRelatedSummary(projects.length, "project")} Reflects program activity tied to this method.`}
-            browseHref="/projects"
-            browseLabel="Browse all projects"
-            emptyLabel="No projects linked in current seed data."
-            items={projects.map((item) => ({
-              id: item.id,
-              label: item.projectName,
-              href: `/projects/${item.id}`,
-              description: item.projectType,
-            }))}
-          />
-        ) : null}
+      <section className="grid gap-4 xl:grid-cols-[1.6fr_1fr]">
+        <div className="space-y-4">
+          <section className="grid gap-4 md:grid-cols-2">
+            <RelatedEntitiesPanel
+              id="related-disease-areas"
+              title="Disease Areas"
+              description="Cancer contexts where this technology appears in linked data."
+              summaryLine={`${formatRelatedSummary(diseaseAreas.length, "disease area")} Shows where this method is currently represented.`}
+              browseHref="/disease-areas"
+              browseLabel="Browse all disease areas"
+              emptyLabel="No disease areas linked in current seed data."
+              items={diseaseAreas.map((item) => ({
+                id: item.id,
+                label: item.diseaseAreaName,
+                href: `/disease-areas/${item.id}`,
+                description: item.diseaseGroup,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-datasets"
+              title="Datasets"
+              description="Datasets using this technology."
+              summaryLine={`${formatRelatedSummary(datasets.length, "dataset")} Indicates connected data resources.`}
+              browseHref={`/datasets?q=${encodedTechnologyName}`}
+              browseLabel="Browse matching datasets"
+              emptyLabel="No datasets linked in current seed data."
+              items={datasets.map((item) => ({
+                id: item.id,
+                label: item.datasetName,
+                href: `/datasets/${item.id}`,
+                description: item.datasetType,
+              }))}
+            />
+            <RelatedEntitiesPanel
+              id="related-researchers"
+              title="Researchers"
+              description="Researchers associated with this technology."
+              summaryLine={`${formatRelatedSummary(researchers.length, "researcher")} Highlights likely collaborators using this method.`}
+              browseHref={`/researchers?q=${encodedTechnologyName}`}
+              browseLabel="Browse matching researchers"
+              emptyLabel="No researchers linked in current seed data."
+              items={researchers.map((item) => ({
+                id: item.id,
+                label: item.fullName,
+                href: `/researchers/${item.id}`,
+                description: item.department,
+              }))}
+            />
+            {projects.length > 0 ? (
+              <RelatedEntitiesPanel
+                id="related-projects"
+                title="Projects"
+                description="Programs connected via linked datasets."
+                summaryLine={`${formatRelatedSummary(projects.length, "project")} Reflects program activity tied to this method.`}
+                browseHref="/projects"
+                browseLabel="Browse all projects"
+                emptyLabel="No projects linked in current seed data."
+                items={projects.map((item) => ({
+                  id: item.id,
+                  label: item.projectName,
+                  href: `/projects/${item.id}`,
+                  description: item.projectType,
+                }))}
+              />
+            ) : null}
+          </section>
+        </div>
+
+        <aside className="space-y-4 xl:sticky xl:top-6 xl:h-fit">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Technology Snapshot</h2>
+            <dl className="mt-3 space-y-2 text-sm">
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Category</dt>
+                <dd className="mt-1 text-slate-800">{technology.technologyCategory}</dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Measurement Focus</dt>
+                <dd className="mt-1 text-slate-800">{technology.measurementFocus ?? "Not specified"}</dd>
+              </div>
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Browse Methods</dt>
+                <dd className="mt-1">
+                  <Link href="/technologies" className="font-medium text-blue-800 underline hover:text-blue-700">
+                    View all technologies
+                  </Link>
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </aside>
       </section>
     </div>
   );

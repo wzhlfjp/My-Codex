@@ -241,6 +241,7 @@ Planned top-level routes:
 
 - `/`
 - `/explore`
+- `/dashboard`
 - `/researchers`
 - `/researchers/[id]`
 - `/datasets`
@@ -251,9 +252,9 @@ Planned top-level routes:
 - `/disease-areas/[id]`
 - `/projects`
 - `/projects/[id]`
+- `/compare`
 - `/about`
 - `/status`
-- `/compare`
 
 These routes support both direct lookup and exploratory navigation.
 

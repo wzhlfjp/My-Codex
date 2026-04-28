@@ -32,10 +32,10 @@ export function CompareToggleButton({
         type="button"
         onClick={handleClick}
         className={[
-          "rounded-md border px-2.5 py-1 text-xs font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400",
+          "rounded-xl border px-3 py-1.5 text-xs font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400",
           selected
-            ? "border-slate-800 bg-slate-900 text-white hover:bg-slate-800"
-            : "border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:text-slate-900",
+            ? "border-blue-700 bg-blue-700 text-white hover:bg-blue-600"
+            : "border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 hover:bg-white",
         ].join(" ")}
         aria-pressed={selected}
       >

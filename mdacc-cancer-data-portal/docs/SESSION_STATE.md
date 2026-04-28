@@ -1,13 +1,14 @@
 # SESSION_STATE
 
-Last updated: 2026-04-16
+Last updated: 2026-04-28
 
 ## Current Status
 - Portal is in MVP+ phase with local CSV -> processed JSON pipeline, contract-backed validation, and generated build/validation artifacts.
 - Core entity support is implemented end-to-end for Researchers, Projects, Datasets, Technologies, and Disease Areas.
-- Main discovery surfaces are implemented and connected: Home, Explore, list pages, detail pages, About, and Status.
+- Main discovery surfaces are implemented and connected: Home, Dashboard, Explore, list pages, detail pages, Compare, About, and Status.
 - About/transparency patterns are implemented: data-scope callouts, build-info summary, and links to operational status.
 - Shared UI patterns are established: browse toolbar, entity list cards, metadata chips, empty-state panel, related-entity panel, breadcrumbs, detail quick-nav, and validation summary patterns.
+- Dashboard-style redesign foundation is implemented with a sidebar application shell, refreshed surface/spacing/typography tokens, and updated shared panel/control/card styles.
 - Detail-page depth/navigation pass is implemented across all entity detail routes with section quick-nav, enriched metadata, related-section summaries, and browse-all pathways into list pages.
 - Lightweight share/export capability is implemented across Explore, all entity list pages, and entity detail pages.
 - Lightweight compare/shortlist workflow is implemented for all core entity types (Researchers, Datasets, Projects, Technologies, Disease Areas) with tray, shareable compare URL, compare page, and JSON export.
@@ -18,6 +19,7 @@ Last updated: 2026-04-16
 ## Active Routes
 - `/`
 - `/explore`
+- `/dashboard`
 - `/about`
 - `/status`
 - `/compare`
@@ -48,9 +50,9 @@ Last updated: 2026-04-16
 - Vitest suite is in place with focused helper and pipeline integration coverage.
 - Positive and negative end-to-end pipeline integration tests are implemented.
 - Helper-level coverage includes data contract, validation report shaping, data-health/preflight summaries, browse helpers, explore helpers, compare helpers, export helpers, metadata helpers, onboarding helpers, and recommendations.
-- Latest verified run (2026-04-16) passed end-to-end via `npm run verify`.
-- Latest test snapshot (2026-04-16): 21 test files passed, 62 tests passed.
-- Latest validation warning snapshot (2026-04-16): project source CSV files currently contain no rows.
+- Latest verified run (2026-04-28) passed end-to-end via `npm run verify`.
+- Latest test snapshot (2026-04-28): 22 test files passed, 69 tests passed.
+- Latest validation warning snapshot (2026-04-28): project source CSV files currently contain no rows.
 - Current checks pass:
 - `npm run test`
 - `npm run lint`
@@ -60,6 +62,13 @@ Last updated: 2026-04-16
 ## Recent UI Fix
 - Fixed dark-button text color behavior so active/primary dark buttons keep white text on Home/Explore/nav states.
 - Updated base font stack to prefer Mona Sans -> Regolapro -> Segoe UI/Tahoma/Geneva/Verdana/sans-serif.
+- Removed `Copy Link` from the top Explore results overview action row while keeping CSV/JSON export.
+
+## Recent Redesign Pass
+- Implemented a left-sidebar application shell inspired by dashboard references, including desktop sidebar navigation and compact mobile nav chips.
+- Added a lightweight `/dashboard` route for portal-wide catalog coverage, disease/technology relationship summaries, connected researcher rankings, and data freshness/trust snapshots.
+- Applied the new dashboard visual language to representative routes: `/`, `/dashboard`, `/explore`, `/researchers`, `/researchers/[id]`, and `/status`.
+- Refined shared UI primitives (headers, filters, cards, chips, detail navigation, related/recommendation panels, validation summary, compare/share actions) so non-representative routes remain visually compatible.
 
 ## Recent Search Refinement
 - Added shared search token helpers (`src/lib/search.ts`) for normalized keyword tokenization, synonym expansion, grouped token matching, and grouped relevance scoring.

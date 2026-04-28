@@ -1,0 +1,70 @@
+
+
+When you are about to shut down:
+
+Ask Codex:
+
+“Update SESSION STATE based on current project status.”
+
+It fills it in for you.
+
+You save it in a file like:
+SESSION_STATE.md or
+at top of README
+
+Then after restart:
+“Read SESSION STATE and continue.”
+
+
+
+[by wzh:
+In fact, the Codex created the file in docs/SESSION_STATE.md
+Thanks. 
+]
+
+
+1. You deploy it somewhere (this is the missing piece)
+
+To make your app visible to users, you deploy it to a hosting platform like:
+
+Vercel
+Netlify
+Heroku
+AWS
+
+These platforms:
+
+Pull your code from GitHub
+Run npm install (this recreates node_modules)
+Build and start your app
+Give you a public URL
+
+So users just visit a link like:
+
+https://your-app.vercel.app
+
+They never see node_modules.
+
+
+
+"Explore"
+
+In the "Explore" page
+- top "Explore" panel, Remove the "Copy link" button. 
+
+
+
+
+
+I want to add a dashboard page to this web application. The design of the page should look like the web page attached. Could you please draft a detailed prompt for Codex? Thank you. 
+
+
+I’d like to try a new design for the project, and I’ve attached screenshots for reference. Could you help draft a prompt for Codex that asks it to carefully review the design screenshots and update all project pages accordingly? 
+
+Also, do you think it’s necessary to have Codex implement this in multiple steps, or is it capable of handling these UI changes in a single pass?
+
+
+
+
+
+

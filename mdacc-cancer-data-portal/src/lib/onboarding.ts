@@ -94,9 +94,9 @@ export function buildOnboardingLinks(portalData: PortalData): OnboardingLink[] {
     },
     {
       key: "collaboration-first",
-      title: `See related projects and collaborators ${diseasePhrase || ""}`.trim(),
-      description: "Follow project links and related entities to identify collaboration opportunities.",
-      href: withQuery("/explore", diseaseQuery ? `${diseaseQuery}&type=project` : "type=project"),
+      title: "Review portfolio coverage in Dashboard",
+      description: "Use Dashboard for high-level catalog coverage, relationship patterns, and data freshness context.",
+      href: "/dashboard",
     },
   ];
 }

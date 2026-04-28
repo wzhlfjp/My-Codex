@@ -47,8 +47,8 @@ function FileIssueList({ items }: { items: PortalHealthSummary["filesWithIssues"
   return (
     <ul className="space-y-2">
       {items.map((item) => (
-        <li key={item.fileName} className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700">
-          <p className="font-medium text-slate-800">{item.fileName}</p>
+        <li key={item.fileName} className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700">
+          <p className="font-medium text-[#1f3f70]">{item.fileName}</p>
           <p className="mt-1 text-xs text-slate-600">
             {formatIssueCount(item.errorCount, item.warningCount)}
             {typeof item.rowCount === "number" ? ` - ${item.rowCount} rows` : ""}
@@ -83,7 +83,7 @@ export function ValidationSummary({
 
   if (variant === "compact") {
     return (
-      <section className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+      <section className="rounded-xl border border-slate-200 bg-white p-3 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
         <div className="flex flex-wrap items-center gap-2">
           <span className={`inline-flex rounded-full px-2 py-0.5 text-xs font-semibold ${presentation.badgeClassName}`}>
             {presentation.label}
@@ -103,36 +103,44 @@ export function ValidationSummary({
   }
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-5">
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Validation And Build Health</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Validation And Build Health</h2>
         <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${presentation.badgeClassName}`}>
           {presentation.label}
         </span>
       </div>
 
-      <div className="mt-3 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
-        <p>
-          <span className="font-medium text-slate-800">Issues:</span> {formatIssueCount(summary.errorCount, summary.warningCount)}
+      <div className="mt-4 grid gap-2 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Issues</span>
+          <span className="mt-1 block font-medium text-slate-800">{formatIssueCount(summary.errorCount, summary.warningCount)}</span>
         </p>
-        <p>
-          <span className="font-medium text-slate-800">Source files:</span>{" "}
-          {typeof summary.sourceFileCount === "number" ? summary.sourceFileCount : "Not available"}
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Source Files</span>
+          <span className="mt-1 block font-medium text-slate-800">
+            {typeof summary.sourceFileCount === "number" ? summary.sourceFileCount : "Not available"}
+          </span>
         </p>
-        <p>
-          <span className="font-medium text-slate-800">Last build:</span> {buildDate ?? "Not available"}
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Last Build</span>
+          <span className="mt-1 block font-medium text-slate-800">{buildDate ?? "Not available"}</span>
         </p>
-        <p>
-          <span className="font-medium text-slate-800">Validation report:</span> {validationDate ?? "Not available"}
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Validation Report</span>
+          <span className="mt-1 block font-medium text-slate-800">{validationDate ?? "Not available"}</span>
         </p>
-        <p>
-          <span className="font-medium text-slate-800">Latest source update:</span> {latestSourceDate ?? "Not available"}
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Latest Source Update</span>
+          <span className="mt-1 block font-medium text-slate-800">{latestSourceDate ?? "Not available"}</span>
         </p>
-        <p>
-          <span className="font-medium text-slate-800">Normalized substitutions:</span>{" "}
-          {typeof summary.normalizationSubstitutionCount === "number"
-            ? summary.normalizationSubstitutionCount
-            : "Not available"}
+        <p className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Normalized Substitutions</span>
+          <span className="mt-1 block font-medium text-slate-800">
+            {typeof summary.normalizationSubstitutionCount === "number"
+              ? summary.normalizationSubstitutionCount
+              : "Not available"}
+          </span>
         </p>
       </div>
 
@@ -151,7 +159,7 @@ export function ValidationSummary({
       ) : null}
 
       <div className="mt-4 space-y-3">
-        <h3 className="text-sm font-semibold text-slate-800">Files Needing Attention</h3>
+        <h3 className="text-sm font-semibold text-[#1f3f70]">Files Needing Attention</h3>
         <FileIssueList items={filesForDisplay} />
         {summary.filesWithIssues.length > filesForDisplay.length ? (
           <p className="text-xs text-slate-500">
@@ -161,7 +169,7 @@ export function ValidationSummary({
       </div>
 
       {showIssueDetails && filesForDisplay.some((item) => item.errors.length > 0 || item.warnings.length > 0) ? (
-        <details className="mt-4 rounded-md border border-slate-200 bg-slate-50 p-3">
+        <details className="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-3">
           <summary className="cursor-pointer text-sm font-medium text-slate-700">View issue details</summary>
           <div className="mt-2 space-y-3">
             {filesForDisplay.map((item) => (

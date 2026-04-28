@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
+import { MetadataChips } from "@/components/ui/metadata-chips";
 import { PageHeader } from "@/components/ui/page-header";
-import { EntityListCard } from "@/components/ui/entity-list-card";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
 import { DataScopeCallout } from "@/components/ui/data-scope-callout";
-import { formatUpdatedMetadata, uniqueCompactMetadata } from "@/lib/entity-metadata";
+import { formatUpdatedMetadata } from "@/lib/entity-metadata";
 import { shapeResearcherExportRows } from "@/lib/export-shape";
 import { compareUpdatedDesc, matchesQueryTokens, tokenizeQuery } from "@/lib/list-browse";
 import { getPortalData, getPortalSnapshot } from "@/lib/data/processed-data";
@@ -131,29 +131,53 @@ export default async function ResearchersPage({ searchParams }: { searchParams: 
       />
 
       {filteredResearchers.length > 0 ? (
-        <section className="grid gap-4 md:grid-cols-2">
-          {filteredResearchers.map((researcher) => {
-            const subtitle = [researcher.title, researcher.department].filter(Boolean).join(" - ");
-            return (
-              <div key={researcher.id} className="space-y-1">
-                <EntityListCard
-                  title={researcher.fullName}
-                  subtitle={subtitle || "Researcher profile"}
-                  metadata={uniqueCompactMetadata([
-                    ...(relationships.researcherToDiseaseAreas[researcher.id] ?? [])
-                      .map((id) => diseaseNameById[id])
-                      .slice(0, 2),
-                    ...(relationships.researcherToTechnologies[researcher.id] ?? [])
-                      .map((id) => technologyNameById[id])
-                      .slice(0, 1),
-                  ])}
-                  metaLine={formatUpdatedMetadata(researcher.lastUpdated)}
-                  href={`/researchers/${researcher.id}`}
-                />
-                <CompareToggleButton type="researcher" id={researcher.id} label={researcher.fullName} />
-              </div>
-            );
-          })}
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <div className="hidden grid-cols-[2fr_1.4fr_1.2fr] gap-3 border-b border-slate-200 bg-[var(--surface-muted)] px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500 md:grid">
+            <p>Researcher</p>
+            <p>Focus</p>
+            <p>Snapshot</p>
+          </div>
+
+          <ul className="divide-y divide-slate-100">
+            {filteredResearchers.map((researcher) => {
+              const subtitle = [researcher.title, researcher.department].filter(Boolean).join(" - ");
+              const diseaseChips = (relationships.researcherToDiseaseAreas[researcher.id] ?? [])
+                .map((id) => diseaseNameById[id])
+                .filter(Boolean)
+                .slice(0, 2);
+              const technologyChips = (relationships.researcherToTechnologies[researcher.id] ?? [])
+                .map((id) => technologyNameById[id])
+                .filter(Boolean)
+                .slice(0, 2);
+
+              return (
+                <li key={researcher.id} className="px-4 py-4">
+                  <div className="grid gap-3 md:grid-cols-[2fr_1.4fr_1.2fr] md:items-center">
+                    <div className="min-w-0">
+                      <Link href={`/researchers/${researcher.id}`} className="text-base font-semibold text-[#1f3f70] hover:underline">
+                        {researcher.fullName}
+                      </Link>
+                      <p className="mt-1 text-sm text-slate-600">{subtitle || "Researcher profile"}</p>
+                    </div>
+
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Disease and Technology</p>
+                      <MetadataChips items={[...diseaseChips, ...technologyChips]} max={4} className="mt-1" />
+                    </div>
+
+                    <div className="text-sm text-slate-600">
+                      <p>{formatUpdatedMetadata(researcher.lastUpdated)}</p>
+                      <p className="mt-1 text-xs">
+                        {(relationships.researcherToDatasets[researcher.id] ?? []).length} datasets
+                        {" - "}
+                        {(relationships.researcherToProjects[researcher.id] ?? []).length} projects
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       ) : (
         <EmptyStatePanel

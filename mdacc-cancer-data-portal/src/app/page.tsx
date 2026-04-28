@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { QuickJumpSearch } from "@/components/search/quick-jump-search";
-import { PageHeader } from "@/components/ui/page-header";
 import { MetadataChips } from "@/components/ui/metadata-chips";
+import { PageHeader } from "@/components/ui/page-header";
+import { ValidationSummary } from "@/components/ui/validation-summary";
 import { EXAMPLE_QUESTION_PROMPTS, START_HERE_CARD_CONTENT } from "@/content/onboarding";
-import { getPortalData } from "@/lib/data/processed-data";
+import { getBuildMetadata, getPortalData, getValidationReport } from "@/lib/data/processed-data";
 import { buildOnboardingLinks, buildOnboardingQuestionLinks } from "@/lib/onboarding";
 import { buildRouteMetadata } from "@/lib/site-metadata";
 import { truncateWithEllipsis } from "@/lib/text-format";
@@ -18,10 +19,25 @@ export const metadata: Metadata = buildRouteMetadata({
 });
 
 export default async function HomePage() {
-  const portalData = await getPortalData();
+  const [portalData, buildMetadata, validationReport] = await Promise.all([
+    getPortalData(),
+    getBuildMetadata(),
+    getValidationReport(),
+  ]);
   const { researchers, projects, datasets, technologies, diseaseAreas, relationships } = portalData;
+  const relationshipMaps = Object.values(relationships) as Record<string, string[]>[];
+  const relationshipCount = relationshipMaps.reduce(
+    (sum, relationshipMap) => sum + Object.values(relationshipMap).reduce((inner, ids) => inner + ids.length, 0),
+    0,
+  );
 
   const browseLinks = [
+    {
+      href: "/dashboard",
+      title: "Open Dashboard",
+      count: relationshipCount,
+      note: "Portfolio-wide coverage and linkage summary",
+    },
     { href: "/researchers", title: "Browse Researchers", count: researchers.length, note: "Profiles and collaboration context" },
     { href: "/projects", title: "Browse Projects", count: projects.length, note: "Programs and initiatives" },
     { href: "/datasets", title: "Browse Datasets", count: datasets.length, note: "Data resources and modalities" },
@@ -69,144 +85,181 @@ export default async function HomePage() {
     href: onboardingQuestions[index]?.href ?? "/explore",
   }));
 
+  const metricCards = [
+    { label: "Researchers", value: researchers.length, href: "/researchers" },
+    { label: "Projects", value: projects.length, href: "/projects" },
+    { label: "Datasets", value: datasets.length, href: "/datasets" },
+    { label: "Technologies", value: technologies.length, href: "/technologies" },
+    { label: "Disease Areas", value: diseaseAreas.length, href: "/disease-areas" },
+    { label: "Mapped Relationships", value: relationshipCount, href: "/dashboard" },
+  ];
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <PageHeader
-        title="Discover MD Anderson research expertise, data resources, and technologies"
-        description="Use guided pathways and search-first navigation to move quickly between disease areas, investigator profiles, datasets, technologies, and projects."
+        title="Discovery Dashboard"
+        description="Use a search-first workflow to move quickly between disease areas, investigator profiles, datasets, technologies, and programs."
         actions={
-          <Link
-            href="/explore"
-            className="inline-flex items-center rounded-md bg-slate-900 px-4 py-2 text-sm font-medium !text-white hover:bg-slate-800 hover:!text-white visited:!text-white focus-visible:!text-white"
-          >
-            Open Explore
-          </Link>
+          <div className="flex flex-wrap gap-2 md:justify-end">
+            <Link
+              href="/explore"
+              className="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold !text-white hover:bg-blue-700 hover:!text-white visited:!text-white focus-visible:!text-white"
+            >
+              Open Explore
+            </Link>
+            <Link
+              href="/dashboard"
+              className="inline-flex items-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 hover:bg-white"
+            >
+              Open Dashboard
+            </Link>
+          </div>
         }
       />
 
-      <QuickJumpSearch
-        title="Search and Quick Jump"
-        description="Start with a keyword, optionally narrow by entity type, and continue in Explore with shareable URL filters."
-        defaultType="all"
-        showTypeSelector
-        submitLabel="Search Explore"
-      />
-
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Start Here</h2>
-        <p className="mt-2 text-sm text-slate-700">
-          Use one of these guided pathways to move from a collaboration question to relevant people, datasets, technologies, and projects.
-        </p>
-        <div className="mt-4 grid gap-3 md:grid-cols-2">
-          {START_HERE_CARD_CONTENT.map((card) => {
-            const route = onboardingLinkByKey[card.id] ?? onboardingLinks[0];
-            return (
-              <article key={card.id} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <h3 className="text-sm font-semibold text-slate-900">{card.title}</h3>
-                <p className="mt-1 text-sm text-slate-700">{card.description}</p>
-                {route ? (
-                  <>
-                    <p className="mt-2 text-xs text-slate-600">{route.description}</p>
-                    <Link href={route.href} className="mt-2 inline-block text-sm font-medium text-slate-900 underline hover:text-slate-700">
-                      {card.actionLabel}
-                    </Link>
-                  </>
-                ) : null}
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Curated Example Discovery Paths</h2>
-        <ul className="mt-3 grid gap-3 md:grid-cols-2">
-          {onboardingLinks.map((example) => (
-            <li key={example.key} className="rounded-md border border-slate-200 px-3 py-2">
-              <Link href={example.href} className="text-sm font-medium text-slate-900 underline hover:text-slate-700">
-                {example.title}
-              </Link>
-              <p className="mt-1 text-xs text-slate-600">{example.description}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Example Questions This Portal Can Answer</h2>
-        <ul className="mt-3 space-y-2">
-          {curatedQuestionLinks.map((item) => (
-            <li key={item.question}>
-              <Link href={item.href} className="text-sm text-slate-800 underline hover:text-slate-900">
-                {item.question}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-        {browseLinks.map((link) => (
+      <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-6">
+        {metricCards.map((card) => (
           <Link
-            key={link.href}
-            href={link.href}
-            className="rounded-xl border border-slate-200 bg-white p-4 hover:border-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+            key={card.label}
+            href={card.href}
+            className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:border-blue-200"
           >
-            <p className="break-words text-sm font-semibold text-slate-900">{link.title}</p>
-            <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">{link.count}</p>
-            <p className="mt-1 line-clamp-2 break-words text-xs text-slate-600">{link.note}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">{card.label}</p>
+            <p className="mt-2 text-3xl font-semibold tracking-tight text-[#1f3f70]">{card.value}</p>
           </Link>
         ))}
       </section>
 
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">What You Can Discover</h2>
-        <div className="mt-3 grid gap-3 md:grid-cols-2">
-          <p className="text-sm text-slate-700">Researchers working in specific disease areas and the technologies they use.</p>
-          <p className="text-sm text-slate-700">Projects and programs linking teams, datasets, and disease-focused efforts.</p>
-          <p className="text-sm text-slate-700">Datasets linked to disease context, modalities, and associated research teams.</p>
-          <p className="text-sm text-slate-700">Measurement platforms and methods connected to active data resources.</p>
-          <p className="text-sm text-slate-700">Disease-oriented entry points that branch into people, projects, datasets, and technologies.</p>
+      <section className="grid gap-4 xl:grid-cols-[1.45fr_1fr]">
+        <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Search Workspace</h2>
+          <QuickJumpSearch
+            title="Search and Quick Jump"
+            description="Start with a keyword, optionally narrow by entity type, and continue in Explore with shareable URL filters."
+            defaultType="all"
+            showTypeSelector
+            submitLabel="Search Explore"
+          />
+          <div className="grid gap-3 md:grid-cols-2">
+            <section className="rounded-xl border border-slate-200 bg-slate-50 p-3">
+              <h3 className="text-sm font-semibold text-slate-900">Curated Discovery Paths</h3>
+              <ul className="mt-2 space-y-2">
+                {onboardingLinks.slice(0, 4).map((example) => (
+                  <li key={example.key}>
+                    <Link href={example.href} className="text-sm font-medium text-blue-800 underline hover:text-blue-700">
+                      {example.title}
+                    </Link>
+                    <p className="mt-0.5 text-xs text-slate-600">{example.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <section className="rounded-xl border border-slate-200 bg-slate-50 p-3">
+              <h3 className="text-sm font-semibold text-slate-900">Common Questions</h3>
+              <ul className="mt-2 space-y-2">
+                {curatedQuestionLinks.slice(0, 4).map((item) => (
+                  <li key={item.question}>
+                    <Link href={item.href} className="text-sm text-slate-800 underline hover:text-slate-900">
+                      {item.question}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Portal Health Snapshot</h2>
+            <ValidationSummary
+              buildMetadata={buildMetadata}
+              validationReport={validationReport}
+              variant="compact"
+              showStatusLink={true}
+            />
+          </section>
+
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Start Here</h2>
+            <div className="mt-3 space-y-2">
+              {START_HERE_CARD_CONTENT.slice(0, 3).map((card) => {
+                const route = onboardingLinkByKey[card.id] ?? onboardingLinks[0];
+                return (
+                  <article key={card.id} className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+                    <p className="text-sm font-semibold text-slate-900">{card.title}</p>
+                    <p className="mt-1 text-xs text-slate-600">{card.description}</p>
+                    {route ? (
+                      <Link href={route.href} className="mt-2 inline-block text-xs font-semibold text-blue-800 underline hover:text-blue-700">
+                        {card.actionLabel}
+                      </Link>
+                    ) : null}
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Entity Browsing</h2>
+        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          {browseLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 hover:border-blue-200 hover:bg-blue-50/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <p className="break-words text-sm font-semibold text-[#1f3f70]">{link.title}</p>
+                <p className="shrink-0 rounded-full border border-blue-100 bg-blue-50 px-2 py-0.5 text-xs font-semibold text-blue-900">
+                  {link.count}
+                </p>
+              </div>
+              <p className="mt-2 line-clamp-2 break-words text-xs text-slate-600">{link.note}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
       <section className="grid gap-4 lg:grid-cols-2">
-        <div className="rounded-xl border border-slate-200 bg-white p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Featured Disease Areas</h2>
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Featured Disease Areas</h2>
           <ul className="mt-3 space-y-2">
             {highlightedDiseaseAreas.map((item) => (
               <li key={item.id}>
-                <div className="rounded-md border border-slate-200 px-3 py-2 hover:border-slate-300">
+                <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
                   <p className="break-words text-sm font-medium text-slate-900">{item.name}</p>
                   <p className="mt-1 text-xs text-slate-600">
                     {item.researcherCount} researchers - {item.datasetCount} datasets - {item.technologyCount} technologies
                   </p>
                   <div className="mt-2 flex flex-wrap gap-2">
-                    <Link href={`/disease-areas/${item.id}`} className="text-xs text-slate-700 underline-offset-2 hover:underline">
+                    <Link href={`/disease-areas/${item.id}`} className="text-xs font-medium text-blue-800 underline-offset-2 hover:underline">
                       View Disease Area
                     </Link>
-                    <Link href={`/researchers?disease=${item.id}`} className="text-xs text-slate-700 underline-offset-2 hover:underline">
-                      Browse Researchers
+                    <Link href={`/researchers?disease=${item.id}`} className="text-xs font-medium text-blue-800 underline-offset-2 hover:underline">
+                      Researchers
                     </Link>
-                    <Link href={`/datasets?disease=${item.id}`} className="text-xs text-slate-700 underline-offset-2 hover:underline">
-                      Browse Datasets
+                    <Link href={`/datasets?disease=${item.id}`} className="text-xs font-medium text-blue-800 underline-offset-2 hover:underline">
+                      Datasets
                     </Link>
-                    <Link href={`/projects?disease=${item.id}`} className="text-xs text-slate-700 underline-offset-2 hover:underline">
-                      Browse Projects
+                    <Link href={`/projects?disease=${item.id}`} className="text-xs font-medium text-blue-800 underline-offset-2 hover:underline">
+                      Projects
                     </Link>
                   </div>
                 </div>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
 
-        <div className="rounded-xl border border-slate-200 bg-white p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">Data and Technology Snapshot</h2>
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">Data and Technology Snapshot</h2>
           <ul className="mt-3 space-y-2">
             {representativeDatasets.map((dataset) => (
               <li key={dataset.id}>
-                <Link href={`/datasets/${dataset.id}`} className="block rounded-md border border-slate-200 px-3 py-2 hover:border-slate-300">
+                <Link href={`/datasets/${dataset.id}`} className="block rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 hover:border-blue-200">
                   <p className="break-words text-sm font-medium text-slate-900">{dataset.datasetName}</p>
                   <p className="mt-1 text-xs text-slate-600">{dataset.datasetType} - updated {dataset.lastUpdated ?? "n/a"}</p>
                 </Link>
@@ -219,7 +272,7 @@ export default async function HomePage() {
             items={topTechnologyCategories.map((item) => `${truncateWithEllipsis(item.category, 28)}: ${item.count}`)}
             max={4}
           />
-        </div>
+        </section>
       </section>
     </div>
   );

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
+import { MetadataChips } from "@/components/ui/metadata-chips";
 import { PageHeader } from "@/components/ui/page-header";
-import { EntityListCard } from "@/components/ui/entity-list-card";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
 import { DataScopeCallout } from "@/components/ui/data-scope-callout";
-import { formatUpdatedMetadata, uniqueCompactMetadata } from "@/lib/entity-metadata";
+import { formatUpdatedMetadata } from "@/lib/entity-metadata";
 import { shapeDatasetExportRows } from "@/lib/export-shape";
 import { compareUpdatedDesc, matchesQueryTokens, tokenizeQuery } from "@/lib/list-browse";
 import { getPortalData, getPortalSnapshot } from "@/lib/data/processed-data";
@@ -140,27 +140,50 @@ export default async function DatasetsPage({ searchParams }: { searchParams: Pro
       />
 
       {filteredDatasets.length > 0 ? (
-        <section className="grid gap-4 md:grid-cols-2">
-          {filteredDatasets.map((dataset) => (
-            <div key={dataset.id} className="space-y-1">
-              <EntityListCard
-                title={dataset.datasetName}
-                subtitle={`${dataset.datasetType} - ${dataset.summary}`}
-                metadata={uniqueCompactMetadata([
-                  dataset.datasetType,
-                  ...(relationships.datasetToDiseaseAreas[dataset.id] ?? [])
-                    .map((id) => diseaseNameById[id])
-                    .slice(0, 2),
-                  ...(relationships.datasetToTechnologies[dataset.id] ?? [])
-                    .map((id) => technologyNameById[id])
-                    .slice(0, 1),
-                ])}
-                metaLine={formatUpdatedMetadata(dataset.lastUpdated)}
-                href={`/datasets/${dataset.id}`}
-              />
-              <CompareToggleButton type="dataset" id={dataset.id} label={dataset.datasetName} />
-            </div>
-          ))}
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <div className="hidden grid-cols-[2fr_1.6fr_1.2fr] gap-3 border-b border-slate-200 bg-[var(--surface-muted)] px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500 md:grid">
+            <p>Dataset</p>
+            <p>Context</p>
+            <p>Stewardship</p>
+          </div>
+
+          <ul className="divide-y divide-slate-100">
+            {filteredDatasets.map((dataset) => {
+              const diseaseChips = (relationships.datasetToDiseaseAreas[dataset.id] ?? [])
+                .map((id) => diseaseNameById[id])
+                .filter(Boolean)
+                .slice(0, 2);
+              const technologyChips = (relationships.datasetToTechnologies[dataset.id] ?? [])
+                .map((id) => technologyNameById[id])
+                .filter(Boolean)
+                .slice(0, 2);
+
+              return (
+                <li key={dataset.id} className="px-4 py-4">
+                  <div className="grid gap-3 md:grid-cols-[2fr_1.6fr_1.2fr] md:items-center">
+                    <div className="min-w-0">
+                      <Link href={`/datasets/${dataset.id}`} className="text-base font-semibold text-[#1f3f70] hover:underline">
+                        {dataset.datasetName}
+                      </Link>
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-600">{dataset.summary}</p>
+                    </div>
+
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Disease and Technology</p>
+                      <MetadataChips items={[dataset.datasetType, ...diseaseChips, ...technologyChips]} max={5} className="mt-1" />
+                    </div>
+
+                    <div className="text-sm text-slate-600">
+                      <p>{formatUpdatedMetadata(dataset.lastUpdated)}</p>
+                      <p className="mt-1 text-xs">
+                        Access: {dataset.accessLevel ?? "Not specified"}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       ) : (
         <EmptyStatePanel

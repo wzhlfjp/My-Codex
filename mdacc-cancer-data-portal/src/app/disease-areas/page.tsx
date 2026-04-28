@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ShareExportActions } from "@/components/actions/share-export-actions";
 import { BrowseToolbar } from "@/components/browse/browse-toolbar";
-import { CompareToggleButton } from "@/components/compare/compare-toggle-button";
+import { MetadataChips } from "@/components/ui/metadata-chips";
 import { PageHeader } from "@/components/ui/page-header";
-import { EntityListCard } from "@/components/ui/entity-list-card";
 import { EmptyStatePanel } from "@/components/ui/empty-state-panel";
 import { DataScopeCallout } from "@/components/ui/data-scope-callout";
-import { formatUpdatedMetadata, uniqueCompactMetadata } from "@/lib/entity-metadata";
+import { formatUpdatedMetadata } from "@/lib/entity-metadata";
 import { shapeDiseaseAreaExportRows } from "@/lib/export-shape";
 import { compareUpdatedDesc, matchesQueryTokens, tokenizeQuery } from "@/lib/list-browse";
 import { getDiseaseAreas, getPortalData, getPortalSnapshot } from "@/lib/data/processed-data";
@@ -121,24 +121,55 @@ export default async function DiseaseAreasPage({ searchParams }: { searchParams:
       />
 
       {filteredDiseaseAreas.length > 0 ? (
-        <section className="grid gap-4 md:grid-cols-2">
-          {filteredDiseaseAreas.map((diseaseArea) => (
-            <div key={diseaseArea.id} className="space-y-1">
-              <EntityListCard
-                title={diseaseArea.diseaseAreaName}
-                subtitle={diseaseArea.summary ?? "Disease area summary not provided."}
-                metadata={uniqueCompactMetadata([
-                  diseaseArea.diseaseGroup,
-                  `${(relationships.diseaseAreaToResearchers[diseaseArea.id] ?? []).length} researchers`,
-                  `${(relationships.diseaseAreaToDatasets[diseaseArea.id] ?? []).length} datasets`,
-                  `${(relationships.diseaseAreaToTechnologies[diseaseArea.id] ?? []).length} technologies`,
-                ])}
-                metaLine={formatUpdatedMetadata(diseaseArea.lastUpdated)}
-                href={`/disease-areas/${diseaseArea.id}`}
-              />
-              <CompareToggleButton type="disease-area" id={diseaseArea.id} label={diseaseArea.diseaseAreaName} />
-            </div>
-          ))}
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+          <div className="hidden grid-cols-[2fr_1.6fr_1.2fr] gap-3 border-b border-slate-200 bg-[var(--surface-muted)] px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500 md:grid">
+            <p>Disease Area</p>
+            <p>Context</p>
+            <p>Activity Snapshot</p>
+          </div>
+
+          <ul className="divide-y divide-slate-100">
+            {filteredDiseaseAreas.map((diseaseArea) => {
+              const researcherCount = (relationships.diseaseAreaToResearchers[diseaseArea.id] ?? []).length;
+              const datasetCount = (relationships.diseaseAreaToDatasets[diseaseArea.id] ?? []).length;
+              const technologyCount = (relationships.diseaseAreaToTechnologies[diseaseArea.id] ?? []).length;
+              const projectCount = (relationships.diseaseAreaToProjects[diseaseArea.id] ?? []).length;
+
+              return (
+                <li key={diseaseArea.id} className="px-4 py-4">
+                  <div className="grid gap-3 md:grid-cols-[2fr_1.6fr_1.2fr] md:items-center">
+                    <div className="min-w-0">
+                      <Link href={`/disease-areas/${diseaseArea.id}`} className="text-base font-semibold text-[#1f3f70] hover:underline">
+                        {diseaseArea.diseaseAreaName}
+                      </Link>
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-600">
+                        {diseaseArea.summary ?? "Disease area summary not provided."}
+                      </p>
+                    </div>
+
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Group and Coverage</p>
+                      <MetadataChips
+                        items={[
+                          diseaseArea.diseaseGroup ?? "Disease group not specified",
+                          `${researcherCount} researchers`,
+                          `${datasetCount} datasets`,
+                          `${technologyCount} technologies`,
+                        ]}
+                        max={4}
+                        className="mt-1"
+                      />
+                    </div>
+
+                    <div className="text-sm text-slate-600">
+                      <p>{projectCount} linked projects</p>
+                      <p className="mt-1 text-xs">{formatUpdatedMetadata(diseaseArea.lastUpdated)}</p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </section>
       ) : (
         <EmptyStatePanel

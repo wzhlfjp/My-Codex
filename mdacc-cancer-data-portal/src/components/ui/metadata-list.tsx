@@ -24,14 +24,14 @@ export function MetadataList({
   }
 
   return (
-    <section id={id} className="scroll-mt-24 rounded-xl border border-slate-200 bg-white p-4">
-      <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-700">{title}</h2>
+    <section id={id} className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-[#1f3f70]">{title}</h2>
       {description ? <p className="mt-1 text-xs text-slate-600">{description}</p> : null}
-      <dl className="mt-3 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+      <dl className="mt-4 grid gap-3 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
         {visibleItems.map((item) => (
-          <div key={item.label} className="min-w-0">
-            <dt className="break-words font-medium text-slate-900">{item.label}</dt>
-            <dd className="break-words">{item.value}</dd>
+          <div key={item.label} className="min-w-0 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2">
+            <dt className="break-words text-xs font-semibold uppercase tracking-wide text-slate-500">{item.label}</dt>
+            <dd className="mt-1 break-words font-medium text-slate-800">{item.value}</dd>
           </div>
         ))}
       </dl>

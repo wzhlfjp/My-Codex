@@ -21,7 +21,7 @@ export function MetadataChips({
           key={`${chip}-${index}`}
           title={chip}
           aria-label={chip}
-          className="max-w-[14rem] overflow-hidden text-ellipsis whitespace-nowrap rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1 text-xs text-slate-700 sm:max-w-[16rem]"
+          className="max-w-[14rem] overflow-hidden text-ellipsis whitespace-nowrap rounded-full border border-blue-100 bg-blue-50/70 px-2.5 py-1 text-xs font-medium text-blue-900 sm:max-w-[16rem]"
         >
           {truncateWithEllipsis(chip, 44)}
         </li>
