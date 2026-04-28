@@ -32,12 +32,6 @@ export default async function HomePage() {
   );
 
   const browseLinks = [
-    {
-      href: "/dashboard",
-      title: "Open Dashboard",
-      count: relationshipCount,
-      note: "Portfolio-wide coverage and linkage summary",
-    },
     { href: "/researchers", title: "Browse Researchers", count: researchers.length, note: "Profiles and collaboration context" },
     { href: "/projects", title: "Browse Projects", count: projects.length, note: "Programs and initiatives" },
     { href: "/datasets", title: "Browse Datasets", count: datasets.length, note: "Data resources and modalities" },
@@ -99,22 +93,6 @@ export default async function HomePage() {
       <PageHeader
         title="Discovery Dashboard"
         description="Use a search-first workflow to move quickly between disease areas, investigator profiles, datasets, technologies, and programs."
-        actions={
-          <div className="flex flex-wrap gap-2 md:justify-end">
-            <Link
-              href="/explore"
-              className="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold !text-white hover:bg-blue-700 hover:!text-white visited:!text-white focus-visible:!text-white"
-            >
-              Open Explore
-            </Link>
-            <Link
-              href="/dashboard"
-              className="inline-flex items-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 hover:border-slate-300 hover:bg-white"
-            >
-              Open Dashboard
-            </Link>
-          </div>
-        }
       />
 
       <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-6">
