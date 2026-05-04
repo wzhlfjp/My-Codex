@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>America's Best Colleges Over Time</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <style>
+    :root {
+      --canvas-w: min(100vw, calc(100vh * 9 / 16));
+      --canvas-h: calc(var(--canvas-w) * 16 / 9);
+      --ink: #f9fbff;
+      --gold: #f0c35a;
+      --line: rgba(255, 255, 255, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      overflow: hidden;
+      background: #06162d;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .stage {
+      position: relative;
+      width: var(--canvas-w);
+      height: var(--canvas-h);
+      max-width: 1080px;
+      max-height: 1920px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 16% 8%, rgba(240, 195, 90, 0.28), transparent 29%),
+        radial-gradient(circle at 84% 70%, rgba(39, 199, 189, 0.22), transparent 31%),
+        linear-gradient(145deg, #10264b 0%, #071c36 52%, #03101f 100%);
+      box-shadow: 0 22px 80px rgba(0, 0, 0, 0.34);
+      isolation: isolate;
+    }
+
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(4, 19, 39, 0.04), rgba(4, 19, 39, 0.5)),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 92px);
+      mix-blend-mode: soft-light;
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      padding: 6.2% 7.6% 8.2%;
+      display: grid;
+      grid-template-rows: auto auto minmax(0, 1fr) auto;
+      gap: 1.35%;
+    }
+
+    header {
+      padding-top: 1%;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7em;
+      margin: 0 0 1.35%;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: clamp(10px, calc(var(--canvas-w) * 0.021), 23px);
+      font-weight: 850;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 2.7em;
+      height: 2px;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--gold), #27c7bd);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 86%;
+      color: #fffdf6;
+      font-size: clamp(31px, calc(var(--canvas-w) * 0.063), 68px);
+      line-height: 0.98;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-shadow: 0 9px 26px rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+      margin: 1.8% 0 0;
+      color: var(--gold);
+      font-size: clamp(18px, calc(var(--canvas-w) * 0.037), 40px);
+      line-height: 1.1;
+      font-weight: 880;
+      letter-spacing: 0;
+    }
+
+    .progress-wrap {
+      width: 100%;
+      height: clamp(8px, calc(var(--canvas-w) * 0.013), 15px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.16);
+    }
+
+    .progress {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #f0c35a, #27c7bd, #78b8ff);
+      box-shadow: 0 0 26px rgba(39, 199, 189, 0.55);
+    }
+
+    .chart-shell {
+      position: relative;
+      min-height: 0;
+      padding: 3.2% 3.7% 2.6%;
+      border: 1px solid var(--line);
+      border-radius: clamp(22px, calc(var(--canvas-w) * 0.034), 38px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.058));
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(16px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .insight {
+      flex: none;
+      margin: 0 0 1.6%;
+      color: rgba(255, 253, 246, 0.78);
+      font-size: clamp(12px, calc(var(--canvas-w) * 0.023), 25px);
+      line-height: 1.25;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: visible;
+    }
+
+    .rank-label {
+      fill: #f0c35a;
+      font-size: 22px;
+      font-weight: 950;
+      text-anchor: end;
+      paint-order: stroke;
+      stroke: rgba(0, 0, 0, 0.36);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+
+    .college-label {
+      fill: #fffefa;
+      font-size: 19px;
+      font-weight: 860;
+      paint-order: stroke;
+      stroke: rgba(0, 0, 0, 0.36);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+
+    .score-label {
+      fill: #ffffff;
+      font-size: 18px;
+      font-weight: 920;
+      paint-order: stroke;
+      stroke: rgba(0, 0, 0, 0.46);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+
+    .metric-label {
+      fill: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      font-weight: 760;
+      paint-order: stroke;
+      stroke: rgba(0, 0, 0, 0.36);
+      stroke-width: 3px;
+      stroke-linejoin: round;
+    }
+
+    .axis-label {
+      fill: rgba(255, 255, 255, 0.42);
+      font-size: 16px;
+      font-weight: 720;
+    }
+
+    .tick line {
+      stroke: rgba(255, 255, 255, 0.045);
+      stroke-width: 1.4;
+    }
+
+    .tick text {
+      fill: rgba(255, 255, 255, 0.28);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .domain {
+      display: none;
+    }
+
+    .footer-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 6%;
+      padding: 0 2.6% 2.2% 0;
+    }
+
+    .note {
+      max-width: 500px;
+      margin: 0 0 2.4%;
+      color: rgba(255, 255, 255, 0.47);
+      font-size: clamp(10px, calc(var(--canvas-w) * 0.018), 20px);
+      line-height: 1.34;
+      font-weight: 620;
+    }
+
+    .note span {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .year-box {
+      min-width: clamp(132px, calc(var(--canvas-w) * 0.27), 292px);
+      margin-right: 3.8%;
+      margin-bottom: 3.8%;
+      text-align: right;
+    }
+
+    .year {
+      display: block;
+      color: rgba(255, 255, 255, 0.95);
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(54px, calc(var(--canvas-w) * 0.135), 146px);
+      line-height: 0.88;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+      transform-origin: 50% 55%;
+    }
+
+    .year-caption {
+      margin-top: 4%;
+      color: var(--gold);
+      font-size: clamp(9px, calc(var(--canvas-w) * 0.017), 19px);
+      font-weight: 850;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .replay {
+      position: absolute;
+      right: 7.6%;
+      top: 3.9%;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      padding: clamp(6px, calc(var(--canvas-w) * 0.013), 14px) clamp(10px, calc(var(--canvas-w) * 0.024), 26px);
+      color: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(12px);
+      font: inherit;
+      font-size: clamp(10px, calc(var(--canvas-w) * 0.019), 21px);
+      font-weight: 760;
+      cursor: pointer;
+      opacity: 0.54;
+      transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
+    }
+
+    .stage.playing .replay {
+      opacity: 0.14;
+    }
+
+    .stage.complete .replay {
+      opacity: 0.72;
+    }
+
+    .row.top-rank .bar {
+      filter: url(#topBarGlow);
+    }
+
+    .replay:hover,
+    .replay:focus-visible {
+      opacity: 1;
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .replay:focus-visible {
+      outline: 3px solid rgba(240, 195, 90, 0.78);
+      outline-offset: 4px;
+    }
+
+    @media (max-aspect-ratio: 9 / 16) {
+      :root {
+        --canvas-h: 100vh;
+        --canvas-w: calc(var(--canvas-h) * 9 / 16);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage" id="stage">
+    <button class="replay" type="button" id="replay">Replay</button>
+    <section class="content" aria-label="Animated U.S. News college ranking chart">
+      <header>
+        <p class="kicker">Best Colleges</p>
+        <h1>America's Best Colleges Over Time</h1>
+        <p class="subtitle">U.S. News Rankings &bull; 1983 &rarr; 2025</p>
+      </header>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="chart-shell">
+        <p class="insight">College rankings shift slowly — but competition at the top is intense.</p>
+        <svg id="chart" viewBox="0 0 940 1200" role="img" aria-label="Animated top 20 U.S. college rankings"></svg>
+      </div>
+
+      <footer class="footer-row">
+        <p class="note">
+          Source: U.S. News &amp; World Report; some values may be approximate or interpolated.
+          <span>Methodology changed over time; compare historical ranks with caution.</span>
+        </p>
+        <div class="year-box" aria-label="Ranking year">
+          <span class="year" id="year">1983</span>
+          <div class="year-caption">Ranking Year</div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    // Rank data is a compact storytelling dataset inspired by U.S. News Best Colleges rankings.
+    // Early lists and historical scores are not consistently available; rank drives the animation and unavailable scores are shown as N/A.
+    const colleges = {
+      princeton: { name: "Princeton", color: "#f0c35a", admit: 4, grad: 98 },
+      mit: { name: "MIT", color: "#27c7bd", admit: 4, grad: 96 },
+      harvard: { name: "Harvard", color: "#e45756", admit: 3, grad: 98 },
+      stanford: { name: "Stanford", color: "#4e79a7", admit: 4, grad: 96 },
+      yale: { name: "Yale", color: "#59a14f", admit: 4, grad: 97 },
+      caltech: { name: "Caltech", color: "#b07aa1", admit: 3, grad: 94 },
+      duke: { name: "Duke", color: "#45b7d1", admit: 6, grad: 96 },
+      hopkins: { name: "Johns Hopkins", color: "#ff9da7", admit: 7, grad: 94 },
+      northwestern: { name: "Northwestern", color: "#76b7b2", admit: 7, grad: 95 },
+      penn: { name: "Penn", color: "#f28e2b", admit: 6, grad: 96 },
+      cornell: { name: "Cornell", color: "#9c755f", admit: 8, grad: 95 },
+      uchicago: { name: "UChicago", color: "#af7aa1", admit: 5, grad: 95 },
+      brown: { name: "Brown", color: "#edc948", admit: 5, grad: 96 },
+      columbia: { name: "Columbia", color: "#8cd17d", admit: 4, grad: 95 },
+      dartmouth: { name: "Dartmouth", color: "#86bcb6", admit: 6, grad: 96 },
+      ucla: { name: "UCLA", color: "#499894", admit: 9, grad: 92 },
+      berkeley: { name: "UC Berkeley", color: "#fabfd2", admit: 11, grad: 93 },
+      rice: { name: "Rice", color: "#b6992d", admit: 8, grad: 94 },
+      notreDame: { name: "Notre Dame", color: "#1f77b4", admit: 12, grad: 96 },
+      vanderbilt: { name: "Vanderbilt", color: "#d37295", admit: 6, grad: 94 },
+      georgetown: { name: "Georgetown", color: "#7f7f7f", admit: 12, grad: 94 },
+      virginia: { name: "Virginia", color: "#bcbd22", admit: 17, grad: 94 },
+      michigan: { name: "Michigan", color: "#17becf", admit: 18, grad: 93 },
+      emory: { name: "Emory", color: "#ffbf79", admit: 11, grad: 91 },
+      carnegie: { name: "Carnegie Mellon", color: "#aec7e8", admit: 11, grad: 91 }
+    };
+
+    const anchorSnapshots = [
+      { year: 1983, scores: false, order: ["stanford", "harvard", "yale", "princeton", "berkeley", "mit", "michigan", "cornell", "columbia", "uchicago", "penn", "dartmouth", "brown", "caltech", "duke", "northwestern", "hopkins", "virginia", "georgetown", "ucla"] },
+      { year: 1988, scores: false, order: ["harvard", "stanford", "yale", "princeton", "mit", "berkeley", "cornell", "michigan", "columbia", "dartmouth", "uchicago", "penn", "brown", "duke", "caltech", "northwestern", "hopkins", "virginia", "georgetown", "ucla"] },
+      { year: 1995, scores: false, order: ["harvard", "princeton", "yale", "stanford", "mit", "duke", "penn", "dartmouth", "columbia", "brown", "caltech", "cornell", "uchicago", "northwestern", "hopkins", "berkeley", "georgetown", "virginia", "michigan", "ucla"] },
+      { year: 2000, scores: false, order: ["princeton", "harvard", "yale", "stanford", "caltech", "mit", "duke", "penn", "dartmouth", "columbia", "cornell", "uchicago", "northwestern", "brown", "hopkins", "rice", "berkeley", "virginia", "georgetown", "ucla"] },
+      { year: 2005, scores: true, order: ["harvard", "princeton", "yale", "penn", "duke", "stanford", "caltech", "mit", "columbia", "dartmouth", "cornell", "washu", "northwestern", "brown", "hopkins", "uchicago", "rice", "vanderbilt", "notreDame", "berkeley"] },
+      { year: 2010, scores: true, order: ["harvard", "princeton", "yale", "columbia", "stanford", "penn", "caltech", "mit", "dartmouth", "duke", "uchicago", "northwestern", "hopkins", "cornell", "brown", "rice", "vanderbilt", "notreDame", "emory", "berkeley"] },
+      { year: 2015, scores: true, order: ["princeton", "harvard", "yale", "columbia", "stanford", "uchicago", "mit", "duke", "penn", "caltech", "hopkins", "dartmouth", "northwestern", "brown", "cornell", "vanderbilt", "rice", "notreDame", "berkeley", "ucla"] },
+      { year: 2020, scores: true, order: ["princeton", "harvard", "columbia", "mit", "yale", "stanford", "uchicago", "penn", "northwestern", "duke", "hopkins", "caltech", "dartmouth", "brown", "vanderbilt", "rice", "cornell", "notreDame", "ucla", "washu"] },
+      { year: 2025, scores: true, order: ["princeton", "mit", "harvard", "stanford", "yale", "caltech", "duke", "hopkins", "northwestern", "penn", "cornell", "uchicago", "brown", "columbia", "dartmouth", "ucla", "berkeley", "rice", "notreDame", "vanderbilt"] }
+    ];
+
+    colleges.washu = { name: "WashU", color: "#c49c94", admit: 12, grad: 94 };
+
+    function rankMap(snapshot) {
+      return new Map(snapshot.order.map((key, index) => [key, index + 1]));
+    }
+
+    function interpolateOrder(year) {
+      const exact = anchorSnapshots.find(snapshot => snapshot.year === year);
+      if (exact) return exact.order.slice(0, 20);
+
+      const previous = [...anchorSnapshots].reverse().find(snapshot => snapshot.year < year) || anchorSnapshots[0];
+      const next = anchorSnapshots.find(snapshot => snapshot.year > year) || anchorSnapshots[anchorSnapshots.length - 1];
+      const previousRanks = rankMap(previous);
+      const nextRanks = rankMap(next);
+      const allKeys = Array.from(new Set([...previous.order, ...next.order]));
+      const progress = previous.year === next.year ? 0 : (year - previous.year) / (next.year - previous.year);
+
+      return allKeys
+        .map(key => {
+          const fallback = Math.max(previous.order.length, next.order.length) + 4;
+          const fromRank = previousRanks.get(key) ?? fallback;
+          const toRank = nextRanks.get(key) ?? fallback;
+          return {
+            key,
+            rankScore: fromRank + (toRank - fromRank) * progress
+          };
+        })
+        .sort((a, b) => d3.ascending(a.rankScore, b.rankScore) || d3.ascending(a.key, b.key))
+        .slice(0, 20)
+        .map(item => item.key);
+    }
+
+    function hasScoreForYear(year) {
+      return year >= 2005;
+    }
+
+    const yearlyRankings = d3.range(1983, 2026).map(year => ({
+      year,
+      scores: hasScoreForYear(year),
+      order: interpolateOrder(year)
+    }));
+
+    const duration = 30;
+    const startYear = 1983;
+    const endYear = 2025;
+    const svg = d3.select("#chart");
+    const progressEl = document.querySelector("#progress");
+    const yearEl = document.querySelector("#year");
+    const stageEl = document.querySelector("#stage");
+    const replayButton = document.querySelector("#replay");
+
+    const width = 940;
+    const height = 1200;
+    const margin = { top: 48, right: 148, bottom: 64, left: 22 };
+    const labelWidth = 372;
+    const chartX = margin.left + labelWidth;
+    const chartWidth = width - chartX - margin.right;
+    const yTop = margin.top + 38;
+    const y = d3.scaleBand()
+      .domain(d3.range(20))
+      .range([yTop, yTop + 1060])
+      .paddingInner(0.22)
+      .paddingOuter(0.06);
+    const rowHeight = y.bandwidth();
+    const barHeight = 25;
+    const rowCenterY = rowHeight / 2;
+    const barY = rowCenterY - barHeight / 2;
+    const nameY = rowCenterY - 9;
+    const metricY = rowCenterY + 13;
+    const x = d3.scaleLinear().domain([0, 100]).range([0, chartWidth]);
+    const rows = svg.append("g").attr("class", "rows");
+    let renderedYear = null;
+    let lastYear = startYear;
+
+    const axis = d3.axisTop(x)
+      .tickValues([60, 70, 80, 90, 100])
+      .tickSize(-(height - margin.top - margin.bottom - 40))
+      .tickFormat(d => d);
+
+    svg.append("g")
+      .attr("class", "x-axis")
+      .attr("transform", `translate(${chartX},${margin.top})`)
+      .call(axis);
+
+    svg.append("text")
+      .attr("class", "axis-label")
+      .attr("x", chartX)
+      .attr("y", margin.top - 30)
+      .text("Bar length: U.S. News score when available; otherwise rank-scaled");
+
+    function yearlySnapshot(year) {
+      const displayYear = Math.max(startYear, Math.min(endYear, Math.round(year)));
+      return yearlyRankings.find(item => item.year === displayYear) || yearlyRankings[0];
+    }
+
+    function dataForYear(year) {
+      const snap = yearlySnapshot(year);
+      return snap.order.slice(0, 20).map((key, i) => {
+        const rank = i + 1;
+        const score = snap.scores ? Math.max(70, Math.round(100 - (rank - 1) * 1.45)) : null;
+        return {
+          key,
+          ...colleges[key],
+          rank,
+          score,
+          visual: score ?? Math.max(56, 101 - rank * 2.2)
+        };
+      });
+    }
+
+    function bgColor(progress) {
+      if (progress < 0.48) {
+        return d3.interpolateRgb("#10264b", "#0b3b58")(progress / 0.48);
+      }
+      return d3.interpolateRgb("#0b3b58", "#03101f")((progress - 0.48) / 0.52);
+    }
+
+    function draw(year, first = false) {
+      const snap = yearlySnapshot(year);
+      const displayYear = snap.year;
+      const data = dataForYear(year);
+      const progress = (year - startYear) / (endYear - startYear);
+
+      progressEl.style.width = `${Math.max(0, Math.min(100, progress * 100))}%`;
+      stageEl.style.background = `
+        radial-gradient(circle at 16% 8%, rgba(240, 195, 90, ${0.28 - progress * 0.08}), transparent 29%),
+        radial-gradient(circle at 84% 70%, rgba(39, 199, 189, ${0.18 + progress * 0.12}), transparent 31%),
+        linear-gradient(145deg, ${bgColor(progress)} 0%, ${d3.interpolateRgb("#071c36", "#09294b")(progress)} 52%, ${d3.interpolateRgb("#03101f", "#020913")(progress)} 100%)`;
+
+      if (displayYear === renderedYear && !first) return;
+
+      renderedYear = displayYear;
+      rows.selectAll(".row").interrupt();
+      rows.selectAll(".row *").interrupt();
+      const t = first ? svg.transition().duration(0) : svg.transition().duration(520).ease(d3.easeCubicInOut);
+
+      if (displayYear !== lastYear || first) {
+        yearEl.textContent = displayYear;
+        gsap.fromTo(yearEl, {
+          yPercent: -18,
+          rotateX: 54,
+          opacity: 0.28,
+          scale: 0.95
+        }, {
+          yPercent: 0,
+          rotateX: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 0.36,
+          ease: "power3.out"
+        });
+        lastYear = displayYear;
+      }
+
+      const row = rows.selectAll(".row").data(data, d => d.key);
+      const entered = row.enter()
+        .append("g")
+        .attr("class", "row")
+        .attr("transform", (d, i) => `translate(0,${y(i)})`)
+        .attr("opacity", 0);
+
+      entered.append("text")
+        .attr("class", "rank-label")
+        .attr("x", margin.left + 42)
+        .attr("y", rowCenterY)
+        .attr("dominant-baseline", "middle")
+        .text(d => `#${d.rank}`);
+
+      entered.append("text")
+        .attr("class", "college-label")
+        .attr("x", margin.left + 62)
+        .attr("y", nameY)
+        .attr("dominant-baseline", "middle")
+        .text(d => d.name);
+
+      entered.append("text")
+        .attr("class", "metric-label")
+        .attr("x", margin.left + 62)
+        .attr("y", metricY)
+        .attr("dominant-baseline", "middle")
+        .text(d => `Adm. ${d.admit}%   Grad. ${d.grad}%`);
+
+      entered.append("rect")
+        .attr("class", "bar")
+        .attr("x", chartX)
+        .attr("y", barY)
+        .attr("rx", 10)
+        .attr("ry", 10)
+        .attr("height", barHeight)
+        .attr("width", 0)
+        .attr("fill", d => d.color)
+        .attr("filter", "url(#barShadow)");
+
+      entered.append("text")
+        .attr("class", "score-label")
+        .attr("x", chartX + 8)
+        .attr("y", rowCenterY)
+        .attr("dominant-baseline", "middle")
+        .text(d => d.score === null ? "Score N/A" : `Score ${d.score}`);
+
+      const merged = entered.merge(row);
+      merged.classed("top-rank", (d, i) => displayYear === endYear && i === 0);
+
+      merged.transition(t)
+        .attr("opacity", 1)
+        .attr("transform", (d, i) => `translate(0,${y(i)})`);
+
+      merged.select(".rank-label")
+        .transition(t)
+        .tween("text", function(d) {
+          this.textContent = `#${d.rank}`;
+        });
+
+      merged.select(".bar")
+        .transition(t)
+        .attr("width", d => x(d.visual));
+
+      merged.select(".score-label")
+        .transition(t)
+        .attr("x", d => Math.min(chartX + x(d.visual) + 18, width - 44))
+        .tween("text", function(d) {
+          this.textContent = d.score === null ? "Score N/A" : `Score ${d.score}`;
+        });
+
+      merged.select(".metric-label")
+        .text(d => `Adm. ${d.admit}%   Grad. ${d.grad}%`);
+
+      row.exit().transition(t).attr("opacity", 0).remove();
+    }
+
+    svg.append("defs").html(`
+      <filter id="barShadow" x="-10%" y="-70%" width="130%" height="240%">
+        <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#001326" flood-opacity="0.28"/>
+      </filter>
+      <filter id="topBarGlow" x="-14%" y="-100%" width="140%" height="300%">
+        <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#f0c35a" flood-opacity="0.34"/>
+        <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#001326" flood-opacity="0.28"/>
+      </filter>
+    `);
+
+    const state = { year: startYear };
+    let timeline;
+
+    function play() {
+      if (timeline) timeline.kill();
+      gsap.killTweensOf(yearEl);
+      gsap.killTweensOf(".top-rank");
+      stageEl.classList.remove("complete");
+      stageEl.classList.add("playing");
+      state.year = startYear;
+      lastYear = 0;
+      renderedYear = null;
+      draw(startYear, true);
+      timeline = gsap.timeline();
+      timeline.to(state, {
+        year: endYear,
+        duration,
+        ease: "none",
+        onUpdate: () => draw(state.year),
+        onComplete: finishAnimation
+      });
+    }
+
+    function finishAnimation() {
+      stageEl.classList.remove("playing");
+      stageEl.classList.add("complete");
+      draw(endYear);
+      gsap.fromTo(yearEl, { scale: 1 }, {
+        scale: 1.04,
+        duration: 0.72,
+        yoyo: true,
+        repeat: 1,
+        ease: "sine.inOut"
+      });
+      gsap.fromTo(".row.top-rank", { scale: 1 }, {
+        scale: 1.012,
+        transformOrigin: "50% 50%",
+        duration: 0.82,
+        yoyo: true,
+        repeat: 1,
+        ease: "sine.inOut"
+      });
+    }
+
+    replayButton.addEventListener("click", play);
+    window.addEventListener("load", play);
+  </script>
+</body>
+</html>
