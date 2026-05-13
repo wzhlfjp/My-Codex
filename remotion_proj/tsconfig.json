@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "packages/*/src",
+    "best-colleges-tuition/src",
+    "best-colleges-tuition/remotion.config.ts"
+  ]
+}

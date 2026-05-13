@@ -1,0 +1,22 @@
+{
+  "name": "best-colleges-tuition",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts BestCollegesTuition out/best-colleges-tuition.mp4",
+    "build": "pnpm typecheck",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@remotion-proj/animation-utils": "workspace:*",
+    "@remotion-proj/remotion-components": "workspace:*",
+    "@remotion-proj/shared": "workspace:*",
+    "@remotion/cli": "^4.0.459",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "remotion": "^4.0.459"
+  }
+}

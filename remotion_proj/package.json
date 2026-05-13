@@ -1,0 +1,25 @@
+{
+  "name": "remotion-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A pnpm workspace for Remotion video projects.",
+  "scripts": {
+    "dev:best-colleges-tuition": "pnpm --filter best-colleges-tuition dev",
+    "render:best-colleges-tuition": "pnpm --filter best-colleges-tuition render",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Get-ChildItem -Path best-colleges-tuition,packages -Recurse -Force -Directory -Include out,dist,.remotion -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.7.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^10.3.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3"
+  },
+  "packageManager": "pnpm@11.1.1"
+}
