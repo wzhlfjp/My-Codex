@@ -8,10 +8,13 @@
     "start:best-colleges-tuition": "pnpm --filter best-colleges-tuition start",
     "dev:best-colleges-tuition": "pnpm --filter best-colleges-tuition dev",
     "render:best-colleges-tuition": "pnpm --filter best-colleges-tuition render",
+    "start:best-colleges-endowment": "pnpm --filter best-colleges-endowment start",
+    "dev:best-colleges-endowment": "pnpm --filter best-colleges-endowment dev",
+    "render:best-colleges-endowment": "pnpm --filter best-colleges-endowment render",
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Get-ChildItem -Path best-colleges-tuition,packages -Recurse -Force -Directory -Include out,dist,.remotion -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force\""
+    "clean": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Get-ChildItem -Path best-colleges-tuition,best-colleges-endowment,packages -Recurse -Force -Directory -Include out,dist,.remotion -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
