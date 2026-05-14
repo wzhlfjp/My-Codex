@@ -1,15 +1,15 @@
 import { Composition } from "remotion";
-import { BestCollegesTuition } from "./Composition";
+import { BestCollegesTuition } from "./BestCollegesComposition";
 
 export const RemotionRoot = () => {
   return (
     <Composition
       id="BestCollegesTuition"
       component={BestCollegesTuition}
-      durationInFrames={240}
+      durationInFrames={1290}
       fps={30}
-      width={1920}
-      height={1080}
+      width={1080}
+      height={1920}
     />
   );
 };

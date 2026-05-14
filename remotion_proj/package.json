@@ -5,6 +5,7 @@
   "type": "module",
   "description": "A pnpm workspace for Remotion video projects.",
   "scripts": {
+    "start:best-colleges-tuition": "pnpm --filter best-colleges-tuition start",
     "dev:best-colleges-tuition": "pnpm --filter best-colleges-tuition dev",
     "render:best-colleges-tuition": "pnpm --filter best-colleges-tuition render",
     "build": "pnpm -r build",

@@ -1,23 +1,70 @@
+# Dependencies
 node_modules/
 **/node_modules/
 .pnpm-store/
 
+# pnpm workspace metadata that is local to an install
+node_modules/.modules.yaml
+node_modules/.pnpm-workspace-state-v1.json
+
+# Generated builds and render outputs
 dist/
 **/dist/
 build/
 **/build/
 out/
 **/out/
+renders/
+**/renders/
+
+# Remotion caches and local render artifacts
 .remotion/
 **/.remotion/
-*.tsbuildinfo
+.cache/
+**/.cache/
 
+# TypeScript and test output
+*.tsbuildinfo
+coverage/
+**/coverage/
+
+# Logs
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
 .env
 .env.*
 !.env.example
 
+# Accidental non-pnpm lockfiles
+package-lock.json
+**/package-lock.json
+npm-shrinkwrap.json
+**/npm-shrinkwrap.json
+yarn.lock
+**/yarn.lock
+
+# OS files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
+# Editor files
 .vscode/*
 !.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+**/tmp/
+**/temp/
