@@ -47,7 +47,7 @@ export const RankingChart = ({
           textShadow: "0 4px 14px rgba(0, 0, 0, 0.42)"
         }}
       >
-        Best Colleges with Endowment
+        Best Colleges: Endowments
       </div>
       <div
         style={{

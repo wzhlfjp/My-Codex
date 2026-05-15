@@ -24,13 +24,13 @@ export const layout = {
   cardLeft: 58,
   cardTop: 425,
   cardWidth: 964,
-  cardHeight: 1160,
+  cardHeight: 1180,
   cardPaddingX: 30,
   cardPaddingTop: 30,
   yearRight: 86,
   yearBottom: 102,
   sourceLeft: 78,
-  sourceBottom: 80
+  sourceBottom: 85
 } as const;
 
 export const chartLayout = {
