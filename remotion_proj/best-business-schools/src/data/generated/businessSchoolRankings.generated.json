@@ -1,0 +1,5553 @@
+{
+  "startYear": 2000,
+  "endYear": 2026,
+  "visualMetric": {
+    "id": "ranking_movement",
+    "label": "Rank movement",
+    "note": "The scoreboard uses U.S. News rank for row order and movement indicators derived from the previous verified ranking year. No bar-length metric or other quantitative metric is used."
+  },
+  "sources": {
+    "infogram_1990_2021": {
+      "title": "US News MBA Rankings 1990-2021",
+      "url": "https://infogram.com/us-news-mba-rankings-1990-2021-1h0r6r9gp8336ek",
+      "sourceType": "secondary_user_compilation",
+      "confidence": "medium_low"
+    },
+    "pq_historical_2001_2012": {
+      "title": "Poets&Quants - U.S. News' Historical MBA Rankings",
+      "url": "https://poetsandquants.com/2012/04/18/u-s-news-historical-mba-rankings/2/",
+      "sourceType": "secondary_reported_from_us_news",
+      "confidence": "high"
+    },
+    "pq_2026_recent": {
+      "title": "Poets&Quants - Stanford Returns To No. 1 In 2026 U.S. News MBA Ranking",
+      "url": "https://poetsandquants.com/2026/04/06/stanford-returns-to-no-1-in-u-s-news-mba-ranking-as-volatility-ripples-across-the-list/3/",
+      "sourceType": "secondary_reported_from_us_news",
+      "confidence": "high"
+    },
+    "pq_2019_metrics": {
+      "title": "Poets&Quants - U.S. News Best MBA Program in 2018: Chicago Booth",
+      "url": "https://poetsandquants.com/2018/03/19/top-mba-programs-and-best-business-schools-2019-usnews-ranking/2/",
+      "sourceType": "secondary_reported_from_us_news",
+      "confidence": "high"
+    },
+    "pq_2025_metrics": {
+      "title": "Poets&Quants - Wharton Claims Sole Possession Of First In New U.S. News MBA Ranking",
+      "url": "https://poetsandquants.com/2025/04/08/u-s-news-mba-ranking-2025-2/",
+      "sourceType": "secondary_reported_from_us_news",
+      "confidence": "high"
+    },
+    "banker_mba50_cadence": {
+      "title": "Banker.az mirror of MBA50 historical U.S. News MBA ranking article",
+      "url": "https://banker.az/us-news-mba-reytinqind%C9%99-yuks%C9%99lisl%C9%99r-v%C9%99-enisl%C9%99r-1990-2013/",
+      "sourceType": "secondary_mirror",
+      "confidence": "medium",
+      "note": "Article states U.S. News MBA rankings were published every two years before becoming annual from 1994 onward; its chart labels skip 1991 and 1993."
+    },
+    "wayback_mba50_2013": {
+      "title": "MBA50 - A History of the US News MBA Ranking 1990-2013 (Wayback capture)",
+      "url": "https://web.archive.org/web/20140209194205/http://www.mba50.com/a-history-of-the-us-news-mba-ranking-1990-2013/",
+      "sourceType": "secondary_archived",
+      "confidence": "high_for_publication_cadence",
+      "note": "Archived original article says U.S. News initially published the ranking every two years, moved to annual results from 1994 onward, and uses publication-year columns '90, '92, '94, '95, etc. with no '91 or '93 columns."
+    }
+  },
+  "years": [
+    {
+      "year": 2000,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 6,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 7,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 8,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 9,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 10,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 11,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 11,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 14,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 17,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 18,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 19,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 3,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 4,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 6,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 8,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 9,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 11,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 12,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 12,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 12,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 15,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 18,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 6,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 6,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 10,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 10,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 13,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 17,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 2,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 6,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 7,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 9,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 10,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 12,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 13,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 14,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 14,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 6,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 6,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 8,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 12,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 12,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 14,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 14,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 14,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 19,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 2,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 6,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 6,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 8,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 11,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 13,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 14,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 15,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 18,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 6,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 7,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 10,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 13,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 13,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 15,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 16,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 18,
+          "tied": true,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 20,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 5,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 7,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 8,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 12,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 14,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 14,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 18,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 20,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 7,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 11,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 12,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 14,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 14,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 14,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 3,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 5,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 8,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 10,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 11,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 13,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 14,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 15,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 15,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 17,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 20,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 3,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 5,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 5,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 7,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 9,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 11,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 12,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 13,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 14,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 16,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 18,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 3,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 5,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 7,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 10,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 13,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 14,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 14,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 10,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 11,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 13,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 13,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 19,
+          "tied": true,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 6,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 12,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 14,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 14,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 18,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 19,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 20,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 6,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 14,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 15,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 17,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 20,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 6,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 14,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 15,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 17,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 20,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 6,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 10,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 11,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 13,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 13,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 18,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 20,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 2,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 4,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 5,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 8,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 8,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 10,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 12,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 14,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 16,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 19,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 20,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 3,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 4,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 8,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 9,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 11,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 12,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 14,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 15,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 16,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 18,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 19,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 20,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "chicago_booth",
+          "rank": 1,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 1,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 4,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 6,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 7,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 10,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 11,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 13,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 13,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 17,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 20,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 3,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 3,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 6,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 6,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 6,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 9,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 12,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 12,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 12,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 17,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 19,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 3,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "kellogg",
+          "rank": 3,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "harvard",
+          "rank": 6,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "yale_som",
+          "rank": 9,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 12,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 12,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 16,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 19,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 20,
+          "tied": false,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "infogram_1990_2021"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "chicago_booth",
+          "rank": 1,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "kellogg",
+          "rank": 3,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "harvard",
+          "rank": 5,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": true,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "yale_som",
+          "rank": 7,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 8,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 10,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 11,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 12,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 14,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 16,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 17,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 19,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "usc_marshall",
+          "rank": 19,
+          "tied": true,
+          "name": "USC Marshall",
+          "fullName": "University of Southern California (Marshall)",
+          "color": "#e0a64a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "chicago_booth",
+          "rank": 1,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "kellogg",
+          "rank": 2,
+          "tied": false,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "wharton",
+          "rank": 3,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 4,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "harvard",
+          "rank": 5,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 6,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "stanford",
+          "rank": 6,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 8,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "yale_som",
+          "rank": 8,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 10,
+          "tied": false,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 11,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "columbia",
+          "rank": 11,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 14,
+          "tied": false,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": true,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "usc_marshall",
+          "rank": 15,
+          "tied": true,
+          "name": "USC Marshall",
+          "fullName": "University of Southern California (Marshall)",
+          "color": "#e0a64a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 17,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": false,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 19,
+          "tied": false,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 20,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "washington_foster",
+          "rank": 20,
+          "tied": true,
+          "name": "Washington Foster",
+          "fullName": "University of Washington (Foster)",
+          "color": "#8b6ccf",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": true,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 3,
+          "tied": true,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "kellogg",
+          "rank": 3,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "harvard",
+          "rank": 6,
+          "tied": false,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 7,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 7,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "yale_som",
+          "rank": 7,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 10,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 10,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "columbia",
+          "rank": 12,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 12,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 16,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 18,
+          "tied": true,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "usc_marshall",
+          "rank": 18,
+          "tied": true,
+          "name": "USC Marshall",
+          "fullName": "University of Southern California (Marshall)",
+          "color": "#e0a64a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "indiana_kelley",
+          "rank": 20,
+          "tied": true,
+          "name": "Indiana Kelley",
+          "fullName": "Indiana University (Kelley)",
+          "color": "#cf5b6d",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 20,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "unc_kenan_flagler",
+          "rank": 20,
+          "tied": true,
+          "name": "UNC Kenan-Flagler",
+          "fullName": "University of North Carolina-Chapel Hill (Kenan-Flagler)",
+          "color": "#28a8e0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "vanderbilt_owen",
+          "rank": 20,
+          "tied": true,
+          "name": "Vanderbilt Owen",
+          "fullName": "Vanderbilt University (Owen)",
+          "color": "#d6b25e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "wharton",
+          "rank": 1,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "kellogg",
+          "rank": 2,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 4,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 5,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 6,
+          "tied": true,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "harvard",
+          "rank": 6,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 6,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": false,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "yale_som",
+          "rank": 10,
+          "tied": false,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 11,
+          "tied": true,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 13,
+          "tied": true,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 13,
+          "tied": true,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 16,
+          "tied": false,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "emory_goizueta",
+          "rank": 17,
+          "tied": false,
+          "name": "Emory Goizueta",
+          "fullName": "Emory University (Goizueta)",
+          "color": "#f0cb69",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 18,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 18,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "vanderbilt_owen",
+          "rank": 18,
+          "tied": true,
+          "name": "Vanderbilt Owen",
+          "fullName": "Vanderbilt University (Owen)",
+          "color": "#d6b25e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford",
+          "fullName": "Stanford Graduate School of Business",
+          "color": "#e65d2f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "wharton",
+          "rank": 2,
+          "tied": false,
+          "name": "Wharton",
+          "fullName": "University of Pennsylvania (Wharton)",
+          "color": "#4d73be",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "chicago_booth",
+          "rank": 3,
+          "tied": false,
+          "name": "Chicago Booth",
+          "fullName": "University of Chicago (Booth)",
+          "color": "#f0b44f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "harvard",
+          "rank": 4,
+          "tied": true,
+          "name": "Harvard",
+          "fullName": "Harvard Business School",
+          "color": "#d64f5f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "kellogg",
+          "rank": 4,
+          "tied": true,
+          "name": "Kellogg",
+          "fullName": "Northwestern University (Kellogg)",
+          "color": "#8d6fe8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "mit_sloan",
+          "rank": 6,
+          "tied": false,
+          "name": "MIT Sloan",
+          "fullName": "Massachusetts Institute of Technology (Sloan)",
+          "color": "#29b7b0",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "columbia",
+          "rank": 7,
+          "tied": true,
+          "name": "Columbia",
+          "fullName": "Columbia University",
+          "color": "#4da3d9",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "nyu_stern",
+          "rank": 7,
+          "tied": true,
+          "name": "NYU Stern",
+          "fullName": "New York University (Stern)",
+          "color": "#b55bd6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "dartmouth_tuck",
+          "rank": 9,
+          "tied": false,
+          "name": "Dartmouth Tuck",
+          "fullName": "Dartmouth College (Tuck)",
+          "color": "#2bb673",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "berkeley_haas",
+          "rank": 10,
+          "tied": false,
+          "name": "Berkeley Haas",
+          "fullName": "University of California, Berkeley (Haas)",
+          "color": "#49a66f",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "virginia_darden",
+          "rank": 11,
+          "tied": true,
+          "name": "Virginia Darden",
+          "fullName": "University of Virginia (Darden)",
+          "color": "#f58b3a",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "yale_som",
+          "rank": 11,
+          "tied": true,
+          "name": "Yale SOM",
+          "fullName": "Yale University",
+          "color": "#8f95a3",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "michigan_ross",
+          "rank": 13,
+          "tied": false,
+          "name": "Michigan Ross",
+          "fullName": "University of Michigan-Ann Arbor (Ross)",
+          "color": "#e06a36",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "duke_fuqua",
+          "rank": 14,
+          "tied": false,
+          "name": "Duke Fuqua",
+          "fullName": "Duke University (Fuqua)",
+          "color": "#5872e6",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cornell_johnson",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell Johnson",
+          "fullName": "Cornell University (Johnson)",
+          "color": "#d95559",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "cmu_tepper",
+          "rank": 16,
+          "tied": true,
+          "name": "CMU Tepper",
+          "fullName": "Carnegie Mellon University (Tepper)",
+          "color": "#c9545e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "vanderbilt_owen",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt Owen",
+          "fullName": "Vanderbilt University (Owen)",
+          "color": "#d6b25e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "texas_mccombs",
+          "rank": 18,
+          "tied": true,
+          "name": "Texas McCombs",
+          "fullName": "University of Texas-Austin (McCombs)",
+          "color": "#8a714e",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "ucla_anderson",
+          "rank": 18,
+          "tied": true,
+          "name": "UCLA Anderson",
+          "fullName": "University of California-Los Angeles (Anderson)",
+          "color": "#4f8ca8",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        },
+        {
+          "key": "washington_foster",
+          "rank": 20,
+          "tied": false,
+          "name": "Washington Foster",
+          "fullName": "University of Washington (Foster)",
+          "color": "#8b6ccf",
+          "overallScore": null,
+          "rankingSourceId": "pq_2026_recent"
+        }
+      ]
+    }
+  ]
+}

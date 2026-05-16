@@ -30,6 +30,30 @@ importers:
         specifier: ^8.59.3
         version: 8.59.3(eslint@10.3.0)(typescript@6.0.3)
 
+  best-business-schools:
+    dependencies:
+      '@remotion-proj/animation-utils':
+        specifier: workspace:*
+        version: link:../packages/animation-utils
+      '@remotion-proj/remotion-components':
+        specifier: workspace:*
+        version: link:../packages/remotion-components
+      '@remotion-proj/shared':
+        specifier: workspace:*
+        version: link:../packages/shared
+      '@remotion/cli':
+        specifier: ^4.0.459
+        version: 4.0.459(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      react:
+        specifier: ^19.2.6
+        version: 19.2.6
+      react-dom:
+        specifier: ^19.2.6
+        version: 19.2.6(react@19.2.6)
+      remotion:
+        specifier: ^4.0.459
+        version: 4.0.459(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+
   best-colleges-endowment:
     dependencies:
       '@remotion-proj/animation-utils':
@@ -1689,7 +1713,7 @@ snapshots:
       react-refresh: 0.18.0
       remotion: 4.0.459(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       source-map: 0.7.3
-      style-loader: 4.0.0(webpack@5.105.0)
+      style-loader: 4.0.0(webpack@5.105.0(esbuild@0.25.0)(postcss@8.5.10))
       webpack: 5.105.0(esbuild@0.25.0)(postcss@8.5.10)
     transitivePeerDependencies:
       - '@minify-html/node'
@@ -2688,7 +2712,7 @@ snapshots:
 
   strip-final-newline@2.0.0: {}
 
-  style-loader@4.0.0(webpack@5.105.0):
+  style-loader@4.0.0(webpack@5.105.0(esbuild@0.25.0)(postcss@8.5.10)):
     dependencies:
       webpack: 5.105.0(esbuild@0.25.0)(postcss@8.5.10)
 
@@ -2698,7 +2722,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  terser-webpack-plugin@5.6.0(esbuild@0.25.0)(postcss@8.5.10)(webpack@5.105.0):
+  terser-webpack-plugin@5.6.0(esbuild@0.25.0)(postcss@8.5.10)(webpack@5.105.0(esbuild@0.25.0)(postcss@8.5.10)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -2797,7 +2821,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.0(esbuild@0.25.0)(postcss@8.5.10)(webpack@5.105.0)
+      terser-webpack-plugin: 5.6.0(esbuild@0.25.0)(postcss@8.5.10)(webpack@5.105.0(esbuild@0.25.0)(postcss@8.5.10))
       watchpack: 2.5.1
       webpack-sources: 3.4.1
     transitivePeerDependencies:

@@ -1,0 +1,299 @@
+[
+  {
+    "year": 2000,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 1,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2001,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 2,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2002,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2003,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 18,
+    "top20Complete": false,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2004,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2005,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 18,
+    "top20Complete": false,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2006,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 6,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2007,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2008,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2009,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2010,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 18,
+    "top20Complete": false,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2011,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 6,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2012,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2013,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2014,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 2,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2015,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 2,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2016,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 2,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2017,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2018,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2019,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2020,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2021,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "infogram_1990_2021"
+    ]
+  },
+  {
+    "year": 2022,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 6,
+    "sourceIds": [
+      "pq_2026_recent"
+    ]
+  },
+  {
+    "year": 2023,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 21,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "pq_2026_recent"
+    ]
+  },
+  {
+    "year": 2024,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 23,
+    "top20Complete": true,
+    "tiedRanks": 8,
+    "sourceIds": [
+      "pq_2026_recent"
+    ]
+  },
+  {
+    "year": 2025,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "pq_2026_recent"
+    ]
+  },
+  {
+    "year": 2026,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "pq_2026_recent"
+    ]
+  }
+]
