@@ -1,0 +1,2614 @@
+{
+  "sources": {
+    "usnews_wilson_2000_2011": {
+      "label": "U.S. News & World Report law school rankings, compiled by George D. Wilson, Stanford Law School Robert Crown Law Library, Research Paper No. 28",
+      "url": "https://law.stanford.edu/wp-content/uploads/2015/03/wilsons-rp28.pdf"
+    },
+    "usnews_wilson_2012_2014": {
+      "label": "U.S. News & World Report law school rankings, compiled by George D. Wilson, Stanford Law School Robert Crown Law Library, Research Paper No. 31",
+      "url": "https://law.stanford.edu/wp-content/uploads/sites/default/files/biblio/1002/412009/doc/slspublic/wilson_rp31.pdf"
+    },
+    "usnews_7sage_2014_2026": {
+      "label": "7Sage Law School Rankings historical US News data, 2014-present",
+      "url": "https://7sage.com/admissions/rankings"
+    },
+    "usnews_current_2026": {
+      "label": "U.S. News Best Law Schools rankings page",
+      "url": "https://www.usnews.com/best-graduate-schools/top-law-schools/law-rankings"
+    }
+  },
+  "schools": [
+    {
+      "key": "berkeley",
+      "displayName": "University of California, Berkeley",
+      "shortName": "Berkeley",
+      "color": "#f0c35a"
+    },
+    {
+      "key": "boston-college",
+      "displayName": "Boston College",
+      "shortName": "Boston College",
+      "color": "#27c7bd"
+    },
+    {
+      "key": "boston-university",
+      "displayName": "Boston University",
+      "shortName": "Boston Univ.",
+      "color": "#e65d4f"
+    },
+    {
+      "key": "columbia",
+      "displayName": "Columbia University",
+      "shortName": "Columbia",
+      "color": "#8cc8ff"
+    },
+    {
+      "key": "cornell",
+      "displayName": "Cornell University",
+      "shortName": "Cornell",
+      "color": "#d998ff"
+    },
+    {
+      "key": "duke",
+      "displayName": "Duke University",
+      "shortName": "Duke",
+      "color": "#7bd88f"
+    },
+    {
+      "key": "emory",
+      "displayName": "Emory University",
+      "shortName": "Emory",
+      "color": "#ff9f6e"
+    },
+    {
+      "key": "george-washington",
+      "displayName": "George Washington University",
+      "shortName": "George Washington",
+      "color": "#b6c2ff"
+    },
+    {
+      "key": "georgetown",
+      "displayName": "Georgetown University",
+      "shortName": "Georgetown",
+      "color": "#f38fbe"
+    },
+    {
+      "key": "georgia",
+      "displayName": "University of Georgia",
+      "shortName": "Georgia",
+      "color": "#8ee6d4"
+    },
+    {
+      "key": "harvard",
+      "displayName": "Harvard University",
+      "shortName": "Harvard",
+      "color": "#d7e36f"
+    },
+    {
+      "key": "iowa",
+      "displayName": "University of Iowa",
+      "shortName": "Iowa",
+      "color": "#f6b26b"
+    },
+    {
+      "key": "michigan",
+      "displayName": "University of Michigan",
+      "shortName": "Michigan",
+      "color": "#9ed0ff"
+    },
+    {
+      "key": "minnesota",
+      "displayName": "University of Minnesota",
+      "shortName": "Minnesota",
+      "color": "#ffcc99"
+    },
+    {
+      "key": "northwestern",
+      "displayName": "Northwestern University",
+      "shortName": "Northwestern",
+      "color": "#b8e986"
+    },
+    {
+      "key": "notre-dame",
+      "displayName": "University of Notre Dame",
+      "shortName": "Notre Dame",
+      "color": "#f7a8a8"
+    },
+    {
+      "key": "nyu",
+      "displayName": "New York University",
+      "shortName": "NYU",
+      "color": "#c5a3ff"
+    },
+    {
+      "key": "stanford",
+      "displayName": "Stanford University",
+      "shortName": "Stanford",
+      "color": "#80cbc4"
+    },
+    {
+      "key": "u-washington",
+      "displayName": "University of Washington",
+      "shortName": "Washington",
+      "color": "#ffd166"
+    },
+    {
+      "key": "uchicago",
+      "displayName": "University of Chicago",
+      "shortName": "Chicago",
+      "color": "#a0e7e5"
+    },
+    {
+      "key": "ucla",
+      "displayName": "University of California, Los Angeles",
+      "shortName": "UCLA",
+      "color": "#ffb5a7"
+    },
+    {
+      "key": "unc",
+      "displayName": "University of North Carolina at Chapel Hill",
+      "shortName": "UNC",
+      "color": "#caffbf"
+    },
+    {
+      "key": "upenn",
+      "displayName": "University of Pennsylvania",
+      "shortName": "Penn",
+      "color": "#9bf6ff"
+    },
+    {
+      "key": "usc",
+      "displayName": "University of Southern California",
+      "shortName": "USC",
+      "color": "#bdb2ff"
+    },
+    {
+      "key": "ut-austin",
+      "displayName": "University of Texas at Austin",
+      "shortName": "Texas",
+      "color": "#ffc6ff"
+    },
+    {
+      "key": "uva",
+      "displayName": "University of Virginia",
+      "shortName": "Virginia",
+      "color": "#fdffb6"
+    },
+    {
+      "key": "vanderbilt",
+      "displayName": "Vanderbilt University",
+      "shortName": "Vanderbilt",
+      "color": "#bee3db"
+    },
+    {
+      "key": "washington-and-lee",
+      "displayName": "Washington and Lee University",
+      "shortName": "Washington & Lee",
+      "color": "#f4a261"
+    },
+    {
+      "key": "washu",
+      "displayName": "Washington University in St. Louis",
+      "shortName": "WashU",
+      "color": "#90be6d"
+    },
+    {
+      "key": "yale",
+      "displayName": "Yale University",
+      "shortName": "Yale",
+      "color": "#e76f51"
+    }
+  ],
+  "yearlyRankings": [
+    {
+      "year": 2000,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 7
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 10
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 12
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 18
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washington-and-lee",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 10
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 17
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "washington-and-lee",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 12
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "iowa",
+          "rank": 20
+        },
+        {
+          "schoolKey": "washington-and-lee",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 7
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 11
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "iowa",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 18
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washington-and-lee",
+          "rank": 18
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 9
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 10
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 10
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 12
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "washington-and-lee",
+          "rank": 19
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 12
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        },
+        {
+          "schoolKey": "notre-dame",
+          "rank": 20
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 11
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 11
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 17
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 19
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 6
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 6
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 9
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 9
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 12
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 12
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 5
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 6
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        },
+        {
+          "schoolKey": "emory",
+          "rank": 20
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "sourceId": "usnews_wilson_2000_2011",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 10
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 11
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "sourceId": "usnews_wilson_2012_2014",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "sourceId": "usnews_wilson_2012_2014",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 7
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 10
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 13
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "u-washington",
+          "rank": 20
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 19
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 19
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 13
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "emory",
+          "rank": 19
+        },
+        {
+          "schoolKey": "george-washington",
+          "rank": 20
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 8
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "emory",
+          "rank": 19
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 2
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 17
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 19
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        },
+        {
+          "schoolKey": "iowa",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 14
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 19
+        },
+        {
+          "schoolKey": "iowa",
+          "rank": 20
+        },
+        {
+          "schoolKey": "notre-dame",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 11
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 11
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 19
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 5
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 10
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 17
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 18
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 18
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 6
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 6
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 14
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 15
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 16
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 16
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 19
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "stanford",
+          "rank": 2
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 3
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 4
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 4
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 6
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 7
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 8
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 9
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 10
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 10
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 12
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 15
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 16
+        },
+        {
+          "schoolKey": "boston-university",
+          "rank": 17
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 17
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 17
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "stanford",
+          "rank": 1
+        },
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 3
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 4
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 4
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 4
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 8
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 9
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 9
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 12
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 13
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 14
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 16
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 19
+        },
+        {
+          "schoolKey": "georgia",
+          "rank": 20
+        },
+        {
+          "schoolKey": "notre-dame",
+          "rank": 20
+        },
+        {
+          "schoolKey": "unc",
+          "rank": 20
+        },
+        {
+          "schoolKey": "usc",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "stanford",
+          "rank": 1
+        },
+        {
+          "schoolKey": "yale",
+          "rank": 1
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 3
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 4
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 5
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 6
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 6
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 8
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 8
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 10
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 10
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 12
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 13
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 14
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 14
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 14
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 14
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 18
+        },
+        {
+          "schoolKey": "unc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "minnesota",
+          "rank": 20
+        },
+        {
+          "schoolKey": "notre-dame",
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "sourceId": "usnews_7sage_2014_2026",
+      "entries": [
+        {
+          "schoolKey": "stanford",
+          "rank": 1
+        },
+        {
+          "schoolKey": "uchicago",
+          "rank": 2
+        },
+        {
+          "schoolKey": "yale",
+          "rank": 2
+        },
+        {
+          "schoolKey": "upenn",
+          "rank": 4
+        },
+        {
+          "schoolKey": "uva",
+          "rank": 4
+        },
+        {
+          "schoolKey": "harvard",
+          "rank": 6
+        },
+        {
+          "schoolKey": "duke",
+          "rank": 7
+        },
+        {
+          "schoolKey": "nyu",
+          "rank": 7
+        },
+        {
+          "schoolKey": "columbia",
+          "rank": 9
+        },
+        {
+          "schoolKey": "michigan",
+          "rank": 9
+        },
+        {
+          "schoolKey": "northwestern",
+          "rank": 9
+        },
+        {
+          "schoolKey": "vanderbilt",
+          "rank": 12
+        },
+        {
+          "schoolKey": "cornell",
+          "rank": 13
+        },
+        {
+          "schoolKey": "ucla",
+          "rank": 13
+        },
+        {
+          "schoolKey": "washu",
+          "rank": 13
+        },
+        {
+          "schoolKey": "berkeley",
+          "rank": 16
+        },
+        {
+          "schoolKey": "ut-austin",
+          "rank": 16
+        },
+        {
+          "schoolKey": "georgetown",
+          "rank": 18
+        },
+        {
+          "schoolKey": "unc",
+          "rank": 18
+        },
+        {
+          "schoolKey": "boston-college",
+          "rank": 20
+        },
+        {
+          "schoolKey": "notre-dame",
+          "rank": 20
+        }
+      ]
+    }
+  ],
+  "sourceNotes": {
+    "dataScope": "Rank, school, tie status, and movement only. No quantitative admissions, employment, score, or bar-passage metrics are included.",
+    "tieHandling": "All schools with rank <= 20 are included, so tied rank groups can make a year display more than 20 rows."
+  }
+}

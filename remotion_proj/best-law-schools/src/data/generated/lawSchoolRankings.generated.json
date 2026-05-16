@@ -1,0 +1,5855 @@
+{
+  "startYear": 2000,
+  "endYear": 2026,
+  "visualMetric": {
+    "id": "ranking_movement",
+    "label": "Rank movement",
+    "note": "The scoreboard uses U.S. News rank for row order and movement indicators derived from the previous verified ranking year. No bar-length metric or other quantitative metric is used."
+  },
+  "sources": {
+    "usnews_wilson_2000_2011": {
+      "label": "U.S. News & World Report law school rankings, compiled by George D. Wilson, Stanford Law School Robert Crown Law Library, Research Paper No. 28",
+      "url": "https://law.stanford.edu/wp-content/uploads/2015/03/wilsons-rp28.pdf"
+    },
+    "usnews_wilson_2012_2014": {
+      "label": "U.S. News & World Report law school rankings, compiled by George D. Wilson, Stanford Law School Robert Crown Law Library, Research Paper No. 31",
+      "url": "https://law.stanford.edu/wp-content/uploads/sites/default/files/biblio/1002/412009/doc/slspublic/wilson_rp31.pdf"
+    },
+    "usnews_7sage_2014_2026": {
+      "label": "7Sage Law School Rankings historical US News data, 2014-present",
+      "url": "https://7sage.com/admissions/rankings"
+    },
+    "usnews_current_2026": {
+      "label": "U.S. News Best Law Schools rankings page",
+      "url": "https://www.usnews.com/best-graduate-schools/top-law-schools/law-rankings"
+    }
+  },
+  "years": [
+    {
+      "year": 2000,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 4,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 8,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 10,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 12,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washington-and-lee",
+          "rank": 20,
+          "tied": false,
+          "name": "Washington and Lee University",
+          "fullName": "Washington and Lee University",
+          "color": "#f4a261",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 4,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 8,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 13,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 18,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washington-and-lee",
+          "rank": 20,
+          "tied": false,
+          "name": "Washington and Lee University",
+          "fullName": "Washington and Lee University",
+          "color": "#f4a261",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 13,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "iowa",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Iowa",
+          "fullName": "University of Iowa",
+          "color": "#f6b26b",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washington-and-lee",
+          "rank": 20,
+          "tied": true,
+          "name": "Washington and Lee University",
+          "fullName": "Washington and Lee University",
+          "color": "#f4a261",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 7,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 11,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 12,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "iowa",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Iowa",
+          "fullName": "University of Iowa",
+          "color": "#f6b26b",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washington-and-lee",
+          "rank": 18,
+          "tied": true,
+          "name": "Washington and Lee University",
+          "fullName": "Washington and Lee University",
+          "color": "#f4a261",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 10,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washington-and-lee",
+          "rank": 19,
+          "tied": true,
+          "name": "Washington and Lee University",
+          "fullName": "Washington and Lee University",
+          "color": "#f4a261",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 13,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "notre-dame",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Notre Dame",
+          "fullName": "University of Notre Dame",
+          "color": "#f7a8a8",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 20,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 11,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 11,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": true,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 4,
+          "tied": true,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 8,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 17,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "george-washington",
+          "rank": 19,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 4,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 8,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": true,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 6,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 9,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 12,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 15,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": false,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 5,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 6,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": true,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "emory",
+          "rank": 20,
+          "tied": true,
+          "name": "Emory University",
+          "fullName": "Emory University",
+          "color": "#ff9f6e",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uchicago",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "berkeley",
+          "rank": 7,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "uva",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "northwestern",
+          "rank": 11,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": false,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2000_2011"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "uchicago",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "uva",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 14,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "uchicago",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "berkeley",
+          "rank": 7,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "uva",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "michigan",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "georgetown",
+          "rank": 13,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "cornell",
+          "rank": 14,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        },
+        {
+          "key": "u-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Washington",
+          "fullName": "University of Washington",
+          "color": "#ffd166",
+          "overallScore": null,
+          "rankingSourceId": "usnews_wilson_2012_2014"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 15,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 17,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 19,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 3,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 13,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "emory",
+          "rank": 19,
+          "tied": false,
+          "name": "Emory University",
+          "fullName": "Emory University",
+          "color": "#ff9f6e",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "george-washington",
+          "rank": 20,
+          "tied": true,
+          "name": "George Washington University",
+          "fullName": "George Washington University",
+          "color": "#b6c2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 8,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 8,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 11,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "emory",
+          "rank": 19,
+          "tied": false,
+          "name": "Emory University",
+          "fullName": "Emory University",
+          "color": "#ff9f6e",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 2,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 8,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 17,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": true,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "iowa",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Iowa",
+          "fullName": "University of Iowa",
+          "color": "#f6b26b",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 12,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 14,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 15,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "iowa",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Iowa",
+          "fullName": "University of Iowa",
+          "color": "#f6b26b",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "notre-dame",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Notre Dame",
+          "fullName": "University of Notre Dame",
+          "color": "#f7a8a8",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 11,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 11,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 5,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 10,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 18,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 18,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 9,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 12,
+          "tied": false,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 17,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 18,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": false,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 3,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 6,
+          "tied": true,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 12,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 14,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 15,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 16,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 16,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "boston-university",
+          "rank": 20,
+          "tied": false,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": false,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 3,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 4,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 4,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 7,
+          "tied": false,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 10,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 13,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": false,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 16,
+          "tied": false,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "boston-university",
+          "rank": 17,
+          "tied": true,
+          "name": "Boston University",
+          "fullName": "Boston University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 17,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 17,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": true,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 3,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 4,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 4,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 8,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 9,
+          "tied": true,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 9,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 12,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 13,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 14,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 16,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 19,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgia",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Georgia",
+          "fullName": "University of Georgia",
+          "color": "#8ee6d4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "unc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of North Carolina at Chapel Hill",
+          "fullName": "University of North Carolina at Chapel Hill",
+          "color": "#caffbf",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "notre-dame",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Notre Dame",
+          "fullName": "University of Notre Dame",
+          "color": "#f7a8a8",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#bdb2ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": true,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "yale",
+          "rank": 1,
+          "tied": true,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 3,
+          "tied": false,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 4,
+          "tied": false,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 6,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 6,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 8,
+          "tied": true,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 10,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 10,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 12,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 13,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 14,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 14,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 14,
+          "tied": true,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 14,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 18,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "unc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of North Carolina at Chapel Hill",
+          "fullName": "University of North Carolina at Chapel Hill",
+          "color": "#caffbf",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "minnesota",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Minnesota",
+          "fullName": "University of Minnesota",
+          "color": "#ffcc99",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "notre-dame",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Notre Dame",
+          "fullName": "University of Notre Dame",
+          "color": "#f7a8a8",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "stanford",
+          "rank": 1,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#80cbc4",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uchicago",
+          "rank": 2,
+          "tied": true,
+          "name": "University of Chicago",
+          "fullName": "University of Chicago",
+          "color": "#a0e7e5",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "yale",
+          "rank": 2,
+          "tied": true,
+          "name": "Yale University",
+          "fullName": "Yale University",
+          "color": "#e76f51",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#9bf6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "uva",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Virginia",
+          "fullName": "University of Virginia",
+          "color": "#fdffb6",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 6,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#d7e36f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 7,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#7bd88f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "nyu",
+          "rank": 7,
+          "tied": true,
+          "name": "New York University",
+          "fullName": "New York University",
+          "color": "#c5a3ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 9,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#8cc8ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 9,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#b8e986",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan",
+          "fullName": "University of Michigan",
+          "color": "#9ed0ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "vanderbilt",
+          "rank": 12,
+          "tied": false,
+          "name": "Vanderbilt University",
+          "fullName": "Vanderbilt University",
+          "color": "#bee3db",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#d998ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#ffb5a7",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "washu",
+          "rank": 13,
+          "tied": true,
+          "name": "Washington University in St. Louis",
+          "fullName": "Washington University in St. Louis",
+          "color": "#90be6d",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "berkeley",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#ffc6ff",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "georgetown",
+          "rank": 18,
+          "tied": true,
+          "name": "Georgetown University",
+          "fullName": "Georgetown University",
+          "color": "#f38fbe",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "unc",
+          "rank": 18,
+          "tied": true,
+          "name": "University of North Carolina at Chapel Hill",
+          "fullName": "University of North Carolina at Chapel Hill",
+          "color": "#caffbf",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "boston-college",
+          "rank": 20,
+          "tied": true,
+          "name": "Boston College",
+          "fullName": "Boston College",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        },
+        {
+          "key": "notre-dame",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Notre Dame",
+          "fullName": "University of Notre Dame",
+          "color": "#f7a8a8",
+          "overallScore": null,
+          "rankingSourceId": "usnews_7sage_2014_2026"
+        }
+      ]
+    }
+  ]
+}
