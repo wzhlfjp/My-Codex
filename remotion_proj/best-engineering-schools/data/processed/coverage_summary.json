@@ -1,0 +1,284 @@
+[
+  {
+    "year": 2000,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2001,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2002,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2003,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 1,
+    "sourceIds": [
+      "usnews_2003_lazowska_mirror"
+    ]
+  },
+  {
+    "year": 2004,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2005,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2006,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2007,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "ptt_usnews_2007"
+    ]
+  },
+  {
+    "year": 2008,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "gter_usnews_2008"
+    ]
+  },
+  {
+    "year": 2009,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "nairaland_usnews_2009"
+    ]
+  },
+  {
+    "year": 2010,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "nairaland_usnews_2010"
+    ]
+  },
+  {
+    "year": 2011,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "worldranking_usnews_2011"
+    ]
+  },
+  {
+    "year": 2012,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "collegeconfidential_usnews_2012"
+    ]
+  },
+  {
+    "year": 2013,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2014,
+    "status": "missing",
+    "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+    "rankingRows": 0,
+    "top20Complete": false,
+    "tiedRanks": 0,
+    "sourceIds": []
+  },
+  {
+    "year": 2015,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 6,
+    "sourceIds": [
+      "universitylist_usnews_2015"
+    ]
+  },
+  {
+    "year": 2016,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "xdf_usnews_2016"
+    ]
+  },
+  {
+    "year": 2017,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 19,
+    "top20Complete": false,
+    "tiedRanks": 4,
+    "sourceIds": [
+      "universitylist_usnews_2017"
+    ]
+  },
+  {
+    "year": 2018,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 22,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "universitylist_usnews_2018"
+    ]
+  },
+  {
+    "year": 2019,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "xuanxiaobao_usnews_2019"
+    ]
+  },
+  {
+    "year": 2020,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "yahoo_usnews_2020"
+    ]
+  },
+  {
+    "year": 2021,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 3,
+    "sourceIds": [
+      "xdf_usnews_2021"
+    ]
+  },
+  {
+    "year": 2022,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 2,
+    "sourceIds": [
+      "xdf_usnews_2022"
+    ]
+  },
+  {
+    "year": 2023,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 20,
+    "top20Complete": true,
+    "tiedRanks": 0,
+    "sourceIds": [
+      "yesuhak_usnews_2023"
+    ]
+  },
+  {
+    "year": 2024,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 5,
+    "top20Complete": false,
+    "tiedRanks": 1,
+    "sourceIds": [
+      "usnews_prn_2024"
+    ]
+  },
+  {
+    "year": 2025,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 24,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "uhomes_usnews_2025",
+      "bestfunded_usnews_2025"
+    ]
+  },
+  {
+    "year": 2026,
+    "status": "ranked",
+    "statusNote": null,
+    "rankingRows": 24,
+    "top20Complete": true,
+    "tiedRanks": 5,
+    "sourceIds": [
+      "uhomes_usnews_2026"
+    ]
+  }
+]

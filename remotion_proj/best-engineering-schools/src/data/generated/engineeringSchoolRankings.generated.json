@@ -1,0 +1,4157 @@
+{
+  "startYear": 2000,
+  "endYear": 2026,
+  "visualMetric": {
+    "id": "ranking_movement",
+    "label": "Rank movement",
+    "note": "The scoreboard uses U.S. News rank for row order and movement indicators derived from the previous verified ranking year. No bar-length metric or other quantitative metric is used."
+  },
+  "sources": {
+    "usnews_2003_lazowska_mirror": {
+      "label": "U.S. News 2003 Graduate School Rankings: Engineering, archived mirror hosted by University of Washington",
+      "title": "usnews.com: Education: 2003 Graduate School Rankings: Engineering",
+      "url": "https://lazowska.cs.washington.edu/usnews2003/usnews_com%20Education%202003%20Graduate%20School%20Rankings%20Engineering.htm",
+      "primarySource": true,
+      "confidence": "high",
+      "note": "Saved U.S. News page mirror. The page states the ranking was computed in January of the year cited."
+    },
+    "nairaland_usnews_2009": {
+      "label": "Forum repost of U.S. News & World Report 2009 Best Graduate Schools engineering list",
+      "title": "Preparing for GRE - Education",
+      "url": "https://www.nairaland.com/943/preparing-gre/14",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Public repost labels the block as U.S. News & World Report's 2009 Best Graduate Schools."
+    },
+    "ptt_usnews_2007": {
+      "label": "PTT repost of U.S. News 2007 Top Engineering Schools list",
+      "title": "[USNews] 2007 Top Engineering Schools",
+      "url": "https://www.ptt.cc/man/global_univ/D9B3/DE34/D761/M.1250789234.A.348.html",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Forum archive links to the original U.S. News engineering ranking URL and reproduces the ranked list."
+    },
+    "gter_usnews_2008": {
+      "label": "GTER repost of America's Best Graduate Schools 2008: Top Engineering Schools",
+      "title": "Americas Best Graduate Schools 2008: Top Engineering Schools",
+      "url": "https://bbs.gter.net/thread-638674-1-1.html",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Forum repost labels the table as America's Best Graduate Schools 2008 and includes rank, score, and school rows."
+    },
+    "nairaland_usnews_2010": {
+      "label": "Forum repost of U.S. News Graduate Engineering Rankings 2010",
+      "title": "Preparing for GRE - Education",
+      "url": "https://www.nairaland.com/943/preparing-gre/14",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Public repost labels the block as U.S. News Graduate Engineering Rankings 2010."
+    },
+    "worldranking_usnews_2011": {
+      "label": "World Ranking Guide repost of U.S. News Best Engineering Schools 2011 top-20 list",
+      "title": "US News Best Engineering Schools - MIT rated Top",
+      "url": "https://worldranking.blogspot.com/2010/06/us-news-best-engineering-schools-2011.html?m=1",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Secondary article lists the 2011 U.S. News graduate engineering top 20 and attributes it to U.S. News & World Report."
+    },
+    "collegeconfidential_usnews_2012": {
+      "label": "College Confidential repost of U.S. News graduate engineering ranking page",
+      "title": "Please Help a Torn Student between Princeton and Columbia Engineering!",
+      "url": "https://talk.collegeconfidential.com/t/please-help-a-torn-student-between-princeton-and-columbia-engineering/1272917",
+      "primarySource": false,
+      "confidence": "medium",
+      "note": "April 2012 forum post quotes the then-current U.S. News graduate engineering ranking page."
+    },
+    "universitylist_usnews_2015": {
+      "label": "University-list archive of U.S. News 2015 Best Graduate Engineering Schools",
+      "title": "Best Graduate Engineering Schools in US 2015",
+      "url": "https://www.university-list.net/us/rank/univ-1034.htm",
+      "primarySource": false,
+      "confidence": "medium",
+      "note": "Archive page states the ranking is by U.S. News and reproduces the table."
+    },
+    "xdf_usnews_2016": {
+      "label": "New Oriental repost of U.S. News 2016 graduate engineering ranking",
+      "title": "2016美国工程学院研究院排名",
+      "url": "https://liuxue.xdf.cn/hefei/lxzg/mglh_bklh_pmjx/501915.shtml",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Chinese-language repost states U.S. News released the 2016 graduate engineering ranking and lists the ranked rows."
+    },
+    "universitylist_usnews_2017": {
+      "label": "University-list archive of U.S. News 2017 Best Graduate Engineering Schools",
+      "title": "Best Graduate Engineering Schools Programs in US 2017",
+      "url": "https://www.university-list.net/us/rank/univ-20131035.htm",
+      "primarySource": false,
+      "confidence": "medium",
+      "note": "Archive page states the ranking was ranked in 2016 by U.S. News and reproduces the engineering-school table."
+    },
+    "universitylist_usnews_2018": {
+      "label": "University-list archive of U.S. News 2018 Best Graduate Engineering Schools",
+      "title": "Best Graduate Engineering Schools in US 2018",
+      "url": "https://www.university-list.net/us/rank/univ-20121032.htm",
+      "primarySource": false,
+      "confidence": "medium",
+      "note": "Archive page states the ranking was ranked in 2017 by U.S. News and reproduces the engineering-school table."
+    },
+    "xuanxiaobao_usnews_2019": {
+      "label": "AI Xuanxiaobao repost of 2019 U.S. News graduate engineering ranking",
+      "title": "2019年USnews美国研究生工程学院排名",
+      "url": "https://www.xuanxiaobao.com/news/detail-105659.html",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Chinese-language repost labels the table as 2019 Best Engineering Schools and includes English school names."
+    },
+    "yahoo_usnews_2020": {
+      "label": "Yahoo republication of U.S. News 2020 Best Graduate Engineering Schools top-20 slideshow",
+      "title": "See the 20 Best Engineering Graduate Programs",
+      "url": "https://www.yahoo.com/news/see-20-best-engineering-graduate-133431663.html",
+      "primarySource": false,
+      "confidence": "medium",
+      "note": "Yahoo republishes a U.S. News Education article and includes the top 20 list."
+    },
+    "xdf_usnews_2021": {
+      "label": "New Oriental repost of 2021 U.S. News Best Engineering Schools top-100 list",
+      "title": "2021 US News美国最佳工程学院TOP100排名",
+      "url": "https://liuxue.xdf.cn/blog/lingxiaoou/blog/1948551.shtml",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Chinese-language repost states U.S. News updated the 2021 graduate rankings on March 16, 2020 and lists the ranked rows."
+    },
+    "xdf_usnews_2022": {
+      "label": "New Oriental repost of 2022 U.S. News Best Engineering Schools ranking",
+      "title": "美国工程学院排名",
+      "url": "https://liuxue.xdf.cn/blog/rendonglin/blog/2996385.shtml",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Chinese-language repost labels the table as 2022 Best Engineering Schools and lists the top engineering schools."
+    },
+    "yesuhak_usnews_2023": {
+      "label": "Yesuhak repost of 2023 U.S. Top Engineering Schools Ranking",
+      "title": "2023 U.S. Top Engineering Schools Ranking",
+      "url": "https://www.yesuhak.com/sub_univ/info_info01.php?b_name=univ_rank&mode=view&number=108096&page=1",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Public table labeled U.S. Best Engineering Schools Ranking."
+    },
+    "bestfunded_usnews_2025": {
+      "label": "Best Fully Funded Scholarships article summarizing 2025 U.S. News Best Engineering Schools",
+      "title": "Best 25 Engineering Schools: 2025 U.S. News Ranking",
+      "url": "https://bestfullyfundedscholarships.com/best-25-engineering-schools-2025-us-news-ranking/",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Secondary article labeled as 2025 U.S. News Best Engineering Schools ranking. Used only for rank rows visible in the source text."
+    },
+    "uhomes_usnews_2025": {
+      "label": "Uhomes article summarizing the 2025 U.S. News Best Engineering Schools top 20",
+      "title": "Best Engineering Schools 2026: Choose by US News Engineering Ranking",
+      "url": "https://en.uhomes.com/blog/best-engineering-schools",
+      "primarySource": false,
+      "confidence": "medium_low",
+      "note": "Secondary article includes a 2025 U.S. News engineering ranking table through rank 20. Used to fill rows visible in that table."
+    },
+    "uhomes_usnews_2026": {
+      "label": "Uhomes republication of U.S. News Graduate School Rankings 2025-26 engineering table",
+      "title": "U.S. News Graduate School Rankings 2025-26: Choose Your Dream University",
+      "url": "https://en.uhomes.com/blog/us-news-graduate-school-rankings",
+      "primarySource": false,
+      "sourceType": "secondary republication",
+      "confidence": "medium",
+      "note": "Article states the U.S. News graduate rankings dropped April 8, 2025 and reproduces the Top 50 Engineering Schools table. Used only for visible ranking rows."
+    },
+    "usnews_prn_2024": {
+      "label": "U.S. News press release for 2024 Best Engineering Schools",
+      "title": "U.S. News Releases 2024 Best Engineering Schools",
+      "url": "https://www.prnewswire.com/news-releases/us-news-releases-2024-best-engineering-schools-302174831.html",
+      "primarySource": true,
+      "confidence": "high",
+      "note": "Official U.S. News release verifies only the top five ordering/ties, not a full top-20 table."
+    },
+    "axios_usnews_2026": {
+      "label": "Axios Boston report of 2026-27 U.S. News Best Graduate Schools engineering top three",
+      "title": "Only one Mass. college topped U.S. News & World Report's grad school rankings",
+      "url": "https://www.axios.com/local/boston/2026/04/07/only-one-mass-college-topped-us-news-world-reports-grad-school-rankings",
+      "primarySource": false,
+      "sourceType": "news report",
+      "confidence": "medium",
+      "note": "News report verifies MIT, Stanford, and UC Berkeley as the top three for the 2026-27 U.S. News graduate engineering ranking."
+    },
+    "usnews_prn_2026": {
+      "label": "U.S. News 2026 Best Graduate Schools press release",
+      "title": "U.S. News Unveils 2026 Best Graduate Schools",
+      "url": "https://www.prnewswire.com/news-releases/us-news-unveils-2026-best-graduate-schools-302735056.html",
+      "primarySource": true,
+      "sourceType": "official U.S. News press release",
+      "confidence": "high",
+      "note": "Official U.S. News release verifies the 2026 Best Engineering Schools top three."
+    },
+    "academicjobs_usnews_2026_top10": {
+      "label": "AcademicJobs summary of 2026 U.S. News Best Graduate Schools engineering top 10",
+      "title": "2026 Best Graduate Schools Rankings | U.S. News Top Programs",
+      "url": "https://www.academicjobs.com/us/higher-education-news/2026-best-graduate-schools-rankings-or-us-news-top-programs-12956",
+      "primarySource": false,
+      "sourceType": "higher-education news summary",
+      "confidence": "medium_low",
+      "note": "Higher-education news article published after the April 7, 2026 U.S. News release lists engineering ranks 1 through 10."
+    },
+    "tamu_usnews_2026": {
+      "label": "Texas A&M Engineering release on 2026 U.S. News graduate engineering rank",
+      "title": "Texas A&M Engineering remains top 10 in public graduate programs",
+      "url": "https://news.engineering.tamu.edu/news/2026/04/07/texas-am-engineering-remains-top-10-in-public-graduate-programs/",
+      "primarySource": false,
+      "sourceType": "official university press release",
+      "confidence": "high",
+      "note": "Texas A&M Engineering states its graduate engineering program ranked No. 14 overall in the 2026 U.S. News rankings."
+    },
+    "umd_usnews_2026": {
+      "label": "University of Maryland release on 2027 Best Graduate Schools list released in 2026",
+      "title": "UMD Graduate Programs Earn High Rankings from U.S. News",
+      "url": "https://umdrightnow.umd.edu/news-releases/umd-graduate-programs-earn-high-rankings-from-u-s-news",
+      "primarySource": false,
+      "sourceType": "official university press release",
+      "confidence": "high",
+      "note": "University of Maryland states the A. James Clark School of Engineering ranked No. 18 in the U.S. News list released April 7, 2026."
+    }
+  },
+  "years": [
+    {
+      "year": 2000,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2001,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2002,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2003,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "cmu",
+          "rank": 4,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "michigan",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "washington",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Washington",
+          "fullName": "University of Washington",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "princeton",
+          "rank": 9,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 11,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 12,
+          "tied": false,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "caltech",
+          "rank": 13,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "purdue",
+          "rank": 14,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 15,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "usc",
+          "rank": 16,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "ucla",
+          "rank": 17,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "northwestern",
+          "rank": 18,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        },
+        {
+          "key": "maryland",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_2003_lazowska_mirror"
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2005,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2006,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2007,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "purdue",
+          "rank": 6,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "michigan",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "cmu",
+          "rank": 8,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "usc",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "caltech",
+          "rank": 10,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "cornell",
+          "rank": 11,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 11,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 13,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "texas-am",
+          "rank": 14,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "maryland",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "penn-state",
+          "rank": 19,
+          "tied": false,
+          "name": "Pennsylvania State University",
+          "fullName": "Pennsylvania State University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        },
+        {
+          "key": "columbia",
+          "rank": 20,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "ptt_usnews_2007"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "cmu",
+          "rank": 6,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "caltech",
+          "rank": 7,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "usc",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 11,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "purdue",
+          "rank": 12,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 13,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "texas-am",
+          "rank": 14,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 14,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "maryland",
+          "rank": 16,
+          "tied": true,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "columbia",
+          "rank": 19,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 19,
+          "tied": true,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "gter_usnews_2008"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "caltech",
+          "rank": 6,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "cmu",
+          "rank": 7,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "usc",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "cornell",
+          "rank": 9,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 11,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 11,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "texas-am",
+          "rank": 13,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "ucla",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "purdue",
+          "rank": 15,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "maryland",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 19,
+          "tied": false,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        },
+        {
+          "key": "northwestern",
+          "rank": 20,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2009"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "cmu",
+          "rank": 6,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "caltech",
+          "rank": 7,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "usc",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "michigan",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "cornell",
+          "rank": 11,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "purdue",
+          "rank": 12,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 12,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "texas-am",
+          "rank": 14,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "ucla",
+          "rank": 14,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 16,
+          "tied": false,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "maryland",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "harvard",
+          "rank": 18,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": true,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 18,
+          "tied": true,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "nairaland_usnews_2010"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "cmu",
+          "rank": 6,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "caltech",
+          "rank": 7,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "usc",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "texas-am",
+          "rank": 12,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "purdue",
+          "rank": 13,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "ucla",
+          "rank": 15,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 15,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "princeton",
+          "rank": 17,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "columbia",
+          "rank": 18,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "harvard",
+          "rank": 19,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 19,
+          "tied": true,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "worldranking_usnews_2011"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "caltech",
+          "rank": 5,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "illinois",
+          "rank": 5,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "cmu",
+          "rank": 7,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "cornell",
+          "rank": 10,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "purdue",
+          "rank": 10,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "texas-am",
+          "rank": 12,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "usc",
+          "rank": 12,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 14,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "columbia",
+          "rank": 15,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "maryland",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "harvard",
+          "rank": 19,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        },
+        {
+          "key": "northwestern",
+          "rank": 19,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "collegeconfidential_usnews_2012"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2014,
+      "status": "missing",
+      "statusNote": "No source-backed top-20 engineering ranking table has been verified for this year.",
+      "statusSourceId": "source_gap",
+      "entries": []
+    },
+    {
+      "year": 2015,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "cmu",
+          "rank": 5,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 6,
+          "tied": true,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "illinois",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "purdue",
+          "rank": 8,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "texas-am",
+          "rank": 11,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "usc",
+          "rank": 11,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "columbia",
+          "rank": 14,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 14,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "princeton",
+          "rank": 17,
+          "tied": true,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 17,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 19,
+          "tied": true,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        },
+        {
+          "key": "upenn",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2015"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "cmu",
+          "rank": 4,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "caltech",
+          "rank": 5,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 6,
+          "tied": true,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "purdue",
+          "rank": 6,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "illinois",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "michigan",
+          "rank": 6,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "usc",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "texas-am",
+          "rank": 12,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "columbia",
+          "rank": 14,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "ucla",
+          "rank": 14,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 14,
+          "tied": true,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 17,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "upenn",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        },
+        {
+          "key": "harvard",
+          "rank": 20,
+          "tied": false,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2016"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "cmu",
+          "rank": 5,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "michigan",
+          "rank": 6,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 7,
+          "tied": true,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "illinois",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "purdue",
+          "rank": 9,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "texas-am",
+          "rank": 11,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "usc",
+          "rank": 12,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "columbia",
+          "rank": 14,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "ucla",
+          "rank": 14,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 17,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "princeton",
+          "rank": 18,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "northwestern",
+          "rank": 19,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        },
+        {
+          "key": "upenn",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2017"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "cmu",
+          "rank": 5,
+          "tied": true,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "michigan",
+          "rank": 5,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 7,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "purdue",
+          "rank": 8,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "illinois",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 9,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "texas-am",
+          "rank": 11,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "usc",
+          "rank": 11,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "columbia",
+          "rank": 13,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "princeton",
+          "rank": 17,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "wisconsin",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Wisconsin-Madison",
+          "fullName": "University of Wisconsin-Madison",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 19,
+          "tied": true,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "northwestern",
+          "rank": 19,
+          "tied": true,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "uc-santa-barbara",
+          "rank": 19,
+          "tied": true,
+          "name": "University of California, Santa Barbara",
+          "fullName": "University of California, Santa Barbara",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        },
+        {
+          "key": "upenn",
+          "rank": 19,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "universitylist_usnews_2018"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "michigan",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "cmu",
+          "rank": 6,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "purdue",
+          "rank": 7,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 8,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "illinois",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "usc",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "columbia",
+          "rank": 12,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "texas-am",
+          "rank": 12,
+          "tied": true,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 12,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "cornell",
+          "rank": 15,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "princeton",
+          "rank": 17,
+          "tied": false,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "upenn",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 19,
+          "tied": false,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        },
+        {
+          "key": "northwestern",
+          "rank": 20,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xuanxiaobao_usnews_2019"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "cmu",
+          "rank": 4,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "caltech",
+          "rank": 5,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "michigan",
+          "rank": 5,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 7,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "purdue",
+          "rank": 8,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "usc",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "illinois",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "columbia",
+          "rank": 11,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 11,
+          "tied": true,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 11,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "cornell",
+          "rank": 14,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "texas-am",
+          "rank": 15,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 17,
+          "tied": true,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "princeton",
+          "rank": 17,
+          "tied": true,
+          "name": "Princeton University",
+          "fullName": "Princeton University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "upenn",
+          "rank": 17,
+          "tied": true,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        },
+        {
+          "key": "northwestern",
+          "rank": 20,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yahoo_usnews_2020"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "cmu",
+          "rank": 4,
+          "tied": true,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "michigan",
+          "rank": 4,
+          "tied": true,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "purdue",
+          "rank": 7,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 8,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "illinois",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "usc",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 10,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "texas-am",
+          "rank": 13,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "columbia",
+          "rank": 14,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "cornell",
+          "rank": 14,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 17,
+          "tied": false,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "upenn",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "northwestern",
+          "rank": 19,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        },
+        {
+          "key": "maryland",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2021"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "cmu",
+          "rank": 4,
+          "tied": true,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "purdue",
+          "rank": 4,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "michigan",
+          "rank": 7,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 8,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 9,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "illinois",
+          "rank": 10,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "texas-am",
+          "rank": 11,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": true,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "usc",
+          "rank": 12,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 12,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "columbia",
+          "rank": 15,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 17,
+          "tied": false,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "upenn",
+          "rank": 18,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "northwestern",
+          "rank": 19,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        },
+        {
+          "key": "maryland",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "xdf_usnews_2022"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "purdue",
+          "rank": 4,
+          "tied": false,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "cmu",
+          "rank": 5,
+          "tied": false,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 6,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "caltech",
+          "rank": 7,
+          "tied": false,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "michigan",
+          "rank": 8,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 9,
+          "tied": false,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "texas-am",
+          "rank": 10,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "illinois",
+          "rank": 11,
+          "tied": false,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 12,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "cornell",
+          "rank": 13,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 14,
+          "tied": false,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "usc",
+          "rank": 15,
+          "tied": false,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "ucla",
+          "rank": 16,
+          "tied": false,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "columbia",
+          "rank": 17,
+          "tied": false,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "northwestern",
+          "rank": 18,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "colorado-boulder",
+          "rank": 19,
+          "tied": false,
+          "name": "University of Colorado Boulder",
+          "fullName": "University of Colorado Boulder",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        },
+        {
+          "key": "maryland",
+          "rank": 20,
+          "tied": false,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "yesuhak_usnews_2023"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_prn_2024"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_prn_2024"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "usnews_prn_2024"
+        },
+        {
+          "key": "caltech",
+          "rank": 4,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "usnews_prn_2024"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": true,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "usnews_prn_2024"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "caltech",
+          "rank": 5,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "purdue",
+          "rank": 5,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "cmu",
+          "rank": 7,
+          "tied": true,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "illinois",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 10,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "michigan",
+          "rank": 11,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 13,
+          "tied": true,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "ucla",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "texas-am",
+          "rank": 15,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "northwestern",
+          "rank": 16,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "upenn",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "columbia",
+          "rank": 18,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "maryland",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "duke",
+          "rank": 20,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "harvard",
+          "rank": 20,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "colorado-boulder",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Colorado Boulder",
+          "fullName": "University of Colorado Boulder",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "bestfunded_usnews_2025"
+        },
+        {
+          "key": "washington",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Washington",
+          "fullName": "University of Washington",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2025"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "status": "ranked",
+      "statusNote": null,
+      "statusSourceId": null,
+      "entries": [
+        {
+          "key": "mit",
+          "rank": 1,
+          "tied": false,
+          "name": "Massachusetts Institute of Technology",
+          "fullName": "Massachusetts Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "stanford",
+          "rank": 2,
+          "tied": false,
+          "name": "Stanford University",
+          "fullName": "Stanford University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "uc-berkeley",
+          "rank": 3,
+          "tied": false,
+          "name": "University of California, Berkeley",
+          "fullName": "University of California, Berkeley",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "georgia-tech",
+          "rank": 4,
+          "tied": false,
+          "name": "Georgia Institute of Technology",
+          "fullName": "Georgia Institute of Technology",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "caltech",
+          "rank": 5,
+          "tied": true,
+          "name": "California Institute of Technology",
+          "fullName": "California Institute of Technology",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "purdue",
+          "rank": 5,
+          "tied": true,
+          "name": "Purdue University",
+          "fullName": "Purdue University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "cmu",
+          "rank": 7,
+          "tied": true,
+          "name": "Carnegie Mellon University",
+          "fullName": "Carnegie Mellon University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "illinois",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Illinois Urbana-Champaign",
+          "fullName": "University of Illinois Urbana-Champaign",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "ut-austin",
+          "rank": 7,
+          "tied": true,
+          "name": "University of Texas at Austin",
+          "fullName": "University of Texas at Austin",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "uc-san-diego",
+          "rank": 10,
+          "tied": false,
+          "name": "University of California, San Diego",
+          "fullName": "University of California, San Diego",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "michigan",
+          "rank": 11,
+          "tied": false,
+          "name": "University of Michigan, Ann Arbor",
+          "fullName": "University of Michigan, Ann Arbor",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "cornell",
+          "rank": 12,
+          "tied": false,
+          "name": "Cornell University",
+          "fullName": "Cornell University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "johns-hopkins",
+          "rank": 13,
+          "tied": true,
+          "name": "Johns Hopkins University",
+          "fullName": "Johns Hopkins University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "ucla",
+          "rank": 13,
+          "tied": true,
+          "name": "University of California, Los Angeles",
+          "fullName": "University of California, Los Angeles",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "texas-am",
+          "rank": 15,
+          "tied": false,
+          "name": "Texas A&M University",
+          "fullName": "Texas A&M University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "northwestern",
+          "rank": 16,
+          "tied": false,
+          "name": "Northwestern University",
+          "fullName": "Northwestern University",
+          "color": "#e65d4f",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "upenn",
+          "rank": 17,
+          "tied": false,
+          "name": "University of Pennsylvania",
+          "fullName": "University of Pennsylvania",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "columbia",
+          "rank": 18,
+          "tied": true,
+          "name": "Columbia University",
+          "fullName": "Columbia University",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "maryland",
+          "rank": 18,
+          "tied": true,
+          "name": "University of Maryland, College Park",
+          "fullName": "University of Maryland, College Park",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "duke",
+          "rank": 20,
+          "tied": true,
+          "name": "Duke University",
+          "fullName": "Duke University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "harvard",
+          "rank": 20,
+          "tied": true,
+          "name": "Harvard University",
+          "fullName": "Harvard University",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "colorado-boulder",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Colorado Boulder",
+          "fullName": "University of Colorado Boulder",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "usc",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Southern California",
+          "fullName": "University of Southern California",
+          "color": "#f0c35a",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        },
+        {
+          "key": "washington",
+          "rank": 20,
+          "tied": true,
+          "name": "University of Washington",
+          "fullName": "University of Washington",
+          "color": "#27c7bd",
+          "overallScore": null,
+          "rankingSourceId": "uhomes_usnews_2026"
+        }
+      ]
+    }
+  ]
+}
